@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7841FF4520445B120086F74C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99435B81E966EA000783118 /* ImageIO.framework */; };
+		7841FF4620445B120086F74C /* RecognizerApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93BEA141EB34DE700A2216E /* RecognizerApi.framework */; };
+		7841FF4720445B120086F74C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99435BA1E966EBE00783118 /* CoreGraphics.framework */; };
+		7841FF4820445B120086F74C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99435B21E966A6500783118 /* CoreFoundation.framework */; };
+		7841FF4A20445B120086F74C /* RecognizerApi.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = C93BEA141EB34DE700A2216E /* RecognizerApi.framework */; };
+		7841FF5620445B480086F74C /* demo.c in Sources */ = {isa = PBXBuildFile; fileRef = 7841FF5520445B480086F74C /* demo.c */; };
+		C956CDA221CBCCD3003B4B6F /* RecognizerImageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C93BEA031EB3450200A2216E /* RecognizerImageWrapper.m */; };
+		C959E39F24E43A7500E1424A /* id.jpg in Copy Demo Images */ = {isa = PBXBuildFile; fileRef = C959E39E24E43A6F00E1424A /* id.jpg */; };
+		C959E3AD24E43A9C00E1424A /* ccc_lookup_table.zzip in Copy Demo Images */ = {isa = PBXBuildFile; fileRef = C959E3A124E43A9000E1424A /* ccc_lookup_table.zzip */; };
+		C959E3AE24E43A9C00E1424A /* BlinkID_Ocr_mrz_6.2.0.strop in Copy Demo Images */ = {isa = PBXBuildFile; fileRef = C959E3A224E43A9100E1424A /* BlinkID_Ocr_mrz_6.2.0.strop */; };
+		C959E3AF24E43A9C00E1424A /* BlinkID_BlurClassifier_general_6.1.0.strop in Copy Demo Images */ = {isa = PBXBuildFile; fileRef = C959E3A324E43A9100E1424A /* BlinkID_BlurClassifier_general_6.1.0.strop */; };
+		C959E3B024E43A9C00E1424A /* BlinkID_MoireClassifier_malaysia_6.0.0.strop in Copy Demo Images */ = {isa = PBXBuildFile; fileRef = C959E3A424E43A9100E1424A /* BlinkID_MoireClassifier_malaysia_6.0.0.strop */; };
+		C959E3B124E43A9C00E1424A /* BlinkID_RotationClassifier_general_6.1.0.strop in Copy Demo Images */ = {isa = PBXBuildFile; fileRef = C959E3A524E43A9100E1424A /* BlinkID_RotationClassifier_general_6.1.0.strop */; };
+		C959E3B224E43A9C00E1424A /* face_detector_model.zzip in Copy Demo Images */ = {isa = PBXBuildFile; fileRef = C959E3A624E43A9100E1424A /* face_detector_model.zzip */; };
+		C959E3B324E43A9C00E1424A /* BlinkID_MonochromeClassifier_general_6.0.0.strop in Copy Demo Images */ = {isa = PBXBuildFile; fileRef = C959E3A724E43A9100E1424A /* BlinkID_MonochromeClassifier_general_6.0.0.strop */; };
+		C959E3B424E43A9C00E1424A /* BlinkID_Analyzer_general_6.3.0.strop in Copy Demo Images */ = {isa = PBXBuildFile; fileRef = C959E3A824E43A9100E1424A /* BlinkID_Analyzer_general_6.3.0.strop */; };
+		C959E3B524E43A9C00E1424A /* BlinkID_Detector_general_6.6.0.strop in Copy Demo Images */ = {isa = PBXBuildFile; fileRef = C959E3A924E43A9100E1424A /* BlinkID_Detector_general_6.6.0.strop */; };
+		C959E3B624E43A9C00E1424A /* BlinkID_Segmentator_general_6.8.0.strop in Copy Demo Images */ = {isa = PBXBuildFile; fileRef = C959E3AA24E43A9100E1424A /* BlinkID_Segmentator_general_6.8.0.strop */; };
+		C959E3B724E43A9C00E1424A /* BlinkID_Ocr_general_6.9.0.strop in Copy Demo Images */ = {isa = PBXBuildFile; fileRef = C959E3AB24E43A9100E1424A /* BlinkID_Ocr_general_6.9.0.strop */; };
+		C959E3B824E43A9C00E1424A /* BlinkID_Classifier_general_6.10.0.strop in Copy Demo Images */ = {isa = PBXBuildFile; fileRef = C959E3AC24E43A9100E1424A /* BlinkID_Classifier_general_6.10.0.strop */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7841FF4920445B120086F74C /* Copy Framework */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				7841FF4A20445B120086F74C /* RecognizerApi.framework in Copy Framework */,
+			);
+			name = "Copy Framework";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7841FF4B20445B120086F74C /* Copy Resources */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Copy Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7841FF4C20445B120086F74C /* Copy Demo Images */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				C959E3AD24E43A9C00E1424A /* ccc_lookup_table.zzip in Copy Demo Images */,
+				C959E3AE24E43A9C00E1424A /* BlinkID_Ocr_mrz_6.2.0.strop in Copy Demo Images */,
+				C959E3AF24E43A9C00E1424A /* BlinkID_BlurClassifier_general_6.1.0.strop in Copy Demo Images */,
+				C959E3B024E43A9C00E1424A /* BlinkID_MoireClassifier_malaysia_6.0.0.strop in Copy Demo Images */,
+				C959E3B124E43A9C00E1424A /* BlinkID_RotationClassifier_general_6.1.0.strop in Copy Demo Images */,
+				C959E3B224E43A9C00E1424A /* face_detector_model.zzip in Copy Demo Images */,
+				C959E3B324E43A9C00E1424A /* BlinkID_MonochromeClassifier_general_6.0.0.strop in Copy Demo Images */,
+				C959E3B424E43A9C00E1424A /* BlinkID_Analyzer_general_6.3.0.strop in Copy Demo Images */,
+				C959E3B524E43A9C00E1424A /* BlinkID_Detector_general_6.6.0.strop in Copy Demo Images */,
+				C959E3B624E43A9C00E1424A /* BlinkID_Segmentator_general_6.8.0.strop in Copy Demo Images */,
+				C959E3B724E43A9C00E1424A /* BlinkID_Ocr_general_6.9.0.strop in Copy Demo Images */,
+				C959E3B824E43A9C00E1424A /* BlinkID_Classifier_general_6.10.0.strop in Copy Demo Images */,
+				C959E39F24E43A7500E1424A /* id.jpg in Copy Demo Images */,
+			);
+			name = "Copy Demo Images";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7841FF5220445B120086F74C /* Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Demo; sourceTree = BUILT_PRODUCTS_DIR; };
+		7841FF5520445B480086F74C /* demo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = demo.c; sourceTree = "<group>"; };
+		C93BEA021EB3450200A2216E /* RecognizerImageWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecognizerImageWrapper.h; path = ../../src/utils/MacOS/RecognizerImageWrapper.h; sourceTree = "<group>"; };
+		C93BEA031EB3450200A2216E /* RecognizerImageWrapper.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = RecognizerImageWrapper.m; path = ../../src/utils/MacOS/RecognizerImageWrapper.m; sourceTree = "<group>"; };
+		C93BEA141EB34DE700A2216E /* RecognizerApi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RecognizerApi.framework; path = ../../../lib/MacOS/RecognizerApi.framework; sourceTree = "<group>"; };
+		C959E39D24E438F000E1424A /* LicenseKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LicenseKey.h; path = ../../src/utils/LicenseKey.h; sourceTree = "<group>"; };
+		C959E39E24E43A6F00E1424A /* id.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = id.jpg; path = ../../src/demo/id.jpg; sourceTree = "<group>"; };
+		C959E3A124E43A9000E1424A /* ccc_lookup_table.zzip */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccc_lookup_table.zzip; sourceTree = "<group>"; };
+		C959E3A224E43A9100E1424A /* BlinkID_Ocr_mrz_6.2.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Ocr_mrz_6.2.0.strop; sourceTree = "<group>"; };
+		C959E3A324E43A9100E1424A /* BlinkID_BlurClassifier_general_6.1.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_BlurClassifier_general_6.1.0.strop; sourceTree = "<group>"; };
+		C959E3A424E43A9100E1424A /* BlinkID_MoireClassifier_malaysia_6.0.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_MoireClassifier_malaysia_6.0.0.strop; sourceTree = "<group>"; };
+		C959E3A524E43A9100E1424A /* BlinkID_RotationClassifier_general_6.1.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_RotationClassifier_general_6.1.0.strop; sourceTree = "<group>"; };
+		C959E3A624E43A9100E1424A /* face_detector_model.zzip */ = {isa = PBXFileReference; lastKnownFileType = file; path = face_detector_model.zzip; sourceTree = "<group>"; };
+		C959E3A724E43A9100E1424A /* BlinkID_MonochromeClassifier_general_6.0.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_MonochromeClassifier_general_6.0.0.strop; sourceTree = "<group>"; };
+		C959E3A824E43A9100E1424A /* BlinkID_Analyzer_general_6.3.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Analyzer_general_6.3.0.strop; sourceTree = "<group>"; };
+		C959E3A924E43A9100E1424A /* BlinkID_Detector_general_6.6.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Detector_general_6.6.0.strop; sourceTree = "<group>"; };
+		C959E3AA24E43A9100E1424A /* BlinkID_Segmentator_general_6.8.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Segmentator_general_6.8.0.strop; sourceTree = "<group>"; };
+		C959E3AB24E43A9100E1424A /* BlinkID_Ocr_general_6.9.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Ocr_general_6.9.0.strop; sourceTree = "<group>"; };
+		C959E3AC24E43A9100E1424A /* BlinkID_Classifier_general_6.10.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Classifier_general_6.10.0.strop; sourceTree = "<group>"; };
+		C99435B21E966A6500783118 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C99435B81E966EA000783118 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C99435BA1E966EBE00783118 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7841FF4420445B120086F74C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7841FF4520445B120086F74C /* ImageIO.framework in Frameworks */,
+				7841FF4620445B120086F74C /* RecognizerApi.framework in Frameworks */,
+				7841FF4720445B120086F74C /* CoreGraphics.framework in Frameworks */,
+				7841FF4820445B120086F74C /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7841FF5720445B510086F74C /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				7841FF5520445B480086F74C /* demo.c */,
+			);
+			name = demo;
+			path = ../../src/demo;
+			sourceTree = "<group>";
+		};
+		C90A6ECA18ABC070004717EF = {
+			isa = PBXGroup;
+			children = (
+				7841FF5720445B510086F74C /* demo */,
+				C93BEA011EB344F700A2216E /* Utils */,
+				C93BEA0D1EB3455C00A2216E /* Resources */,
+				C90A6EF418ABD2ED004717EF /* Frameworks */,
+				C90A6ED418ABC070004717EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C90A6ED418ABC070004717EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7841FF5220445B120086F74C /* Demo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C90A6EF418ABD2ED004717EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C93BEA141EB34DE700A2216E /* RecognizerApi.framework */,
+				C99435BA1E966EBE00783118 /* CoreGraphics.framework */,
+				C99435B81E966EA000783118 /* ImageIO.framework */,
+				C99435B21E966A6500783118 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C93BEA011EB344F700A2216E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C93BEA021EB3450200A2216E /* RecognizerImageWrapper.h */,
+				C93BEA031EB3450200A2216E /* RecognizerImageWrapper.m */,
+				C959E39D24E438F000E1424A /* LicenseKey.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		C93BEA0D1EB3455C00A2216E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C959E3A024E43A9000E1424A /* non-android */,
+				C959E39E24E43A6F00E1424A /* id.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C959E3A024E43A9000E1424A /* non-android */ = {
+			isa = PBXGroup;
+			children = (
+				C959E3A124E43A9000E1424A /* ccc_lookup_table.zzip */,
+				C959E3A224E43A9100E1424A /* BlinkID_Ocr_mrz_6.2.0.strop */,
+				C959E3A324E43A9100E1424A /* BlinkID_BlurClassifier_general_6.1.0.strop */,
+				C959E3A424E43A9100E1424A /* BlinkID_MoireClassifier_malaysia_6.0.0.strop */,
+				C959E3A524E43A9100E1424A /* BlinkID_RotationClassifier_general_6.1.0.strop */,
+				C959E3A624E43A9100E1424A /* face_detector_model.zzip */,
+				C959E3A724E43A9100E1424A /* BlinkID_MonochromeClassifier_general_6.0.0.strop */,
+				C959E3A824E43A9100E1424A /* BlinkID_Analyzer_general_6.3.0.strop */,
+				C959E3A924E43A9100E1424A /* BlinkID_Detector_general_6.6.0.strop */,
+				C959E3AA24E43A9100E1424A /* BlinkID_Segmentator_general_6.8.0.strop */,
+				C959E3AB24E43A9100E1424A /* BlinkID_Ocr_general_6.9.0.strop */,
+				C959E3AC24E43A9100E1424A /* BlinkID_Classifier_general_6.10.0.strop */,
+			);
+			name = "non-android";
+			path = "../../../resources/non-android";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7841FF4020445B120086F74C /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7841FF4F20445B120086F74C /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				7841FF4120445B120086F74C /* Sources */,
+				7841FF4420445B120086F74C /* Frameworks */,
+				7841FF4920445B120086F74C /* Copy Framework */,
+				7841FF4B20445B120086F74C /* Copy Resources */,
+				7841FF4C20445B120086F74C /* Copy Demo Images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = RecognizerApiDemo;
+			productReference = 7841FF5220445B120086F74C /* Demo */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C90A6ECB18ABC070004717EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = DoDo;
+			};
+			buildConfigurationList = C90A6ECE18ABC070004717EF /* Build configuration list for PBXProject "Demo-apps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = C90A6ECA18ABC070004717EF;
+			productRefGroup = C90A6ED418ABC070004717EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7841FF4020445B120086F74C /* Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7841FF4120445B120086F74C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7841FF5620445B480086F74C /* demo.c in Sources */,
+				C956CDA221CBCCD3003B4B6F /* RecognizerImageWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7841FF5020445B120086F74C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"LICENSEE=\\\"test\\\"",
+					"LICENSE_KEY=\\\"sRwAAAQEdGVzdMo6VCwH3Y0vyKAlKFL322rLesOMY6WZXjEb/xCdM6+chMJlQdAXo9hqUXs+LZURxPvUEmYDGl2Z4M3rAyK+vFu4MxwSJ9ArBee+wEu+4jA8ddlpeYYJk1ubgWvok0SgVzAKp98aJ4sgKK9cAKEK8cunER7oAoF7pIFFGC45QIYwPEwuga1QhZH99EYYKHimZIvH9mvGdzY1SOTeAaeQYywIU7MwRbER1xqb2xsIQwNsbJgZ07yiQTiUAYpgI+k0v0aNr8tPRSA=\\\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		7841FF5120445B120086F74C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"LICENSEE=\\\"test\\\"",
+					"LICENSE_KEY=\\\"sRwAAAQEdGVzdMo6VCwH3Y0vyKAlKFL322rLesOMY6WZXjEb/xCdM6+chMJlQdAXo9hqUXs+LZURxPvUEmYDGl2Z4M3rAyK+vFu4MxwSJ9ArBee+wEu+4jA8ddlpeYYJk1ubgWvok0SgVzAKp98aJ4sgKK9cAKEK8cunER7oAoF7pIFFGC45QIYwPEwuga1QhZH99EYYKHimZIvH9mvGdzY1SOTeAaeQYywIU7MwRbER1xqb2xsIQwNsbJgZ07yiQTiUAYpgI+k0v0aNr8tPRSA=\\\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		C90A6EDA18ABC070004717EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = $PROJECT_DIR/../../../lib/MacOS;
+				GCC_C_LANGUAGE_STANDARD = ansi;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$PROJECT_DIR/../../../include,
+					$PROJECT_DIR/../../src/utils/MacOS,
+					$PROJECT_DIR/../../src/utils,
+					$PROJECT_DIR/../../../lib/MacOS/RecognizerApi.framework/Headers,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		C90A6EDB18ABC070004717EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = $PROJECT_DIR/../../../lib/MacOS;
+				GCC_C_LANGUAGE_STANDARD = ansi;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$PROJECT_DIR/../../../include,
+					$PROJECT_DIR/../../src/utils/MacOS,
+					$PROJECT_DIR/../../src/utils,
+					$PROJECT_DIR/../../../lib/MacOS/RecognizerApi.framework/Headers,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7841FF4F20445B120086F74C /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7841FF5020445B120086F74C /* Debug */,
+				7841FF5120445B120086F74C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90A6ECE18ABC070004717EF /* Build configuration list for PBXProject "Demo-apps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90A6EDA18ABC070004717EF /* Debug */,
+				C90A6EDB18ABC070004717EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C90A6ECB18ABC070004717EF /* Project object */;
+}

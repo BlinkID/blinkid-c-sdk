@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['mbanonymizationmode_617',['MBAnonymizationMode',['../_anonymization_mode_8h.html#a52962ad30f02b6946ff8bdc4550500cf',1,'AnonymizationMode.h']]],
+  ['mbbarcodedocumenttype_618',['MBBarcodeDocumentType',['../_barcode_document_type_8h.html#a16bfd1c1a3d1d3f8b3c26d15452f7595',1,'BarcodeDocumentType.h']]],
+  ['mbbarcodetype_619',['MBBarcodeType',['../_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8d',1,'BarcodeData.h']]],
+  ['mbcountry_620',['MBCountry',['../_class_info_types_8h.html#aea6d6cdf362cfb7ee17f90c83393bf0d',1,'ClassInfoTypes.h']]],
+  ['mbdatamatchresult_621',['MBDataMatchResult',['../_data_match_result_8h.html#a8c71cfaea03e52bcfb28531864b94ca7',1,'DataMatchResult.h']]],
+  ['mbdetectionstatus_622',['MBDetectionStatus',['../_recognizer_runner_8h.html#a233b5c71a0779f0346df9f5b39250505',1,'RecognizerRunner.h']]],
+  ['mbdocumentimagecolorstatus_623',['MBDocumentImageColorStatus',['../_document_image_color_status_8h.html#aaf16d9cd91f521292dce8b5bde851ce3',1,'DocumentImageColorStatus.h']]],
+  ['mbdocumenttype_624',['MBDocumentType',['../_class_info_types_8h.html#aacbe376929bcb7ae7f675b310126167c',1,'ClassInfoTypes.h']]],
+  ['mbimageanalysisdetectionstatus_625',['MBImageAnalysisDetectionStatus',['../_image_analysis_detection_status_8h.html#ae8f134e8d81bcc6c2ba6bb56828074d1',1,'ImageAnalysisDetectionStatus.h']]],
+  ['mbimageorientation_626',['MBImageOrientation',['../_recognizer_image_8h.html#af5ef4ed34aa18118ba3c8605f4c4305f',1,'RecognizerImage.h']]],
+  ['mbmrtddocumenttype_627',['MBMRTDDocumentType',['../_m_r_z_result_8h.html#a880bce949f52d5e20a50f8d109745e45',1,'MRZResult.h']]],
+  ['mbprocessingstatus_628',['MBProcessingStatus',['../_processing_status_8h.html#aa4172cb96ca3426510ecd328092a1fb6',1,'ProcessingStatus.h']]],
+  ['mbrawimagetype_629',['MBRawImageType',['../_recognizer_image_8h.html#aa0ff796c761521138a3bbe11def09f82',1,'RecognizerImage.h']]],
+  ['mbrecognitionmode_630',['MBRecognitionMode',['../_recognition_mode_8h.html#ab45354e61e99b4d4912bd593f9d94f13',1,'RecognitionMode.h']]],
+  ['mbrecognizererrorstatus_631',['MBRecognizerErrorStatus',['../_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27',1,'RecognizerError.h']]],
+  ['mbrecognizerresultstate_632',['MBRecognizerResultState',['../_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0',1,'Recognizer.h']]],
+  ['mbregion_633',['MBRegion',['../_class_info_types_8h.html#a070ac3283e35b216803efd613be1ebff',1,'ClassInfoTypes.h']]],
+  ['mbshowimagetype_634',['MBShowImageType',['../_recognizer_runner_8h.html#af6b3bb72748cbe49659e8bbc61c13d9d',1,'RecognizerRunner.h']]]
+];

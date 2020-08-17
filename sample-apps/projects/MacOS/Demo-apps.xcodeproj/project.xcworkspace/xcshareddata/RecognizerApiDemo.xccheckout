@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>376C12AB-E6F1-4366-9D42-E2EC7A81C9E1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RecognizerApiDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>43F1CF154D5C9A09924D93E31CAFE803EB42B50D</key>
+		<string>github.com:PhotoPay/PhotoPay.git</string>
+		<key>6369108B04FC6808609396AC9FCF502ED3E8C317</key>
+		<string>github.com:BlinkID/blinkid-core.git</string>
+		<key>83439DF8D5E7D86101A1B3E1534E2CF8B56FD92C</key>
+		<string>github.com:PhotoPay/pdf417-core.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MacOSX/RecognizerApiDemo/RecognizerApiDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>43F1CF154D5C9A09924D93E31CAFE803EB42B50D</key>
+		<string>../../../../..</string>
+		<key>6369108B04FC6808609396AC9FCF502ED3E8C317</key>
+		<string>../../../..</string>
+		<key>83439DF8D5E7D86101A1B3E1534E2CF8B56FD92C</key>
+		<string>../../../../../pdf417-core</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:BlinkID/blinkid-core.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6369108B04FC6808609396AC9FCF502ED3E8C317</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>43F1CF154D5C9A09924D93E31CAFE803EB42B50D</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6369108B04FC6808609396AC9FCF502ED3E8C317</string>
+			<key>IDESourceControlWCCName</key>
+			<string>blinkid-core</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>83439DF8D5E7D86101A1B3E1534E2CF8B56FD92C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pdf417-core</string>
+		</dict>
+	</array>
+</dict>
+</plist>
