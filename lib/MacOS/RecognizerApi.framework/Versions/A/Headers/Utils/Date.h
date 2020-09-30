@@ -15,7 +15,8 @@
 #include <Recognizer/Export.h>
 
 #ifdef _cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
 /**

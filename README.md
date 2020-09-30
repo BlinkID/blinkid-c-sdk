@@ -11,9 +11,9 @@ Integrating _BlinkID C SDK_ into your app requires experience with native develo
 
 You should use _BlinkID C SDK_ if you are developing:
 
-- Linux or macOS desktop applications
+- Windows, Linux or macOS desktop applications
 - Custom hardware that runs a Linux-based OS on an Intel-compatible CPU, such as airport document readers and ATM machines
-- C++. Java, Python or Ruby applications (you wrap the C-API in your target language)
+- C++, Java, Python or Ruby applications (you wrap the C-API in your target language)
 - Server-side solutions where quick runtime is essential and a docker-based integration cannot meet your performance or compliance needs
 - mobile apps that run on native code and need to work without the extra overhead incurred by Objective C (iOS) or Java (Android) callbacks
 
@@ -27,6 +27,7 @@ You should use _BlinkID C SDK_ if you are developing:
     * [Configuring your build system](#configure-build)
         * [Linux](#configure-linux)
         * [MacOS](#configure-macos)
+        * [Windows](#configure-windows)
         * [Android](#configure-android)
         * [iOS](#configure-ios)
     * [Obtaining a license key](#obtaining-a-license-key)
@@ -44,6 +45,7 @@ You should use _BlinkID C SDK_ if you are developing:
     * [Licensing problems](#licensing-problems)
         * [Other problems](#other-problems)
 * [FAQ and known issues](#faq)
+    * [Linux-specific known issues](#faq-linux)
     * [Android-specific known issues](#faq-android)
     * [iOS-specific known issues](#faq-ios)
 * [Additional info](#info)
@@ -53,7 +55,7 @@ You should use _BlinkID C SDK_ if you are developing:
 
 ## <a name="hw-requirements"></a> Minimum hardware requirements
 
-### Desktop platforms (Linux, MacOS)
+### Desktop platforms (Linux, MacOS, Windows)
 
 - _BlinkID C SDK_ supports any `x86_64` compatible processor
     - x86, ARM, MIPS, SPARC, Power, Itanium and other non-x86_64-compatible CPUs are **not supported**
@@ -87,8 +89,18 @@ You should use _BlinkID C SDK_ if you are developing:
 ### Linux
 
 - _BlinkID C SDK_ supports Linux distributions that have **GLIBC 2.17** or newer
+- **OpenSSL v1.1.1** is required to be installed on the system, as well as CA certificates
+    - both `libssl.so.1.1` and `libcrypto.so.1.1` must be available
+    - for axample, on CentOS 7, you can install OpenSSL v1.1.1 by [enabling EPEL repo](https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/) and installing the package `openssl11` with command `sudo yum install openssl11`
+    - for example, on Ubuntu, you can install OpenSSL v1.1.1 with `sudo apt install libssl1.1 ca-certificates`
 - additionally, for running bundled demo apps, a `libjpeg v8` is required
 	- this is a dependency of the demo apps, not the SDK itself
+
+### Windows
+
+- _BlinkID C SDK_ supports only 64-bit Windows 10
+    - 32-bit version of Windows 10, as well as Windows 8.1 and earlier versions are **not supported**
+- [Visual C++ 2019 redistributable package](https://aka.ms/vs/16/release/VC_redist.x64.exe) is required for BlinkID SDK to work on Windows
 
 ### Android
 
@@ -115,6 +127,7 @@ The _BlinkID C SDK_ consists of:
     - Linux shared objects are available [here](lib/Linux)
     - iOS dynamic framework is available [here](lib/iOS)
     - MacOS dynamic framework is available [here](lib/MacOS)
+    - Windows DLL and import lib is available [here](lib/Windows)
 - resources that _BlinkID_ requires at runtime
     - resources for Android are available [here](resources/android)
     - resources for all other platforms are available [here](resources/non-android)
@@ -125,7 +138,7 @@ In order to be able to use _BlinkID_ in your application, you first need to conf
 
 ### <a name="configure-linux"></a> Linux
 
-On Linux, please make sure that you instruct your compiler to search for headers in [include](include) directory and to link with `libRecognizerApi.so`, which is located in [Linux lib folder](lib/Linux/x64). When running your app, make sure that `libRecognizerApi.so` is available in library search path by installing it to the default library directory (usually `/usr/lib`) or by setting `LD_LIBRARY_PATH` environment variable to folder containing the `libRecognizerApi.so`. While deploying your application, make sure that you also include the [resources](resources/non-android) that are needed at runtime. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan).
+On Linux, please make sure that you instruct your compiler to search for headers in [include](include) directory and to link with `libRecognizerApi.so`, which is located in [Linux lib folder](lib/Linux/x64). Also, make sure that your Linux distribution has `OpenSSL` installed (`libssl.so.10` and `libcrypto.so.10` need to be available). When running your app, make sure that `libRecognizerApi.so` is available in library search path by installing it to the default library directory (usually `/usr/lib`) or by setting `LD_LIBRARY_PATH` environment variable to folder containing the `libRecognizerApi.so`. While deploying your application, make sure that you also include the [resources](resources/non-android) that are needed at runtime. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan).
 
 Please check [the Linux sample-app](sample-apps/projects/Linux/x64) for an example of integration of _BlinkID C SDK_ on Linux.
 
@@ -134,6 +147,12 @@ Please check [the Linux sample-app](sample-apps/projects/Linux/x64) for an examp
 On MacOS, _BlinkID C SDK_ is available as [dynamic framework](lib/MacOS). You can simply drag and drop the framework in your Xcode project and Xcode should automatically setup header and framework search paths for you. While deploying your application, make sure that you also include the [resources](resources/non-android) that are needed at runtime. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan).
 
 Please check [the MacOS sample-app](sample-apps/projects/MacOS) for an example of integration of _BlinkID C SDK_ on MacOS.
+
+### <a name="configure-windows"></a> Windows
+
+On Windows, _BlinkID C SDK_ is available as [dynamic library](lib/Windows). You need to instruct your compiler to search for headers in [include](include) directory and link with `RecognizerApi.lib`, which is located in [Windows lib folder](lib/Windows/x64). When running your app, make sure that `RecognizerApi.dll` is available in the same directory as your application's executable file. While deploying your application, make sure that you also include the [resources](resources/non-android) that are needed at runtime. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan). In order for _BlinkID C SDK_ to work, a  [Visual C++ 2019 redistributable package](https://aka.ms/vs/16/release/VC_redist.x64.exe) needs to be installed on the system.
+
+Please check [the Windows sample-app](sample-apps/projects/Windows/x64) for an example of integration of _BlinkID C SDK_ on Windows.
 
 ### <a name="configure-android"></a> Android
 
@@ -153,7 +172,7 @@ Using _BlinkID C SDK_ in your app requires a valid license key.
 
 You can obtain a free trial license key by registering to [Microblink dashboard](https://microblink.com/login). After registering, you will be able to generate a license key for your app.
 
-- On Android, the license key is bound to the [package name](http://tools.android.com/tech-docs/new-build-system/applicationid-vs-packagename) of your app.
+- On Android, the license key is bound to the [application ID](https://developer.android.com/studio/build/application-id.html) of your app.
 - On iOS, the license key is bound to the [bundle identifier](https://stackoverflow.com/a/11347680/213057) of your app.
 - On Linux, the license key is bound to the [machine ID](https://man7.org/linux/man-pages/man5/machine-id.5.html) of the computer that will run your app.
     - you can obtain the ID by running a [license request tool](lib/Linux/LicenseRequestTool). This utility will print the machine ID as `Licensee` to the standard output and also into file `MicroblinkLicenseRequest.txt`
@@ -161,6 +180,9 @@ You can obtain a free trial license key by registering to [Microblink dashboard]
 - On MacOS, the license key is bound to the [Mac's UUID](https://www.engadget.com/2013-07-25-mac-101-finding-your-macs-uuid.html?guccounter=1)
     - you can obtain the ID by running a [license request tool](lib/MacOS/LicenseRequestTool). This utility will print the machine ID as `Licensee` to the standard output and also into file `MicroblinkLicenseRequest.txt`
     - if you need a macOS license eligible for multiple machines, please [contact us](https://help.microblink.com)
+- On Windows, the license key is bound to the [Windows product ID](https://superuser.com/a/886764)
+    - you can obtain the ID by running a [license request tool](lib/Windows/LicenseRequestTool.exe). This utility will print the product ID as `Licensee` to the standard output and also into file `MicroblinkLicenseRequest.txt`
+    - if you need a Windows license eligible for multiple machines, please [contact us](https://help.microblink.com)
 
 ## <a name="first-scan"></a> Performing your first scan
 
@@ -177,6 +199,11 @@ You can obtain a free trial license key by registering to [Microblink dashboard]
     // context is of type "jobject" and must point to instance "android.content.Context" java object. It is recommended to use application context
     // to avoid memory leaks. For more information, please see: https://android-developers.googleblog.com/2009/01/avoiding-memory-leaks.html
     recognizerAPIInitializeAndroidApplication( jniEnv, context );
+    ```
+
+1. (Desktop platforms only) define the location of cache folder. This is required to store some cache files when online licenses are used. On mobile platforms those files are stored into app's private folder, but on desktop platforms it is required to define a unique folder in order to avoid clashes with other applications using the same SDK.
+    ```c
+    recognizerAPISetCacheLocation( "/path/to/cache/folder" );
     ```
 
 1. Insert your license key
@@ -352,7 +379,7 @@ If you have followed the instructions to the letter and you still have the probl
 
 If you are getting "invalid license key" error or having other license-related problems (e.g. some feature is not enabled that should be), first check the output of your program. All license-related problems are logged to the standard output for each platform (ADB on Android, NSLog on iOS, `stdout` on desktop platforms).
 
-When you have to determine what is the license-related problem or you simply do not understand the log, you should contact us [help.microblink.com](http://help.microblink.com). When contacting us, please make sure you provide following information:
+When you have to determine what is the license-related problem or you simply do not understand the log, you should contact us [help.microblink.com](https://help.microblink.com). When contacting us, please make sure you provide following information:
 
 - `licensee` to which your license key is bound
     - for more information about obtaining the `licensee`, check [Obtaining a license key](#obtaining-a-license-key)
@@ -365,7 +392,7 @@ When you have to determine what is the license-related problem or you simply do 
 
 If you are having problems with scanning certain items, undesired behaviour on specific device(s), crashes inside _BlinkID_ or anything unmentioned, please do as follows:
 
-- Contact us at [help.microblink.com](http://help.microblink.com) describing your problem and provide following information:
+- Contact us at [help.microblink.com](https://help.microblink.com) describing your problem and provide following information:
     - Log from the program output
     - high resolution scan/photo of the item that you are trying to scan
     - information about the operating system and its version
@@ -375,11 +402,19 @@ If you are having problems with scanning certain items, undesired behaviour on s
 
 #### After switching from trial to production license I get error `This entity is not allowed by currently active license!` when I create a specific `Recognizer` object.
 
-Each license key contains information about which features are allowed to use and which are not. This error indicates that your production license does not allow using of specific `Recognizer` object. You should contact [support](http://help.microblink.com) to check if provided license is OK and that it really contains all features that you have purchased.
+Each license key contains information about which features are allowed to use and which are not. This error indicates that your production license does not allow using of specific `Recognizer` object. You should contact [support](https://help.microblink.com) to check if provided license is OK and that it really contains all features that you have purchased.
 
 #### Initialization of the `RecognizerRunner` fails
 
 Please check that you have correctly set the license key and that you have correctly set the path to resources that need to be loaded at runtime. For more information, see [_performing your first scan_ article](#first-scan)
+
+## <a name="faq-linux"></a> Linux-specific known issues
+
+#### Unlocking the SDK fails with `RECOGNIZER_ERROR_STATUS_NETWORK_ERROR` even if my machine is online
+
+This can happen if online license is used, which requires server permission for unlocking the SDK and the server is not reachable. First, make sure that your system has CA certificates installed. Most systems have that as soon as OpenSSL package is installed, however, Ubuntu-based Linux distribution contain CA certificates in `ca-certificates` package. You can install that by issuing command `sudo apt install ca-certificates`.
+
+If this didn't fix your problem, make sure that the licensing server is reachable by issuing command `ping baltazar.microblink.com`. If the server is reachable, but you are still getting network error, please [contact us](https://help.microblink.com)
 
 ## <a name="faq-android"></a> Android-specific known issues
 
@@ -395,7 +430,7 @@ This error happens when JVM fails to load some native method from native library
 
 Also, make sure that you have correctly combined _BlinkID_ SDK with third party SDKs that contain native code, i.e. that your final app contains matching ABIs for all libraries that ended up in the final library. For more information about that, check [this article in our BlinkID Android SDK documentation](https://github.com/blinkid/blinkid-android#combineNativeLibraries).
 
-If you are getting this error also in our integration demo app, then it may indicate a bug in the SDK that is manifested on specific device. Please report that to our [support team](http://help.microblink.com).
+If you are getting this error also in our integration demo app, then it may indicate a bug in the SDK that is manifested on specific device. Please report that to our [support team](https://help.microblink.com).
 
 #### Application crashes as soon as any _BlinkID C SDK_ API function is called
 
@@ -409,7 +444,7 @@ RecognizerApi.framework is a dynamic framework which contains slices for all arc
 
 Ideal solution is to add a build phase after embed frameworks build phase, which strips unused slices from embedded frameworks.
 
-Build step is based on the one provided here: http://ikennd.ac/blog/2015/02/stripping-unwanted-architectures-from-dynamic-libraries-in-xcode/
+Build step is based on the one provided here: https://ikennd.ac/blog/2015/02/stripping-unwanted-architectures-from-dynamic-libraries-in-xcode/
 
 ```shell
 APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"

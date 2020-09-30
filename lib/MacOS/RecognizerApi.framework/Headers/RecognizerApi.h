@@ -123,7 +123,7 @@
  *
  * @section info Additional info
  *
- * For any inquiries, additional information or instructions please contact us at <a href="http://help.microblink.com">help.microblink.com</a>.
+ * For any inquiries, additional information or instructions please contact us at <a href="https://help.microblink.com">help.microblink.com</a>.
  * When contacting, please state which product and which platform you are using so we can help you more quickly. Also, please state that you are using
  * C SDK and state the version you are using. You can obtain the library version with function ::recognizerAPIGetVersionString.
  */

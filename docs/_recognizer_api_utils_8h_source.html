@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.7.0</span>
+   &#160;<span id="projectnumber">version 5.8.0</span>
    </div>
   </td>
  </tr>
@@ -80,31 +80,41 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;jni.h&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifdef __APPLE__</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#   include &lt;TargetConditionals.h&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="_recognizer_api_utils_8h.html#ac1d636103741b9704adf7da87e29d1c3">   31</a></span>&#160;MB_API <span class="keywordtype">char</span> <span class="keyword">const</span> * MB_CALL <a class="code" href="_recognizer_api_utils_8h.html#ac1d636103741b9704adf7da87e29d1c3">recognizerAPIGetVersionString</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_recognizer_api_utils_8h.html#ac4d8c955145a7ee7508b8d25f1cac599">   40</a></span>&#160;MB_API <a class="code" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> MB_CALL <a class="code" href="_recognizer_api_utils_8h.html#ac4d8c955145a7ee7508b8d25f1cac599">recognizerAPISetResourcesLocation</a>( <span class="keywordtype">char</span> <span class="keyword">const</span> * resourcePath );</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifdef __ANDROID__</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="_recognizer_api_utils_8h.html#a6a39476a55beb625a6063e9129e02ff6">   53</a></span>&#160;MB_API <span class="keywordtype">void</span> MB_CALL <a class="code" href="_recognizer_api_utils_8h.html#a6a39476a55beb625a6063e9129e02ff6">recognizerAPIInitializeAndroidApplication</a>( JNIEnv * env, jobject applicationContext );</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="_recognizer_api_utils_8h.html#ac1d636103741b9704adf7da87e29d1c3">   36</a></span>&#160;MB_API <span class="keywordtype">char</span> <span class="keyword">const</span> * MB_CALL <a class="code" href="_recognizer_api_utils_8h.html#ac1d636103741b9704adf7da87e29d1c3">recognizerAPIGetVersionString</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="_recognizer_api_utils_8h.html#ac4d8c955145a7ee7508b8d25f1cac599">   45</a></span>&#160;MB_API <a class="code" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> MB_CALL <a class="code" href="_recognizer_api_utils_8h.html#ac4d8c955145a7ee7508b8d25f1cac599">recognizerAPISetResourcesLocation</a>( <span class="keywordtype">char</span> <span class="keyword">const</span> * resourcePath );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#if !defined( __ANDROID__ ) &amp;&amp; !( defined( __APPLE__ ) &amp;&amp; TARGET_OS_IPHONE )</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;MB_API <a class="code" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> MB_CALL recognizerAPISetCacheLocation( <span class="keywordtype">char</span> <span class="keyword">const</span> * cacheFolder );</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#ifdef __ANDROID__</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="_recognizer_api_utils_8h.html#a6a39476a55beb625a6063e9129e02ff6">   82</a></span>&#160;MB_API <span class="keywordtype">void</span> MB_CALL <a class="code" href="_recognizer_api_utils_8h.html#a6a39476a55beb625a6063e9129e02ff6">recognizerAPIInitializeAndroidApplication</a>( JNIEnv * env, jobject applicationContext );</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="a_recognizer_api_utils_8h_html_ac1d636103741b9704adf7da87e29d1c3"><div class="ttname"><a href="_recognizer_api_utils_8h.html#ac1d636103741b9704adf7da87e29d1c3">recognizerAPIGetVersionString</a></div><div class="ttdeci">MB_API char const  *MB_CALL recognizerAPIGetVersionString()</div><div class="ttdoc">Returns the library version string.</div></div>
 <div class="ttc" id="a_recognizer_api_utils_8h_html_a6a39476a55beb625a6063e9129e02ff6"><div class="ttname"><a href="_recognizer_api_utils_8h.html#a6a39476a55beb625a6063e9129e02ff6">recognizerAPIInitializeAndroidApplication</a></div><div class="ttdeci">MB_API void MB_CALL recognizerAPIInitializeAndroidApplication(JNIEnv *env, jobject applicationContext)</div><div class="ttdoc">Sets the JNI application context to the SDK. This is required in order for SDK to be able to load res...</div></div>
 <div class="ttc" id="a_recognizer_api_utils_8h_html_ac4d8c955145a7ee7508b8d25f1cac599"><div class="ttname"><a href="_recognizer_api_utils_8h.html#ac4d8c955145a7ee7508b8d25f1cac599">recognizerAPISetResourcesLocation</a></div><div class="ttdeci">MB_API MBRecognizerErrorStatus MB_CALL recognizerAPISetResourcesLocation(char const *resourcePath)</div><div class="ttdoc">Sets the location where required resources will be loaded from. If not set, &quot;res&quot; folder within curre...</div></div>
 <div class="ttc" id="a_recognizer_error_8h_html"><div class="ttname"><a href="_recognizer_error_8h.html">RecognizerError.h</a></div></div>
-<div class="ttc" id="a_recognizer_error_8h_html_a478101be8b179bf0b97ae64d80574f27"><div class="ttname"><a href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a></div><div class="ttdeci">MBRecognizerErrorStatus</div><div class="ttdoc">Enumeration of all possible error statuses.</div><div class="ttdef"><b>Definition:</b> RecognizerError.h:27</div></div>
+<div class="ttc" id="a_recognizer_error_8h_html_a478101be8b179bf0b97ae64d80574f27"><div class="ttname"><a href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a></div><div class="ttdeci">MBRecognizerErrorStatus</div><div class="ttdoc">Enumeration of all possible error statuses.</div><div class="ttdef"><b>Definition:</b> RecognizerError.h:28</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.19

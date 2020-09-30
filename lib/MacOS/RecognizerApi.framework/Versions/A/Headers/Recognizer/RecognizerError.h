@@ -17,7 +17,8 @@
 #include "Export.h"
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
 /**
@@ -27,13 +28,13 @@ extern "C" {
 enum MBRecognizerErrorStatus {
     /** Operation was successfully completed */
     RECOGNIZER_ERROR_STATUS_SUCCESS = 0,
-    
+
     /** Operation failed */
     RECOGNIZER_ERROR_STATUS_FAIL,
 
     /** Failed to allocate memory */
     RECOGNIZER_ERROR_STATUS_MALLOC_FAIL,
-    
+
     /** Invalid or expired license key was provided */
     RECOGNIZER_ERROR_STATUS_INVALID_LICENSE_KEY,
 
@@ -41,7 +42,19 @@ enum MBRecognizerErrorStatus {
     RECOGNIZER_ERROR_STATUS_NOT_SUPPORTED,
 
     /** Specified recognizer is in use and cannot be modified. */
-    RECOGNIZER_ERROR_STATUS_RECOGNIZER_IN_USE
+    RECOGNIZER_ERROR_STATUS_RECOGNIZER_IN_USE,
+
+    /** Invalid settings were provided */
+    RECOGNIZER_ERROR_STATUS_INVALID_SETTINGS,
+
+    /** Invalid argument was provided to the function */
+    RECOGNIZER_ERROR_STATUS_INVALID_ARGUMENT,
+
+    /** There has been a network error while validating the license key */
+    RECOGNIZER_ERROR_STATUS_NETWORK_ERROR,
+
+    /** Given license key has been remotely locked */
+    RECOGNIZER_ERROR_STATUS_REMOTE_LOCK
 };
 
 /**
@@ -51,7 +64,7 @@ typedef MB_EXPORTED_TYPE enum MBRecognizerErrorStatus MBRecognizerErrorStatus;
 
 /**
  Helper method for fetching string representation of the error status. Usually used in debugging.
- 
+
  @param errorStatus   status for which the string representation is required
  @return null terminated string for required status
  */

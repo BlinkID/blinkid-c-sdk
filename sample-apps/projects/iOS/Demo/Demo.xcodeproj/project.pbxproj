@@ -15,18 +15,18 @@
 		C938049824E2DF710060507E /* MBRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = C938049624E2DF710060507E /* MBRecognition.m */; };
 		C938049924E2DF710060507E /* MBRecognitionResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C938049724E2DF710060507E /* MBRecognitionResult.m */; };
 		C938049D24E2DF7C0060507E /* Demo.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = C938049B24E2DF7C0060507E /* Demo.xctestplan */; };
-		C93804B024E2E0130060507E /* BlinkID_Analyzer_general_6.3.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C938046C24E2A2490060507E /* BlinkID_Analyzer_general_6.3.0.strop */; };
-		C93804B124E2E0130060507E /* BlinkID_BlurClassifier_general_6.1.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C938046624E2A2490060507E /* BlinkID_BlurClassifier_general_6.1.0.strop */; };
-		C93804B224E2E0130060507E /* BlinkID_Classifier_general_6.10.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C938046B24E2A2490060507E /* BlinkID_Classifier_general_6.10.0.strop */; };
-		C93804B324E2E0130060507E /* BlinkID_Detector_general_6.6.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C938046724E2A2490060507E /* BlinkID_Detector_general_6.6.0.strop */; };
-		C93804B424E2E0130060507E /* BlinkID_MoireClassifier_malaysia_6.0.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C938046524E2A2490060507E /* BlinkID_MoireClassifier_malaysia_6.0.0.strop */; };
-		C93804B524E2E0130060507E /* BlinkID_MonochromeClassifier_general_6.0.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C938046424E2A2490060507E /* BlinkID_MonochromeClassifier_general_6.0.0.strop */; };
-		C93804B624E2E0130060507E /* BlinkID_Ocr_general_6.9.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C938046824E2A2490060507E /* BlinkID_Ocr_general_6.9.0.strop */; };
-		C93804B724E2E0130060507E /* BlinkID_Ocr_mrz_6.2.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C938046924E2A2490060507E /* BlinkID_Ocr_mrz_6.2.0.strop */; };
-		C93804B824E2E0130060507E /* BlinkID_RotationClassifier_general_6.1.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C938046A24E2A2490060507E /* BlinkID_RotationClassifier_general_6.1.0.strop */; };
-		C93804B924E2E0130060507E /* BlinkID_Segmentator_general_6.8.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C938046124E2A2490060507E /* BlinkID_Segmentator_general_6.8.0.strop */; };
-		C93804BA24E2E0130060507E /* ccc_lookup_table.zzip in Resources */ = {isa = PBXBuildFile; fileRef = C938046224E2A2490060507E /* ccc_lookup_table.zzip */; };
-		C93804BB24E2E0130060507E /* face_detector_model.zzip in Resources */ = {isa = PBXBuildFile; fileRef = C938046324E2A2490060507E /* face_detector_model.zzip */; };
+		C94CFF61252340C2001FE406 /* BlinkID_Segmentator_general_6.9.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C94CFF55252340C2001FE406 /* BlinkID_Segmentator_general_6.9.0.strop */; };
+		C94CFF62252340C2001FE406 /* BlinkID_MonochromeClassifier_general_6.0.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C94CFF56252340C2001FE406 /* BlinkID_MonochromeClassifier_general_6.0.0.strop */; };
+		C94CFF63252340C2001FE406 /* BlinkID_Classifier_general_6.11.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C94CFF57252340C2001FE406 /* BlinkID_Classifier_general_6.11.0.strop */; };
+		C94CFF64252340C2001FE406 /* BlinkID_BlurClassifier_general_6.1.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C94CFF58252340C2001FE406 /* BlinkID_BlurClassifier_general_6.1.0.strop */; };
+		C94CFF65252340C2001FE406 /* BlinkID_Ocr_general_6.10.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C94CFF59252340C2001FE406 /* BlinkID_Ocr_general_6.10.0.strop */; };
+		C94CFF66252340C2001FE406 /* ccc_lookup_table.zzip in Resources */ = {isa = PBXBuildFile; fileRef = C94CFF5A252340C2001FE406 /* ccc_lookup_table.zzip */; };
+		C94CFF67252340C2001FE406 /* BlinkID_Detector_general_6.6.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C94CFF5B252340C2001FE406 /* BlinkID_Detector_general_6.6.0.strop */; };
+		C94CFF68252340C2001FE406 /* BlinkID_Analyzer_general_6.4.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C94CFF5C252340C2001FE406 /* BlinkID_Analyzer_general_6.4.0.strop */; };
+		C94CFF69252340C2001FE406 /* BlinkID_MoireClassifier_malaysia_6.0.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C94CFF5D252340C2001FE406 /* BlinkID_MoireClassifier_malaysia_6.0.0.strop */; };
+		C94CFF6A252340C2001FE406 /* face_detector_model.zzip in Resources */ = {isa = PBXBuildFile; fileRef = C94CFF5E252340C2001FE406 /* face_detector_model.zzip */; };
+		C94CFF6B252340C2001FE406 /* BlinkID_RotationClassifier_general_6.1.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C94CFF5F252340C2001FE406 /* BlinkID_RotationClassifier_general_6.1.0.strop */; };
+		C94CFF6C252340C2001FE406 /* BlinkID_Ocr_mrz_6.4.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C94CFF60252340C2001FE406 /* BlinkID_Ocr_mrz_6.4.0.strop */; };
 		C956CDB121CD5CA0003B4B6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C956CDB021CD5CA0003B4B6F /* AppDelegate.m */; };
 		C956CDB421CD5CA0003B4B6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C956CDB321CD5CA0003B4B6F /* ViewController.m */; };
 		C956CDB721CD5CA0003B4B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C956CDB521CD5CA0003B4B6F /* Main.storyboard */; };
@@ -65,24 +65,24 @@
 		C900CCDC24E57EDE000E2AEF /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C900CCE024E57EDE000E2AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C938045D24E2A15C0060507E /* id.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = id.jpg; path = ../../../../src/demo/id.jpg; sourceTree = "<group>"; };
-		C938046124E2A2490060507E /* BlinkID_Segmentator_general_6.8.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_Segmentator_general_6.8.0.strop; path = "../../../../../../resources/non-android/BlinkID_Segmentator_general_6.8.0.strop"; sourceTree = "<group>"; };
-		C938046224E2A2490060507E /* ccc_lookup_table.zzip */ = {isa = PBXFileReference; lastKnownFileType = file; name = ccc_lookup_table.zzip; path = "../../../../../../resources/non-android/ccc_lookup_table.zzip"; sourceTree = "<group>"; };
-		C938046324E2A2490060507E /* face_detector_model.zzip */ = {isa = PBXFileReference; lastKnownFileType = file; name = face_detector_model.zzip; path = "../../../../../../resources/non-android/face_detector_model.zzip"; sourceTree = "<group>"; };
-		C938046424E2A2490060507E /* BlinkID_MonochromeClassifier_general_6.0.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_MonochromeClassifier_general_6.0.0.strop; path = "../../../../../../resources/non-android/BlinkID_MonochromeClassifier_general_6.0.0.strop"; sourceTree = "<group>"; };
-		C938046524E2A2490060507E /* BlinkID_MoireClassifier_malaysia_6.0.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_MoireClassifier_malaysia_6.0.0.strop; path = "../../../../../../resources/non-android/BlinkID_MoireClassifier_malaysia_6.0.0.strop"; sourceTree = "<group>"; };
-		C938046624E2A2490060507E /* BlinkID_BlurClassifier_general_6.1.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_BlurClassifier_general_6.1.0.strop; path = "../../../../../../resources/non-android/BlinkID_BlurClassifier_general_6.1.0.strop"; sourceTree = "<group>"; };
-		C938046724E2A2490060507E /* BlinkID_Detector_general_6.6.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_Detector_general_6.6.0.strop; path = "../../../../../../resources/non-android/BlinkID_Detector_general_6.6.0.strop"; sourceTree = "<group>"; };
-		C938046824E2A2490060507E /* BlinkID_Ocr_general_6.9.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_Ocr_general_6.9.0.strop; path = "../../../../../../resources/non-android/BlinkID_Ocr_general_6.9.0.strop"; sourceTree = "<group>"; };
-		C938046924E2A2490060507E /* BlinkID_Ocr_mrz_6.2.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_Ocr_mrz_6.2.0.strop; path = "../../../../../../resources/non-android/BlinkID_Ocr_mrz_6.2.0.strop"; sourceTree = "<group>"; };
-		C938046A24E2A2490060507E /* BlinkID_RotationClassifier_general_6.1.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_RotationClassifier_general_6.1.0.strop; path = "../../../../../../resources/non-android/BlinkID_RotationClassifier_general_6.1.0.strop"; sourceTree = "<group>"; };
-		C938046B24E2A2490060507E /* BlinkID_Classifier_general_6.10.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_Classifier_general_6.10.0.strop; path = "../../../../../../resources/non-android/BlinkID_Classifier_general_6.10.0.strop"; sourceTree = "<group>"; };
-		C938046C24E2A2490060507E /* BlinkID_Analyzer_general_6.3.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_Analyzer_general_6.3.0.strop; path = "../../../../../../resources/non-android/BlinkID_Analyzer_general_6.3.0.strop"; sourceTree = "<group>"; };
 		C938049424E2DF710060507E /* MBRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRecognition.h; sourceTree = "<group>"; };
 		C938049524E2DF710060507E /* MBRecognitionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRecognitionResult.h; sourceTree = "<group>"; };
 		C938049624E2DF710060507E /* MBRecognition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRecognition.m; sourceTree = "<group>"; };
 		C938049724E2DF710060507E /* MBRecognitionResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRecognitionResult.m; sourceTree = "<group>"; };
 		C938049A24E2DF7C0060507E /* BlinkIDTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlinkIDTests.m; sourceTree = "<group>"; };
 		C938049B24E2DF7C0060507E /* Demo.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Demo.xctestplan; sourceTree = "<group>"; };
+		C94CFF55252340C2001FE406 /* BlinkID_Segmentator_general_6.9.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_Segmentator_general_6.9.0.strop; path = "../../../../../../resources/non-android/BlinkID_Segmentator_general_6.9.0.strop"; sourceTree = "<group>"; };
+		C94CFF56252340C2001FE406 /* BlinkID_MonochromeClassifier_general_6.0.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_MonochromeClassifier_general_6.0.0.strop; path = "../../../../../../resources/non-android/BlinkID_MonochromeClassifier_general_6.0.0.strop"; sourceTree = "<group>"; };
+		C94CFF57252340C2001FE406 /* BlinkID_Classifier_general_6.11.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_Classifier_general_6.11.0.strop; path = "../../../../../../resources/non-android/BlinkID_Classifier_general_6.11.0.strop"; sourceTree = "<group>"; };
+		C94CFF58252340C2001FE406 /* BlinkID_BlurClassifier_general_6.1.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_BlurClassifier_general_6.1.0.strop; path = "../../../../../../resources/non-android/BlinkID_BlurClassifier_general_6.1.0.strop"; sourceTree = "<group>"; };
+		C94CFF59252340C2001FE406 /* BlinkID_Ocr_general_6.10.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_Ocr_general_6.10.0.strop; path = "../../../../../../resources/non-android/BlinkID_Ocr_general_6.10.0.strop"; sourceTree = "<group>"; };
+		C94CFF5A252340C2001FE406 /* ccc_lookup_table.zzip */ = {isa = PBXFileReference; lastKnownFileType = file; name = ccc_lookup_table.zzip; path = "../../../../../../resources/non-android/ccc_lookup_table.zzip"; sourceTree = "<group>"; };
+		C94CFF5B252340C2001FE406 /* BlinkID_Detector_general_6.6.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_Detector_general_6.6.0.strop; path = "../../../../../../resources/non-android/BlinkID_Detector_general_6.6.0.strop"; sourceTree = "<group>"; };
+		C94CFF5C252340C2001FE406 /* BlinkID_Analyzer_general_6.4.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_Analyzer_general_6.4.0.strop; path = "../../../../../../resources/non-android/BlinkID_Analyzer_general_6.4.0.strop"; sourceTree = "<group>"; };
+		C94CFF5D252340C2001FE406 /* BlinkID_MoireClassifier_malaysia_6.0.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_MoireClassifier_malaysia_6.0.0.strop; path = "../../../../../../resources/non-android/BlinkID_MoireClassifier_malaysia_6.0.0.strop"; sourceTree = "<group>"; };
+		C94CFF5E252340C2001FE406 /* face_detector_model.zzip */ = {isa = PBXFileReference; lastKnownFileType = file; name = face_detector_model.zzip; path = "../../../../../../resources/non-android/face_detector_model.zzip"; sourceTree = "<group>"; };
+		C94CFF5F252340C2001FE406 /* BlinkID_RotationClassifier_general_6.1.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_RotationClassifier_general_6.1.0.strop; path = "../../../../../../resources/non-android/BlinkID_RotationClassifier_general_6.1.0.strop"; sourceTree = "<group>"; };
+		C94CFF60252340C2001FE406 /* BlinkID_Ocr_mrz_6.4.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlinkID_Ocr_mrz_6.4.0.strop; path = "../../../../../../resources/non-android/BlinkID_Ocr_mrz_6.4.0.strop"; sourceTree = "<group>"; };
 		C956CDAC21CD5CA0003B4B6F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C956CDAF21CD5CA0003B4B6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C956CDB021CD5CA0003B4B6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -127,18 +127,18 @@
 		C938046024E2A2330060507E /* sdk-resources */ = {
 			isa = PBXGroup;
 			children = (
-				C938046C24E2A2490060507E /* BlinkID_Analyzer_general_6.3.0.strop */,
-				C938046624E2A2490060507E /* BlinkID_BlurClassifier_general_6.1.0.strop */,
-				C938046B24E2A2490060507E /* BlinkID_Classifier_general_6.10.0.strop */,
-				C938046724E2A2490060507E /* BlinkID_Detector_general_6.6.0.strop */,
-				C938046524E2A2490060507E /* BlinkID_MoireClassifier_malaysia_6.0.0.strop */,
-				C938046424E2A2490060507E /* BlinkID_MonochromeClassifier_general_6.0.0.strop */,
-				C938046824E2A2490060507E /* BlinkID_Ocr_general_6.9.0.strop */,
-				C938046924E2A2490060507E /* BlinkID_Ocr_mrz_6.2.0.strop */,
-				C938046A24E2A2490060507E /* BlinkID_RotationClassifier_general_6.1.0.strop */,
-				C938046124E2A2490060507E /* BlinkID_Segmentator_general_6.8.0.strop */,
-				C938046224E2A2490060507E /* ccc_lookup_table.zzip */,
-				C938046324E2A2490060507E /* face_detector_model.zzip */,
+				C94CFF5C252340C2001FE406 /* BlinkID_Analyzer_general_6.4.0.strop */,
+				C94CFF58252340C2001FE406 /* BlinkID_BlurClassifier_general_6.1.0.strop */,
+				C94CFF57252340C2001FE406 /* BlinkID_Classifier_general_6.11.0.strop */,
+				C94CFF5B252340C2001FE406 /* BlinkID_Detector_general_6.6.0.strop */,
+				C94CFF5D252340C2001FE406 /* BlinkID_MoireClassifier_malaysia_6.0.0.strop */,
+				C94CFF56252340C2001FE406 /* BlinkID_MonochromeClassifier_general_6.0.0.strop */,
+				C94CFF59252340C2001FE406 /* BlinkID_Ocr_general_6.10.0.strop */,
+				C94CFF60252340C2001FE406 /* BlinkID_Ocr_mrz_6.4.0.strop */,
+				C94CFF5F252340C2001FE406 /* BlinkID_RotationClassifier_general_6.1.0.strop */,
+				C94CFF55252340C2001FE406 /* BlinkID_Segmentator_general_6.9.0.strop */,
+				C94CFF5A252340C2001FE406 /* ccc_lookup_table.zzip */,
+				C94CFF5E252340C2001FE406 /* face_detector_model.zzip */,
 			);
 			path = "sdk-resources";
 			sourceTree = "<group>";
@@ -290,23 +290,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C93804B024E2E0130060507E /* BlinkID_Analyzer_general_6.3.0.strop in Resources */,
-				C93804B124E2E0130060507E /* BlinkID_BlurClassifier_general_6.1.0.strop in Resources */,
-				C93804B224E2E0130060507E /* BlinkID_Classifier_general_6.10.0.strop in Resources */,
-				C93804B324E2E0130060507E /* BlinkID_Detector_general_6.6.0.strop in Resources */,
-				C93804B424E2E0130060507E /* BlinkID_MoireClassifier_malaysia_6.0.0.strop in Resources */,
-				C93804B524E2E0130060507E /* BlinkID_MonochromeClassifier_general_6.0.0.strop in Resources */,
-				C93804B624E2E0130060507E /* BlinkID_Ocr_general_6.9.0.strop in Resources */,
-				C93804B724E2E0130060507E /* BlinkID_Ocr_mrz_6.2.0.strop in Resources */,
-				C93804B824E2E0130060507E /* BlinkID_RotationClassifier_general_6.1.0.strop in Resources */,
-				C93804B924E2E0130060507E /* BlinkID_Segmentator_general_6.8.0.strop in Resources */,
-				C93804BA24E2E0130060507E /* ccc_lookup_table.zzip in Resources */,
-				C93804BB24E2E0130060507E /* face_detector_model.zzip in Resources */,
 				C938045E24E2A15C0060507E /* id.jpg in Resources */,
+				C94CFF64252340C2001FE406 /* BlinkID_BlurClassifier_general_6.1.0.strop in Resources */,
 				C956CDBC21CD5CA2003B4B6F /* LaunchScreen.storyboard in Resources */,
+				C94CFF6C252340C2001FE406 /* BlinkID_Ocr_mrz_6.4.0.strop in Resources */,
 				C956CDB921CD5CA2003B4B6F /* Assets.xcassets in Resources */,
+				C94CFF6B252340C2001FE406 /* BlinkID_RotationClassifier_general_6.1.0.strop in Resources */,
+				C94CFF67252340C2001FE406 /* BlinkID_Detector_general_6.6.0.strop in Resources */,
+				C94CFF66252340C2001FE406 /* ccc_lookup_table.zzip in Resources */,
+				C94CFF65252340C2001FE406 /* BlinkID_Ocr_general_6.10.0.strop in Resources */,
+				C94CFF6A252340C2001FE406 /* face_detector_model.zzip in Resources */,
 				C938049D24E2DF7C0060507E /* Demo.xctestplan in Resources */,
+				C94CFF69252340C2001FE406 /* BlinkID_MoireClassifier_malaysia_6.0.0.strop in Resources */,
 				C956CDB721CD5CA0003B4B6F /* Main.storyboard in Resources */,
+				C94CFF68252340C2001FE406 /* BlinkID_Analyzer_general_6.4.0.strop in Resources */,
+				C94CFF62252340C2001FE406 /* BlinkID_MonochromeClassifier_general_6.0.0.strop in Resources */,
+				C94CFF63252340C2001FE406 /* BlinkID_Classifier_general_6.11.0.strop in Resources */,
+				C94CFF61252340C2001FE406 /* BlinkID_Segmentator_general_6.9.0.strop in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

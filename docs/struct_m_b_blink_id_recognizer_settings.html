@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.7.0</span>
+   &#160;<span id="projectnumber">version 5.8.0</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,12 @@ Data Fields</h2></td></tr>
 <tr class="separator:a7380f9f50db2019a1585cc64a828f54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a592dce5b2a3450134d858ec069c64f51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_b_recognition_mode_filter.html">MBRecognitionModeFilter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_blink_id_recognizer_settings.html#a592dce5b2a3450134d858ec069c64f51">recognitionModeFilter</a></td></tr>
 <tr class="separator:a592dce5b2a3450134d858ec069c64f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2de1dc2719617fe30ce2508553cee40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_b_full_document_image_options.html">MBFullDocumentImageOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_blink_id_recognizer_settings.html#ac2de1dc2719617fe30ce2508553cee40">fullDocumentImageOptions</a></td></tr>
+<tr class="separator:ac2de1dc2719617fe30ce2508553cee40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e446256dc6a8851f2a1dc2c59581fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_b_image_options.html">MBImageOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_blink_id_recognizer_settings.html#a63e446256dc6a8851f2a1dc2c59581fb">faceImageOptions</a></td></tr>
+<tr class="separator:a63e446256dc6a8851f2a1dc2c59581fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a963c875cc8c11c883b422df0047fdda4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_b_image_options.html">MBImageOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_blink_id_recognizer_settings.html#a963c875cc8c11c883b422df0047fdda4">signatureImageOptions</a></td></tr>
+<tr class="separator:a963c875cc8c11c883b422df0047fdda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d2a3b27ad04f91aba18b73065868998"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_blink_id_recognizer_settings.html#a1d2a3b27ad04f91aba18b73065868998">dewarpedImageCallback</a> )(<a class="el" href="struct_m_b_raw_image.html">MBRawImage</a> image)</td></tr>
 <tr class="separator:a1d2a3b27ad04f91aba18b73065868998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a944e6956bafab3fb233dd54306bcdd8e"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_blink_id_recognizer_settings.html#a944e6956bafab3fb233dd54306bcdd8e">classifierCallback</a> )(MBBool supported)</td></tr>
@@ -224,6 +230,7 @@ Data Fields</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>should class be processed: true process, false skip </dd></dl>
 
 </div>
 </div>
@@ -262,6 +269,36 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a63e446256dc6a8851f2a1dc2c59581fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63e446256dc6a8851f2a1dc2c59581fb">&#9670;&nbsp;</a></span>faceImageOptions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_b_image_options.html">MBImageOptions</a> MBBlinkIdRecognizerSettings::faceImageOptions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Options for the faceImage. </p>
+
+</div>
+</div>
+<a id="ac2de1dc2719617fe30ce2508553cee40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2de1dc2719617fe30ce2508553cee40">&#9670;&nbsp;</a></span>fullDocumentImageOptions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_b_full_document_image_options.html">MBFullDocumentImageOptions</a> MBBlinkIdRecognizerSettings::fullDocumentImageOptions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Image options for the fullDocumentImage. </p>
+
+</div>
+</div>
 <a id="afcee324601e0039fe6df579c5d788793"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afcee324601e0039fe6df579c5d788793">&#9670;&nbsp;</a></span>paddingEdge</h2>
 
@@ -289,6 +326,21 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Enable or disable recognition of specific document groups supported by the current license. By default all modes are enabled. </p>
+
+</div>
+</div>
+<a id="a963c875cc8c11c883b422df0047fdda4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a963c875cc8c11c883b422df0047fdda4">&#9670;&nbsp;</a></span>signatureImageOptions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_b_image_options.html">MBImageOptions</a> MBBlinkIdRecognizerSettings::signatureImageOptions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Options for the signatureImage. </p>
 
 </div>
 </div>

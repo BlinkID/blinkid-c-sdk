@@ -54,7 +54,8 @@ enum MBMRTDDocumentType
 MB_EXPORTED_TYPE typedef enum MBMRTDDocumentType MBMRTDDocumentType;
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
 /**

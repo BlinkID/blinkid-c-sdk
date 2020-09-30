@@ -18,7 +18,7 @@
         "description": "Eigen is a C++ template library for linear algebra: vectors, matrices, and related algorithms. It is versatile, fast, elegant and works on many platforms (OS/Compilers)."
     },
     {
-        "package": "Err/1.1.0@microblink/stable",
+        "package": "Err/1.1.1@microblink/stable",
         "url": "https://github.com/microblink/err",
         "license": "Boost Software License",
         "description": "err - yet another take on C++ error handling"
@@ -60,31 +60,31 @@
         "description": "Obfuscation library based on C++11/14 and metaprogramming"
     },
     {
-        "package": "OpenCV/3.2.0.7@microblink/stable",
+        "package": "OpenCV/3.2.0.9@microblink/stable",
         "url": "https://bitbucket.org/microblink/opencvfork/src",
         "license": "MIT",
         "description": "Microblink's fork of OpenCV"
     },
     {
-        "package": "OpenCVAnalysis/3.2.0.7@microblink/stable",
+        "package": "OpenCVAnalysis/3.2.0.9@microblink/stable",
         "url": "https://bitbucket.org/microblink/opencvfork/src",
         "license": "MIT",
         "description": null
     },
     {
-        "package": "OpenCVCore/3.2.0.7@microblink/stable",
+        "package": "OpenCVCore/3.2.0.9@microblink/stable",
         "url": "https://bitbucket.org/microblink/opencvfork/src",
         "license": "MIT",
         "description": null
     },
     {
-        "package": "OpenCVImageIO/3.2.0.7@microblink/stable",
+        "package": "OpenCVImageIO/3.2.0.9@microblink/stable",
         "url": "https://bitbucket.org/microblink/opencvfork/src",
         "license": "MIT",
         "description": null
     },
     {
-        "package": "OpenCVProcessing/3.2.0.7@microblink/stable",
+        "package": "OpenCVProcessing/3.2.0.9@microblink/stable",
         "url": "https://bitbucket.org/microblink/opencvfork/src",
         "license": "MIT",
         "description": null
@@ -114,22 +114,34 @@
         "description": "UTF-8 with C++ in a Portable Way"
     },
     {
-        "package": "ZXing/2.2.2@microblink/stable",
+        "package": "ZXing/2.2.3@microblink/stable",
         "url": "https://github.com/microblink/zxing",
         "license": "Apache License 2.0",
         "description": "ZXing (\"Zebra Crossing\") barcode scanning library for Java, Android"
     },
     {
-        "package": "Zlib/1.2.8.7@microblink/stable",
+        "package": "Zlib/1.2.8.9@microblink/stable",
         "url": "https://bitbucket.org/microblink/opencvfork/src",
         "license": "MIT",
         "description": null
+    },
+    {
+        "package": "cpr/1.5.1@microblink/stable",
+        "url": "https://github.com/microblink/cpr",
+        "license": "https://github.com/microblink/cpr",
+        "description": "C++ Requests: Curl for People, a spiritual port of Python Requests"
     },
     {
         "package": "cpuinfo/2.1.0@microblink/stable",
         "url": "https://github.com/microblink/cpuinfo",
         "license": "BSD 2-Clause \"Simplified\" License",
         "description": "cpuinfo is a library to detect essential for performance optimization information about host CPU"
+    },
+    {
+        "package": "libcurl/7.72.0@microblink/stable",
+        "url": "https://github.com/microblink/curl",
+        "license": "MIT",
+        "description": "command line tool and library for transferring data with URLs"
     },
     {
         "package": "range-v3/0.10.0@microblink/stable",
