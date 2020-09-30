@@ -19,6 +19,7 @@
 #include <Recognizer/BlinkID/Generic/Common/ClassInfo.h>
 #include <Recognizer/BlinkID/Generic/Common/DriverLicenseDetailedInfo.h>
 #include <Recognizer/BlinkID/Generic/Common/ImageAnalysisResult.h>
+#include <Recognizer/BlinkID/Generic/Common/ImageOptions.h>
 #include <Recognizer/BlinkID/Generic/Common/ImageResult.h>
 #include <Recognizer/BlinkID/Generic/Common/ProcessingStatus.h>
 #include <Recognizer/BlinkID/Generic/Common/RecognitionMode.h>
@@ -32,7 +33,8 @@
 #include <Utils/Date.h>
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
 struct MBBlinkIdRecognizerSettings;
@@ -93,6 +95,21 @@ struct MBBlinkIdRecognizerSettings
     MBRecognitionModeFilter recognitionModeFilter;
 
     /**
+     * Image options for the fullDocumentImage.
+     */
+    MBFullDocumentImageOptions fullDocumentImageOptions;
+
+    /**
+     * Options for the faceImage.
+     */
+    MBImageOptions faceImageOptions;
+
+    /**
+     * Options for the signatureImage.
+     * */
+    MBImageOptions signatureImageOptions;
+
+    /**
      * Called when dewarped full document image is available.
      */
     void (*dewarpedImageCallback)( MBRawImage image );
@@ -113,6 +130,7 @@ struct MBBlinkIdRecognizerSettings
      * Enables filtering based on class.
      *
      * @param classInfo - classInfo of the document
+     * @return should class be processed: true process, false skip
      */
     MBBool (*classFilter)( MBClassInfo classInfo );
 
@@ -225,6 +243,9 @@ struct MBBlinkIdRecognizerResult
 
     /** Image of the person's face. */
     MBImageResult faceImage;
+
+    /** Signature image extracted from the document. */
+    MBImageResult signatureImage;
 
     /** Various information obtained by analysing the scanned image. */
     MBImageAnalysisResult imageAnalysisResult;

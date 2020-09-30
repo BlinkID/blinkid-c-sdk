@@ -24,6 +24,8 @@ int main( int argc, char * argv[] )
         return EXIT_FAILURE;
     }
 
+    recognizerAPISetCacheLocation( "." );
+
     /* load the image from given path */
     imageWrapper = loadImageFromFile( argv[ 2 ] );
 
@@ -42,7 +44,7 @@ int main( int argc, char * argv[] )
 
     if ( errorStatus != RECOGNIZER_ERROR_STATUS_SUCCESS )
     {
-        printf( "Failed to unlock!\n" );
+        printf( "Failed to unlock! Reason: %s\n", recognizerErrorToString( errorStatus ) );
         return EXIT_FAILURE;
     }
 

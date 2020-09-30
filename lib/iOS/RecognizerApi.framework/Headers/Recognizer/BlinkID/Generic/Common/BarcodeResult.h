@@ -29,6 +29,8 @@ struct MBBarcodeResult
 
     /** The first name of the document owner. */
     char const * firstName;
+    /** The middle name of the document owner. */
+    const char * middleName;
     /** The last name of the document owner. */
     char const * lastName;
     /** The full name of the document owner. */

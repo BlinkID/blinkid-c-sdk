@@ -107,7 +107,9 @@ enum MBCountry
     MB_COUNTRY_ECUADOR                = 87,
     MB_COUNTRY_EL_SALVADOR            = 88,
     MB_COUNTRY_SRI_LANKA              = 89,
-    MB_COUNTRY_COUNT                  = 90
+    MB_COUNTRY_PERU                   = 90,
+    MB_COUNTRY_URUGUAY                = 91,
+    MB_COUNTRY_COUNT                  = 92
 };
 
 /**
@@ -187,7 +189,11 @@ enum MBRegion
     MB_REGION_WISCONSIN                    = 66,
     MB_REGION_WYOMING                      = 67,
     MB_REGION_YUKON                        = 68,
-    MB_REGION_COUNT                        = 69
+    MB_REGION_CIUDAD_DE_MEXICO             = 69,
+    MB_REGION_JALISCO                      = 70,
+    MB_REGION_NEWFOUNDLAND_AND_LABRADOR    = 71,
+    MB_REGION_NUEVO_LEON                   = 72,
+    MB_REGION_COUNT                        = 73
 };
 
 /**
@@ -223,7 +229,9 @@ enum MBDocumentType
     MB_DOCUMENT_TYPE_MyKAS                      = 22,
     MB_DOCUMENT_TYPE_SOCIAL_SECURITY_CARD       = 23,
     MB_DOCUMENT_TYPE_HEALTH_INSURANCE_CARD      = 24,
-    MB_DOCUMENT_TYPE_COUNT                      = 25
+    MB_DOCUMENT_TYPE_PASSPORT                   = 25,
+    MB_DOCUMENT_TYPE_S_PASS                     = 26,
+    MB_DOCUMENT_TYPE_COUNT                      = 27
 };
 
 /**

@@ -54,6 +54,9 @@ var menudata={children:[
 {text:"y",url:"functions_y.html#index_y"}]},
 {text:"Functions",url:"functions_func.html",children:[
 {text:"b",url:"functions_func.html#index_b"},
+{text:"e",url:"functions_func.html#index_e"},
+{text:"f",url:"functions_func.html#index_f"},
+{text:"i",url:"functions_func.html#index_i"},
 {text:"r",url:"functions_func.html#index_r"}]},
 {text:"Variables",url:"functions_vars.html",children:[
 {text:"a",url:"functions_vars.html#index_a"},

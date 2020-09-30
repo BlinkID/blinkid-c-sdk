@@ -15,7 +15,13 @@
 
 #include <Recognizer/BlinkID/DataMatchResult.h>
 #include <Recognizer/BlinkID/DigitalSignatureResult.h>
+#include <Recognizer/BlinkID/Generic/Common/BarcodeResult.h>
+#include <Recognizer/BlinkID/Generic/Common/ImageAnalysisResult.h>
+#include <Recognizer/BlinkID/Generic/Common/ImageResult.h>
+#include <Recognizer/BlinkID/Generic/Common/ProcessingStatus.h>
+#include <Recognizer/BlinkID/Generic/Common/VIZResult.h>
 #include <Recognizer/BlinkID/Generic/IdRecognizer.h>
+#include <Recognizer/BlinkID/MRTD/MRZResult.h>
 #include <Recognizer/Export.h>
 #include <Recognizer/RecognizerError.h>
 #include <Recognizer/Types.h>
@@ -47,7 +53,7 @@ MB_API void MB_CALL blinkIdCombinedRecognizerSettingsDefaultInit( MBBlinkIdCombi
 struct MBBlinkIdCombinedRecognizerSettings
 {
     /** All settings as for MBBlinkIdRecognizer */
-    MBBlinkIdRecognizerSettings genericIdSettings;
+    MBBlinkIdRecognizerSettings baseSettings;
 
     /** Whether or not recognition result should be signed. */
     MBBool allowSignature;

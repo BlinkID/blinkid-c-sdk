@@ -21,7 +21,8 @@
 #include <Utils/Date.h>
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
 /** The IdBarcodeRecognizer scans barcodes from identity documents and returns the parsed information. */
@@ -38,6 +39,8 @@ struct MBIdBarcodeRecognizerResult
 
     /** The first name of the document owner. */
     char const * firstName;
+    /** The middle name of the document owner. */
+    char const * middleName;
     /** The last name of the document owner. */
     char const * lastName;
     /** The full name of the document owner. */
