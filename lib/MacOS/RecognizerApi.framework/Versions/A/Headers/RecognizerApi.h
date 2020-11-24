@@ -1,14 +1,13 @@
 /**
-* Copyright (c) Microblink Ltd. All rights reserved.
-*
-* ANY UNAUTHORIZED USE OR SALE, DUPLICATION, OR DISTRIBUTION
-* OF THIS PROGRAM OR ANY OF ITS PARTS, IN SOURCE OR BINARY FORMS,
-* WITH OR WITHOUT MODIFICATION, WITH THE PURPOSE OF ACQUIRING
-* UNLAWFUL MATERIAL OR ANY OTHER BENEFIT IS PROHIBITED!
-* THIS PROGRAM IS PROTECTED BY COPYRIGHT LAWS AND YOU MAY NOT
-* REVERSE ENGINEER, DECOMPILE, OR DISASSEMBLE IT.
-*/
-
+ * Copyright (c) Microblink Ltd. All rights reserved.
+ *
+ * ANY UNAUTHORIZED USE OR SALE, DUPLICATION, OR DISTRIBUTION
+ * OF THIS PROGRAM OR ANY OF ITS PARTS, IN SOURCE OR BINARY FORMS,
+ * WITH OR WITHOUT MODIFICATION, WITH THE PURPOSE OF ACQUIRING
+ * UNLAWFUL MATERIAL OR ANY OTHER BENEFIT IS PROHIBITED!
+ * THIS PROGRAM IS PROTECTED BY COPYRIGHT LAWS AND YOU MAY NOT
+ * REVERSE ENGINEER, DECOMPILE, OR DISASSEMBLE IT.
+ */
 /**
  * @file RecognizerApi.h
  *
@@ -28,6 +27,11 @@
  *          // context is of type "jobject" and must point to instance "android.content.Context" java object. It is recommended to use application context
  *          // to avoid memory leaks. For more information, please see: https://android-developers.googleblog.com/2009/01/avoiding-memory-leaks.html
  *          recognizerAPIInitializeAndroidApplication( jniEnv, context );
+ *      @endcode
+ *
+ * -# (Desktop platforms only) define the location of cache folder. This is required to store some cache files when online licenses are used. On mobile platforms those files are stored into app's private folder, but on desktop platforms it is required to define a unique folder in order to avoid clashes with other applications using the same SDK.
+ *      @code
+ *          recognizerAPISetCacheLocation( "/path/to/cache/folder" );
  *      @endcode
  *
  * -# Insert your license key

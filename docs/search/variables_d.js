@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['ondetectedobject_556',['onDetectedObject',['../struct_m_b_recognition_callback.html#ac3560bd42da8670d6acd8f5652ccf94b',1,'MBRecognitionCallback']]],
-  ['ondetectionfailed_557',['onDetectionFailed',['../struct_m_b_recognition_callback.html#a53516539901863f13d7b88d30f06dee7',1,'MBRecognitionCallback']]],
-  ['ondetectionmidway_558',['onDetectionMidway',['../struct_m_b_recognition_callback.html#a5773890a9578720eb942f0fa225ba00e',1,'MBRecognitionCallback']]],
-  ['ondetectionstarted_559',['onDetectionStarted',['../struct_m_b_recognition_callback.html#ad2ec0d6c499a029642d4f25bf7a1b22a',1,'MBRecognitionCallback']]],
-  ['onfirstsideresult_560',['onFirstSideResult',['../struct_m_b_recognition_callback.html#add2434ba02549bb7a912dc376083df54',1,'MBRecognitionCallback']]],
-  ['onglare_561',['onGlare',['../struct_m_b_recognition_callback.html#a682167aa1ce661a8094388fdd7c62552',1,'MBRecognitionCallback']]],
-  ['onrecognitionfinished_562',['onRecognitionFinished',['../struct_m_b_recognition_callback.html#af76af79d31fe7be25b267c6be3e910ec',1,'MBRecognitionCallback']]],
-  ['onrecognitionstarted_563',['onRecognitionStarted',['../struct_m_b_recognition_callback.html#a92dc5ee052c19b6651ed154e12a19b54',1,'MBRecognitionCallback']]],
-  ['onshowimage_564',['onShowImage',['../struct_m_b_recognition_callback.html#a854a24a2877f14b8837eb2e87bfd2ddb',1,'MBRecognitionCallback']]],
-  ['opt1_565',['opt1',['../struct_m_b_m_r_z_result.html#ab2b40e96f76ec8687f2484ec1766e30d',1,'MBMRZResult']]],
-  ['opt2_566',['opt2',['../struct_m_b_m_r_z_result.html#a23a53ce2895af73325e227459f9b033f',1,'MBMRZResult']]],
-  ['orientation_567',['orientation',['../struct_m_b_raw_image.html#ae3760e7e0b2e4c1477f5d6d987fad379',1,'MBRawImage']]],
-  ['originalstring_568',['originalString',['../struct_m_b_date.html#ae7f9539a75e771e9629d9f1d4503f9dd',1,'MBDate']]]
+  ['ondetectedobject_592',['onDetectedObject',['../struct_m_b_recognition_callback.html#ac3560bd42da8670d6acd8f5652ccf94b',1,'MBRecognitionCallback']]],
+  ['ondetectionfailed_593',['onDetectionFailed',['../struct_m_b_recognition_callback.html#a53516539901863f13d7b88d30f06dee7',1,'MBRecognitionCallback']]],
+  ['ondetectionmidway_594',['onDetectionMidway',['../struct_m_b_recognition_callback.html#a5773890a9578720eb942f0fa225ba00e',1,'MBRecognitionCallback']]],
+  ['ondetectionstarted_595',['onDetectionStarted',['../struct_m_b_recognition_callback.html#ad2ec0d6c499a029642d4f25bf7a1b22a',1,'MBRecognitionCallback']]],
+  ['onfirstsideresult_596',['onFirstSideResult',['../struct_m_b_recognition_callback.html#add2434ba02549bb7a912dc376083df54',1,'MBRecognitionCallback']]],
+  ['onglare_597',['onGlare',['../struct_m_b_recognition_callback.html#a682167aa1ce661a8094388fdd7c62552',1,'MBRecognitionCallback']]],
+  ['onrecognitionfinished_598',['onRecognitionFinished',['../struct_m_b_recognition_callback.html#af76af79d31fe7be25b267c6be3e910ec',1,'MBRecognitionCallback']]],
+  ['onrecognitionstarted_599',['onRecognitionStarted',['../struct_m_b_recognition_callback.html#a92dc5ee052c19b6651ed154e12a19b54',1,'MBRecognitionCallback']]],
+  ['onshowimage_600',['onShowImage',['../struct_m_b_recognition_callback.html#a854a24a2877f14b8837eb2e87bfd2ddb',1,'MBRecognitionCallback']]],
+  ['opt1_601',['opt1',['../struct_m_b_m_r_z_result.html#ab2b40e96f76ec8687f2484ec1766e30d',1,'MBMRZResult']]],
+  ['opt2_602',['opt2',['../struct_m_b_m_r_z_result.html#a23a53ce2895af73325e227459f9b033f',1,'MBMRZResult']]],
+  ['orientation_603',['orientation',['../struct_m_b_raw_image.html#ae3760e7e0b2e4c1477f5d6d987fad379',1,'MBRawImage']]],
+  ['originalstring_604',['originalString',['../struct_m_b_date.html#ae7f9539a75e771e9629d9f1d4503f9dd',1,'MBDate']]]
 ];

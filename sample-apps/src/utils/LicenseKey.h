@@ -1,5 +1,5 @@
 /**
- * Copyright (c)2020 Microblink Ltd. All rights reserved.
+ * Copyright (c) Microblink Ltd. All rights reserved.
  *
  * ANY UNAUTHORIZED USE OR SALE, DUPLICATION, OR DISTRIBUTION
  * OF THIS PROGRAM OR ANY OF ITS PARTS, IN SOURCE OR BINARY FORMS,
