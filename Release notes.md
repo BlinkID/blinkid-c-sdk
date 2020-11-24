@@ -1,5 +1,12 @@
 # Release notes
 
+## 5.8.1
+
+- fixed a rare crash that could occur when using online license on a device with unstable network connection
+- SDK is now thread safe under specific conditions
+    - those conditions are now documented
+- added Barcode recognizer
+
 ## 5.8.0
 
 ### New additions to our supported documents list

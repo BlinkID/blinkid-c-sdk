@@ -14,6 +14,7 @@
 #ifndef AVAILABLERECOGNIZERS_H
 #define AVAILABLERECOGNIZERS_H
 
+#include "BlinkBarcode/BarcodeRecognizer/BarcodeRecognizer.h"
 #include "BlinkID/Generic/IdRecognizer.h"
 #include "BlinkID/Generic/IdCombinedRecognizer.h"
 #include "BlinkID/Barcode/IdBarcodeRecognizer.h"

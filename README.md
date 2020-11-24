@@ -32,11 +32,13 @@ You should use _BlinkID C SDK_ if you are developing:
         * [iOS](#configure-ios)
     * [Obtaining a license key](#obtaining-a-license-key)
     * [Performing your first scan](#first-scan)
+    * [Thread safety](#thread-safety)
 * [The `Recognizer` concept and the `RecognizerRunner`](#available-recognizers)
     * [The `Recognizer` concept](#recognizer-concept)
     * [`RecognizerRunner`](#recognizer-runner)
 * [Handling processing events with `RecognitionCallback`](#recognition-callbacks)
 * [List of available recognizers](#recognizer-list)
+    * [Barcode recognizer](#barcodeRecognizer)
     * [ID barcode recognizer](#idBarcodeRecognizer)
     * [BlinkID recognizer](#blinkidRecognizer)
     * [BlinkID combined recognizer](#blinkidCombinedRecognizer)
@@ -100,7 +102,7 @@ You should use _BlinkID C SDK_ if you are developing:
 
 - _BlinkID C SDK_ supports only 64-bit Windows 10
     - 32-bit version of Windows 10, as well as Windows 8.1 and earlier versions are **not supported**
-- [Visual C++ 2019 redistributable package](https://aka.ms/vs/16/release/VC_redist.x64.exe) is required for BlinkID SDK to work on Windows
+- [Visual C++ 2019 redistributable package](https://aka.ms/vs/16/release/VC_redist.x64.exe) is required for _BlinkID C SDK_ to work on Windows
 
 ### Android
 
@@ -305,6 +307,10 @@ You can obtain a free trial license key by registering to [Microblink dashboard]
     blinkIdRecognizerDelete( &blinkIdRecognizer );
     ```
 
+## <a name="thread-safety"></a> Thread safety
+
+_BlinkID C SDK_ is thread-safe, except for functions for setting the license key. Those are not thread safe and should be called before launching any processing threads. However, [recognizers and RecognizerRunner](#available-recognizers) should not be shared between different threads without synchronization. Each Recognizer, when associated with `RecognizerRunner` can only be used from the single thread at the time. This means that if you plan to process multiple images in different threads in parallel, you should use specific `RecognizerRunner` and recognizer objects for each of your threads. Failure to do so will result in undefined behaviour.
+
 # <a name="available-recognizers"></a> The `Recognizer` concept and the `RecognizerRunner`
 
 This section will first describe [what is a `Recognizer`](#recognizer-concept) and how it should be used to perform recognition of the still images and video frames. Next, we will describe what is a [`RecognizerRunner`](#recognizer-runner) and how it can be used to tweak the recognition procedure.
@@ -344,6 +350,11 @@ Callbacks for all possible events are bundled into the [`MBRecognitionCallback`]
 # <a name="recognizer-list"></a> List of available recognizers
 
 This section will give a list of all `Recognizer` objects that are available within _BlinkID_ SDK, their purpose and recommendations how they should be used to get best performance and user experience.
+## <a name="barcodeRecognizer"></a> Barcode recognizer
+
+The [`BarcodeRecognizer`](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_barcode_recognizer.html) is recognizer specialized for scanning various types of barcodes.
+
+As you can see from [the doxygen documentation](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_barcode_recognizer_settings.html), you can enable multiple barcode symbologies within this recognizer, however keep in mind that enabling more barcode symbologies affects scanning performance - the more barcode symbologies are enabled, the slower the overall recognition performance. Also, keep in mind that some simple barcode symbologies that lack proper redundancy, such as [Code 39](https://en.wikipedia.org/wiki/Code_39), can be recognized within more complex barcodes, especially 2D barcodes, like [PDF417](https://en.wikipedia.org/wiki/PDF417).
 ## <a name="idBarcodeRecognizer"></a> ID barcode recognizer
 
 The [`IdBarcodeRecognizer`](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_id_barcode_recognizer.html) is recognizer specialized for scanning barcodes from various ID cards.

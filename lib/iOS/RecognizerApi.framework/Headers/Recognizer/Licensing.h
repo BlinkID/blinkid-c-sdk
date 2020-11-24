@@ -27,6 +27,7 @@ extern "C"
 
 /**
  * @brief Unlocks the SDK with given license key encoded as base64 string.
+ * NOTE: This function is not thread safe.
  * @param licenseKeyBase64 License key as base64 encoded string bound to current
  *                         package name/bundle id which will be used for unlocking.
  * @return status of the operation
@@ -35,6 +36,7 @@ MB_API MBRecognizerErrorStatus MB_CALL recognizerAPIUnlockWithLicenseKey( char c
 
 /**
  * @brief Unlocks the SDK with given license key presented as raw buffer.
+ * NOTE: This function is not thread safe.
  * @param licenseBuffer Buffer containing the entire license file.
  * @param licenseBufferLength Length of licenseBuffer
  * @return status of the operation.
@@ -43,6 +45,7 @@ MB_API MBRecognizerErrorStatus MB_CALL recognizerAPIUnlockWithLicenseBuffer( MBB
 
 /**
  * @brief Unlocks the SDK with given license key encoded as base64 string.
+ * NOTE: This function is not thread safe.
  * @param licenseKeyBase64 License key as base64 encoded string bound to given
  *                         licensee which allows usage inside multiple applications.
  * @param licensee   Licensee to which license key is bound.
@@ -52,6 +55,7 @@ MB_API MBRecognizerErrorStatus MB_CALL recognizerAPIUnlockForLicenseeWithLicense
 
 /**
  * @brief Unlocks the SDK with given license key presented as raw buffer.
+ * NOTE: This function is not thread safe.
  * @param licenseBuffer Buffer containing the entire license file.
  * @param licenseBufferLength Length of licenseBuffer.
  * @param licensee Licensee to which license key is bound.
