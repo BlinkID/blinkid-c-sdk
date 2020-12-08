@@ -103,7 +103,7 @@
       <AdditionalDependencies>..\..\..\..\..\..\lib\Windows\x64\RecognizerApi.lib;windowscodecs.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
-      <Command>copy ..\..\..\..\..\..\lib\Windows\x64\RecognizerApi.dll $(OutputPath)</Command>
+      <Command>copy ..\..\..\..\..\..\lib\Windows\x64\RecognizerApi.dll "$(OutputPath)"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -138,7 +138,7 @@
       <AdditionalDependencies>..\..\..\..\..\..\lib\Windows\x64\RecognizerApi.lib;windowscodecs.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
-      <Command>copy ..\..\..\..\..\..\lib\Windows\x64\RecognizerApi.dll $(OutputPath)</Command>
+      <Command>copy ..\..\..\..\..\..\lib\Windows\x64\RecognizerApi.dll "$(OutputPath)"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
