@@ -220,6 +220,9 @@ struct MBBlinkIdRecognizerResult
     /** The additional number of the document. */
     char const * documentAdditionalNumber;
 
+    /** The one more additional number of the document. */
+    char const * documentOptionalAdditionalNumber;
+
     /** The issuing authority of the document. */
     char const * issuingAuthority;
 

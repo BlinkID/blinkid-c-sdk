@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.8.1</span>
+   &#160;<span id="projectnumber">version 5.9.0</span>
    </div>
   </td>
  </tr>
@@ -73,7 +73,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_recognizer_error_8h_source.html">RecognizerError.h</a>&quot;</code><br />
-<code>#include &quot;jni.h&quot;</code><br />
 </div>
 <p><a href="_recognizer_api_utils_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -85,6 +84,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac4d8c955145a7ee7508b8d25f1cac599"><td class="memItemLeft" align="right" valign="top">MB_API <a class="el" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_recognizer_api_utils_8h.html#ac4d8c955145a7ee7508b8d25f1cac599">recognizerAPISetResourcesLocation</a> (char const *resourcePath)</td></tr>
 <tr class="memdesc:ac4d8c955145a7ee7508b8d25f1cac599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the location where required resources will be loaded from. If not set, "res" folder within current working directory will be used. NOTE: It is safe to call this with temporary pointer, as internal a copy will be made to store the given string.  <a href="_recognizer_api_utils_8h.html#ac4d8c955145a7ee7508b8d25f1cac599">More...</a><br /></td></tr>
 <tr class="separator:ac4d8c955145a7ee7508b8d25f1cac599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc944adfb3f0295cd6d905f64292a853"><td class="memItemLeft" align="right" valign="top">MB_API <a class="el" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_recognizer_api_utils_8h.html#adc944adfb3f0295cd6d905f64292a853">recognizerAPISetCacheLocation</a> (char const *cacheFolder)</td></tr>
+<tr class="memdesc:adc944adfb3f0295cd6d905f64292a853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the location where cache files will be stored on desktop platforms. The given folder may or may not be used, depending on the nature of used license key. The files that may need to be stored are:  <a href="_recognizer_api_utils_8h.html#adc944adfb3f0295cd6d905f64292a853">More...</a><br /></td></tr>
+<tr class="separator:adc944adfb3f0295cd6d905f64292a853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a39476a55beb625a6063e9129e02ff6"><td class="memItemLeft" align="right" valign="top">MB_API void MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_recognizer_api_utils_8h.html#a6a39476a55beb625a6063e9129e02ff6">recognizerAPIInitializeAndroidApplication</a> (JNIEnv *env, jobject applicationContext)</td></tr>
 <tr class="memdesc:a6a39476a55beb625a6063e9129e02ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the JNI application context to the SDK. This is required in order for SDK to be able to load resources from assets and use other Android Java APIs.  <a href="_recognizer_api_utils_8h.html#a6a39476a55beb625a6063e9129e02ff6">More...</a><br /></td></tr>
 <tr class="separator:a6a39476a55beb625a6063e9129e02ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +150,37 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Nothing. </dd></dl>
+
+</div>
+</div>
+<a id="adc944adfb3f0295cd6d905f64292a853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc944adfb3f0295cd6d905f64292a853">&#9670;&nbsp;</a></span>recognizerAPISetCacheLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MB_API <a class="el" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> MB_CALL recognizerAPISetCacheLocation </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>cacheFolder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the location where cache files will be stored on desktop platforms. The given folder may or may not be used, depending on the nature of used license key. The files that may need to be stored are: </p>
+<ul>
+<li>the state of the license counters (number of scans since last report to the server)</li>
+<li>cached server permission for licenses that require online validation If offline license is used, this folder will not be used as no caching is required. If not set, the user's home folder will be used for storing files. If given path to non-existing folder, RECOGNIZER_ERROR_STATUS_INVALID_ARGUMENT will be returned and the user's home folder will be used for storing files. If given path is not writeable, RECOGNIZER_ERROR_STATUS_INVALID_ARGUMENT will be returned and the user's home folder will be used for storing files. It is recommended to set this to unique path for your application on desktop systems, in order to avoid clashes with other applications on the system that use the same SDK. This function is not available on mobile systems (iOS and Android), as every application on those systems is already isolated from all other apps. <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cacheFolder</td><td>Location of the folder where cache files will be stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>status of the operation. If given path is not folder or not writeable, RECOGNIZER_ERROR_STATUS_INVALID_ARGUMENT is returned. </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>

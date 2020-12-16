@@ -24,7 +24,7 @@ enum MBMRTDDocumentType
     MRTD_TYPE_UNKNOWN = 0,
 
     /** Identity card */
-    MRTD_TYPE_IDENITY_CARD,
+    MRTD_TYPE_IDENTITY_CARD,
 
     /** Passport */
     MRTD_TYPE_PASSPORT,
