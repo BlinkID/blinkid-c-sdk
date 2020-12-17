@@ -48,7 +48,12 @@ enum MBRecognizerResultState
      * Indicates that Recognizer's result is valid, i.e. all
      * required data is present.
      */
-    RECOGNIZER_RESULT_STATE_VALID
+    RECOGNIZER_RESULT_STATE_VALID,
+
+    /**
+     * All mandatory information from one side of the document was extracted.
+     */
+    RECOGNIZER_RESULT_STATE_STAGE_VALID
 };
 
 /**

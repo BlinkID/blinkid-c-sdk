@@ -147,6 +147,9 @@ struct MBBlinkIdCombinedRecognizerResult
     /** The additional number of the document. */
     char const * documentAdditionalNumber;
 
+    /** The one more additional number of the document. */
+    char const * documentOptionalAdditionalNumber;
+
     /** The additional personal identification number. */
     char const * additionalPersonalIdNumber;
 

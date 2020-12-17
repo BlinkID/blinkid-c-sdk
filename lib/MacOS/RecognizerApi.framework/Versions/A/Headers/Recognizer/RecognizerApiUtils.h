@@ -44,7 +44,7 @@ MB_API char const * MB_CALL recognizerAPIGetVersionString();
  */
 MB_API MBRecognizerErrorStatus MB_CALL recognizerAPISetResourcesLocation( char const * resourcePath );
 
-#if !defined( __ANDROID__ ) && !( defined( __APPLE__ ) && TARGET_OS_IPHONE )
+#if defined( __DOXYGEN__ ) || ( !defined( __ANDROID__ ) && !( defined( __APPLE__ ) && TARGET_OS_IPHONE ) )
 /**
  * @brief Sets the location where cache files will be stored on desktop platforms.
  * The given folder may or may not be used, depending on the nature of used license key.
@@ -68,7 +68,7 @@ MB_API MBRecognizerErrorStatus MB_CALL recognizerAPISetResourcesLocation( char c
 MB_API MBRecognizerErrorStatus MB_CALL recognizerAPISetCacheLocation( char const * cacheFolder );
 #endif
 
-#ifdef __ANDROID__
+#if defined( __ANDROID__ ) || defined( __DOXYGEN__ )
 /**
  * @brief Sets the JNI application context to the SDK.
  * This is required in order for SDK to be able to load resources from assets and use other Android Java APIs.

@@ -14,6 +14,8 @@
 #ifndef CLASSINFOTYPES_H_INCLUDED
 #define CLASSINFOTYPES_H_INCLUDED
 
+#include <Recognizer/Export.h>
+
 /** Document country */
 enum MBCountry
 {
@@ -109,7 +111,21 @@ enum MBCountry
     MB_COUNTRY_SRI_LANKA              = 89,
     MB_COUNTRY_PERU                   = 90,
     MB_COUNTRY_URUGUAY                = 91,
-    MB_COUNTRY_COUNT                  = 92
+    MB_COUNTRY_BAHAMAS                = 92,
+    MB_COUNTRY_BERMUDA                = 93,
+    MB_COUNTRY_BOLIVIA                = 94,
+    MB_COUNTRY_CHINA                  = 95,
+    MB_COUNTRY_EUROPEAN_UNION         = 96,
+    MB_COUNTRY_HAITI                  = 97,
+    MB_COUNTRY_HONDURAS               = 98,
+    MB_COUNTRY_ICELAND                = 99,
+    MB_COUNTRY_JAPAN                  = 100,
+    MB_COUNTRY_LUXEMBOURG             = 101,
+    MB_COUNTRY_MONTENEGRO             = 102,
+    MB_COUNTRY_NICARAGUA              = 103,
+    MB_COUNTRY_SOUTH_KOREA            = 104,
+    MB_COUNTRY_VENEZUELA              = 105,
+    MB_COUNTRY_COUNT                  = 106
 };
 
 /**
@@ -193,7 +209,16 @@ enum MBRegion
     MB_REGION_JALISCO                      = 70,
     MB_REGION_NEWFOUNDLAND_AND_LABRADOR    = 71,
     MB_REGION_NUEVO_LEON                   = 72,
-    MB_REGION_COUNT                        = 73
+    MB_REGION_BAJA_CALIFORNIA              = 73,
+    MB_REGION_CHIHUAHUA                    = 74,
+    MB_REGION_GUANAJUATO                   = 75,
+    MB_REGION_GUERRERO                     = 76,
+    MB_REGION_MEXICO                       = 77,
+    MB_REGION_MICHOACAN                    = 78,
+    MB_REGION_NEW_YORK_CITY                = 79,
+    MB_REGION_TAMAULIPAS                   = 80,
+    MB_REGION_VERACRUZ                     = 81,
+    MB_REGION_COUNT                        = 82
 };
 
 /**
@@ -231,7 +256,16 @@ enum MBDocumentType
     MB_DOCUMENT_TYPE_HEALTH_INSURANCE_CARD      = 24,
     MB_DOCUMENT_TYPE_PASSPORT                   = 25,
     MB_DOCUMENT_TYPE_S_PASS                     = 26,
-    MB_DOCUMENT_TYPE_COUNT                      = 27
+    MB_DOCUMENT_TYPE_ADDRESS_CARD               = 27,
+    MB_DOCUMENT_TYPE_ALIEN_ID                   = 28,
+    MB_DOCUMENT_TYPE_ALIEN_PASSPORT             = 29,
+    MB_DOCUMENT_TYPE_GREEN_CARD                 = 30,
+    MB_DOCUMENT_TYPE_MINORS_ID                  = 31,
+    MB_DOCUMENT_TYPE_POSTAL_ID                  = 32,
+    MB_DOCUMENT_TYPE_PROFESSIONAL_DL            = 33,
+    MB_DOCUMENT_TYPE_TAX_ID                     = 34,
+    MB_DOCUMENT_TYPE_WEAPON_PERMIT              = 35,
+    MB_DOCUMENT_TYPE_COUNT                      = 36
 };
 
 /**

@@ -60,7 +60,7 @@
         "description": "Microblink's fork of OpenCV"
     },
     {
-        "package": "OpenCVAnalysis/3.2.0.9@microblink/stable",
+        "package": "OpenCVAnalysis/3.2.0.11@microblink/stable",
         "url": "https://bitbucket.org/microblink/opencvfork/src",
         "license": "MIT",
         "description": null
