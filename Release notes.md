@@ -1,5 +1,11 @@
 # Release notes
 
+## 5.9.1
+
+- fix implicit resetting of recognizers when using `recognizerRunnerRecognizeFromImage` for still images
+    - if the user wants to reset the recognizers, they have to be explicitly reset between recognizing successive images
+      by calling `recognizerRunnerReset`
+
 ## 5.9.0
 
 ### New additions to our supported documents list

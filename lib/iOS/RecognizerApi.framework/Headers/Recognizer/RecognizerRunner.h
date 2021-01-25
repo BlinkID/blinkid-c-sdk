@@ -349,8 +349,8 @@ MB_API MBRecognizerErrorStatus MB_CALL recognizerRunnerSetROI( MBRecognizerRunne
  *                              corrupted. To reset recognizer to initial setting, call ::recognizerRunnerReset.
  *                              Also note that returned recognition status may be RECOGNIZER_RESULT_STATE_EMPTY or
  *                              RECOGNIZER_RESULT_STATE_UNCERTAIN for frames for which library concludes are too poor to be processed.
- *                              If you want to force library to process every frame, set this parameter to MB_FALSE. In that case
- *                              time redundancy information from consecutive frames will not be used for recognition improvement.
+ *                              Note: If you want to force the library to process every frame independently, you have to call the ::recognizerRunnerReset
+ *                              between every invocation of this function.
  * @param callback              Pointer to structure that contains pointer to callback functions. If given NULL,
  *                              no callback will be called. If given non-NULL, only non-NULL function pointers will be called.
  *
@@ -412,12 +412,10 @@ MB_API MBRecognizerErrorStatus MB_CALL recognizerRunnerCancelCurrentRecognition(
  * @memberof MBRecognizerRunner
  * @brief Resets all recognizers used by the MBRecognizerRunner to the default state.
  *
- * When using method ::recognizerRunnerRecognizeFromImage with parameter imageIsVideoFrame set to MB_TRUE, multiple consecutive video frames
- * are used to obtain time redundancy information and yield better recognition result. To be able to do that, library will cache some
- * information from each frame that is later used for boosting the recognition quality. This method will purge that cache. In Microblink's
- * mobile SDKs this method is usually called when device gets shaken or new camera session starts.
- *
- * If you are not using video frames for recognition, this method is not neccessary.
+ * When using method ::recognizerRunnerRecognizeFromImage, multiple consecutive images are used to obtain time redundancy information
+ * and yield better recognition results. To be able to do that, library will cache some information from each frame that is later used
+ * for boosting the recognition quality. This method will purge that cache. In Microblink's * mobile SDKs this method is usually called
+ * when the device gets shaken or new camera session starts.
  *
  * @param recognizerRunner object which performs recognition.
  * @return status of the operation.

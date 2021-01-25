@@ -79,7 +79,7 @@ You should use _BlinkID C SDK_ if you are developing:
 
 #### iOS
 
-- all iOS devices that have iOS 8.0 or newer are supported. Note that recognition performance can be low on older single-core iOS devices, such as iPhone 4.
+- all iOS devices that have iOS 9.0 or newer are supported. Note that recognition performance can be low on older single-core iOS devices, such as iPhone 4.
 
 ## <a name="sw-requirements"></a> Minimum software requirements
 
@@ -185,6 +185,10 @@ You can obtain a free trial license key by registering to [Microblink dashboard]
 - On Windows, the license key is bound to the [Windows product ID](https://superuser.com/a/886764)
     - you can obtain the ID by running a [license request tool](lib/Windows/LicenseRequestTool.exe). This utility will print the product ID as `Licensee` to the standard output and also into file `MicroblinkLicenseRequest.txt`
     - if you need a Windows license eligible for multiple machines, please [contact us](https://help.microblink.com)
+
+**Keep in mind:** Versions 5.8.0 and above require a public network access under our License Management Program.
+We’re only asking you to do this so we can validate your trial license key. Scanning or data extraction of identity documents still happens offline, on the device itself. Once the validation is complete, you can continue using the SDK in offline mode (or over a private network) until the next check. If there is a network error during trial license check, functions `recognizerAPIUnlock*` will fail with `RECOGNIZER_ERROR_STATUS_NETWORK_ERROR` error code and functions `recognizerRunnerRecognizeFrom*` will immediately return with `RECOGNIZER_RESULT_STATE_EMPTY`. Note that License Management Program can be disabled for production licenses - in that case no Internet connection will be required for SDK to work.
+
 
 ## <a name="first-scan"></a> Performing your first scan
 
@@ -418,6 +422,10 @@ Each license key contains information about which features are allowed to use an
 #### Initialization of the `RecognizerRunner` fails
 
 Please check that you have correctly set the license key and that you have correctly set the path to resources that need to be loaded at runtime. For more information, see [_performing your first scan_ article](#first-scan)
+
+#### Unlocking the SDK fails with `RECOGNIZER_ERROR_STATUS_NETWORK_ERROR`
+
+If you are using trial license key or production license key under License Management Program, it will require Internet connection to periodically validate the license key. Scanning or data extraction of identity documents still happens offline, on the device itself. For more information, check [Obtaining a license key](#obtaining-a-license-key) paragraph.
 
 ## <a name="faq-linux"></a> Linux-specific known issues
 
