@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.9.1</span>
+   &#160;<span id="projectnumber">version 5.10.0</span>
    </div>
   </td>
  </tr>
@@ -123,6 +123,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:a883870513fa7232c2bfa3bfce0d14399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31e9c1b9a874faf8a9cb67ca6bf8b812"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_b_driver_license_detailed_info.html">MBDriverLicenseDetailedInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_barcode_result.html#a31e9c1b9a874faf8a9cb67ca6bf8b812">driverLicenseDetailedInfo</a></td></tr>
 <tr class="separator:a31e9c1b9a874faf8a9cb67ca6bf8b812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803566820fecbfcd99220037a01e8e9f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_barcode_result.html#a803566820fecbfcd99220037a01e8e9f">empty</a></td></tr>
+<tr class="separator:a803566820fecbfcd99220037a01e8e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac00661f60071ab1b0d304556c397828d"><td class="memItemLeft" align="right" valign="top">char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_barcode_result.html#ac00661f60071ab1b0d304556c397828d">extendedElements</a> [<a class="el" href="_barcode_element_key_8h.html#abe14eb9bfca2f891fc0c2c2a8e9a1588a32777b3e6f46997af4bb098f0a41e9f2">MB_BARCODE_ELEMENT_KEY_COUNT</a>]</td></tr>
+<tr class="separator:ac00661f60071ab1b0d304556c397828d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BarcodeResult contains data extracted from the barcode. </p>
@@ -289,6 +293,38 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The employer of the document owner. </p>
+
+</div>
+</div>
+<a id="a803566820fecbfcd99220037a01e8e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a803566820fecbfcd99220037a01e8e9f">&#9670;&nbsp;</a></span>empty</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MBBarcodeResult::empty</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether the result is empty </p>
+
+</div>
+</div>
+<a id="ac00661f60071ab1b0d304556c397828d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac00661f60071ab1b0d304556c397828d">&#9670;&nbsp;</a></span>extendedElements</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char const* MBBarcodeResult::extendedElements[<a class="el" href="_barcode_element_key_8h.html#abe14eb9bfca2f891fc0c2c2a8e9a1588a32777b3e6f46997af4bb098f0a41e9f2">MB_BARCODE_ELEMENT_KEY_COUNT</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Document specific extended elements that contain all barcode fields in their original form.</p>
+<p>Currently this is only filled for AAMVACompliant documents.</p>
+<p>NOTE: Access to elements of this array should be done only through <a class="el" href="_barcode_element_key_8h.html#a1fa3d27ada766eb05087b9ca55a06017" title="Typedef for the MBBarcodeElementKey structure.">MBBarcodeElementKey</a>. </p>
 
 </div>
 </div>

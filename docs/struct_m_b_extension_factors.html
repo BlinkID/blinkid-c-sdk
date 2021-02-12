@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.9.1</span>
+   &#160;<span id="projectnumber">version 5.10.0</span>
    </div>
   </td>
  </tr>
@@ -93,11 +93,16 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>Extension factors relative to corresponding dimension of the full image. For example, </p><div class="fragment"><div class="line"><a class="code" href="struct_m_b_extension_factors.html#a28889bb78c409b177628ed7fdc946321">upFactor</a> </div>
 </div><!-- fragment --><p> and</p><div class="fragment"><div class="line"><a class="code" href="struct_m_b_extension_factors.html#a1bad0a51d203ce0ad212acfa3438d735">downFactor</a> </div>
 </div><!-- fragment --><p> define extensions relative to image height, e.g. when</p><div class="fragment"><div class="line"><a class="code" href="struct_m_b_extension_factors.html#a28889bb78c409b177628ed7fdc946321">upFactor</a> </div>
-</div><!-- fragment --><p> is 0.5, upper image boundary will be extended for half of image's full height. </p><pre class="fragment">                 ._______________________________________.
-                 |                   ↑                   |
-                 |                upFactor               |
-</pre><p> .________. | .________. | | | --&gt; | ⃖ leftFactor | | rightFactor ⃗ | |________| | |________| | | ↓ | | downFactor | |_______________________________________| </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><!-- fragment --><p> is 0.5, upper image boundary will be extended for half of image's full height. </p><div class="fragment"><div class="line">                   ._______________________________________.</div>
+<div class="line">                   |                   ↑                   |</div>
+<div class="line">                   |                <a class="code" href="struct_m_b_extension_factors.html#a28889bb78c409b177628ed7fdc946321">upFactor</a>               |</div>
+<div class="line">.________.         |              .________.               |</div>
+<div class="line">|        |   --&gt;   |  ⃖ <a class="code" href="struct_m_b_extension_factors.html#a44632150f491ee497dacd4d736e84534">leftFactor</a> |        | <a class="code" href="struct_m_b_extension_factors.html#a4d8baa1e7632643d3d0d115ae9bfed74">rightFactor</a>  ⃗ |</div>
+<div class="line">|________|         |              |________|               |</div>
+<div class="line">                   |                   ↓                   |</div>
+<div class="line">                   |               <a class="code" href="struct_m_b_extension_factors.html#a1bad0a51d203ce0ad212acfa3438d735">downFactor</a>              |</div>
+<div class="line">                   |_______________________________________|</div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a96277acdf3e18d825d526d0cf845f138"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a96277acdf3e18d825d526d0cf845f138">&#9670;&nbsp;</a></span>extensionFactorsDefaultInit()</h2>
 
@@ -184,8 +189,10 @@ Data Fields</h2></td></tr>
 <li>inc/Recognizer/BlinkID/Generic/Common/<a class="el" href="_extension_factors_8h_source.html">ExtensionFactors.h</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="astruct_m_b_extension_factors_html_a1bad0a51d203ce0ad212acfa3438d735"><div class="ttname"><a href="struct_m_b_extension_factors.html#a1bad0a51d203ce0ad212acfa3438d735">MBExtensionFactors::downFactor</a></div><div class="ttdeci">float downFactor</div><div class="ttdef"><b>Definition:</b> ExtensionFactors.h:63</div></div>
-<div class="ttc" id="astruct_m_b_extension_factors_html_a28889bb78c409b177628ed7fdc946321"><div class="ttname"><a href="struct_m_b_extension_factors.html#a28889bb78c409b177628ed7fdc946321">MBExtensionFactors::upFactor</a></div><div class="ttdeci">float upFactor</div><div class="ttdef"><b>Definition:</b> ExtensionFactors.h:60</div></div>
+<div class="ttc" id="astruct_m_b_extension_factors_html_a1bad0a51d203ce0ad212acfa3438d735"><div class="ttname"><a href="struct_m_b_extension_factors.html#a1bad0a51d203ce0ad212acfa3438d735">MBExtensionFactors::downFactor</a></div><div class="ttdeci">float downFactor</div><div class="ttdef"><b>Definition:</b> ExtensionFactors.h:64</div></div>
+<div class="ttc" id="astruct_m_b_extension_factors_html_a44632150f491ee497dacd4d736e84534"><div class="ttname"><a href="struct_m_b_extension_factors.html#a44632150f491ee497dacd4d736e84534">MBExtensionFactors::leftFactor</a></div><div class="ttdeci">float leftFactor</div><div class="ttdef"><b>Definition:</b> ExtensionFactors.h:67</div></div>
+<div class="ttc" id="astruct_m_b_extension_factors_html_a28889bb78c409b177628ed7fdc946321"><div class="ttname"><a href="struct_m_b_extension_factors.html#a28889bb78c409b177628ed7fdc946321">MBExtensionFactors::upFactor</a></div><div class="ttdeci">float upFactor</div><div class="ttdef"><b>Definition:</b> ExtensionFactors.h:61</div></div>
+<div class="ttc" id="astruct_m_b_extension_factors_html_a4d8baa1e7632643d3d0d115ae9bfed74"><div class="ttname"><a href="struct_m_b_extension_factors.html#a4d8baa1e7632643d3d0d115ae9bfed74">MBExtensionFactors::rightFactor</a></div><div class="ttdeci">float rightFactor</div><div class="ttdef"><b>Definition:</b> ExtensionFactors.h:70</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.19

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.9.1</span>
+   &#160;<span id="projectnumber">version 5.10.0</span>
    </div>
   </td>
  </tr>
@@ -77,7 +77,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_export_8h_source.html">Recognizer/Export.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_recognizer_error_8h_source.html">Recognizer/RecognizerError.h</a>&quot;</code><br />
-<code>#include &quot;Recognizer/Types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_types_8h_source.html">Recognizer/Types.h</a>&quot;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 </div>
 <p><a href="_barcode_data_8h_source.html">Go to the source code of this file.</a></p>
@@ -102,20 +102,20 @@ typedef typedefMB_EXPORTED_TYPE struct <a class="el" href="struct_m_b_barcode_da
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ad49854688c7eeeb03f03ce6384596a8d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8d">MBBarcodeType</a> { <br />
-&#160;&#160;<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da0902cc6ee9c1351f5fdcefbde29ac55c">BARCODE_TYPE_AZTEC</a>, 
-<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da3ec867a8d076a412d224483c49e9530e">BARCODE_TYPE_CODE128</a>, 
-<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da67a813d5385e94014187c1c18b338812">BARCODE_TYPE_CODE39</a>, 
-<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da8a33dfd1711f9845d1a23ca3f77c3c62">BARCODE_TYPE_DATA_MATRIX</a>, 
+&#160;&#160;<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da740c7d2b65e4bd4f53ee094a9346865e">MB_BARCODE_TYPE_AZTEC</a>, 
+<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8dabade58fc8941e640fb0aed1a460fd338">MB_BARCODE_TYPE_CODE128</a>, 
+<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da8c2f0f37558b68bf25b44ef47ced5209">MB_BARCODE_TYPE_CODE39</a>, 
+<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da3f16263b64bbbf14d34092c235667537">MB_BARCODE_TYPE_DATA_MATRIX</a>, 
 <br />
-&#160;&#160;<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da17da06ad0bf223368602a0c28c072af9">BARCODE_TYPE_EAN13</a>, 
-<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da0810970891b56087c363c691253f35d3">BARCODE_TYPE_EAN8</a>, 
-<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da42a2ea5192130217744a641a00cdf802">BARCODE_TYPE_ITF</a>, 
-<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da930859c1730f9c9de19262758d8b1f9b">BARCODE_TYPE_QR</a>, 
+&#160;&#160;<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8dae0073a93d9464e5c5d6a5bca01f52d24">MB_BARCODE_TYPE_EAN13</a>, 
+<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da09418e2a05a455badbc1130dc59deb23">MB_BARCODE_TYPE_EAN8</a>, 
+<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da52ca0edd68adf0ce6a3cdfce4f7e240a">MB_BARCODE_TYPE_ITF</a>, 
+<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da28818c0d3f3ec51b8f8a551a926138a3">MB_BARCODE_TYPE_QR</a>, 
 <br />
-&#160;&#160;<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da9704b8083c3b89005974161aee23274c">BARCODE_TYPE_UPCA</a>, 
-<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da1bed685950770ad250bbc22fc0bcf333">BARCODE_TYPE_UPCE</a>, 
-<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da59e1e819e82a08cf5ba3e04fcba912d6">BARCODE_TYPE_PDF417</a>, 
-<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8dad25ccb111ab21dfad31fc18a61f9bd94">BARCODE_TYPE_NOT_BARCODE</a>
+&#160;&#160;<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8dae390060d2ed4fb69642416ad56d7c4ce">MB_BARCODE_TYPE_UPCA</a>, 
+<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da66701d690a24276046fccb5ba697db99">MB_BARCODE_TYPE_UPCE</a>, 
+<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8da4a3b0fa76a479b85bd172d7cc948d96e">MB_BARCODE_TYPE_PDF417</a>, 
+<a class="el" href="_barcode_data_8h.html#ad49854688c7eeeb03f03ce6384596a8daf61cfd1f8ba01042f40fbbcf347f819b">MB_BARCODE_TYPE_NOT_BARCODE</a>
 <br />
  }</td></tr>
 <tr class="separator:ad49854688c7eeeb03f03ce6384596a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,29 +143,29 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Possible types of barcodes. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da0902cc6ee9c1351f5fdcefbde29ac55c"></a>BARCODE_TYPE_AZTEC&#160;</td><td class="fielddoc"><p>Represents Aztec 2D barcode </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da740c7d2b65e4bd4f53ee094a9346865e"></a>MB_BARCODE_TYPE_AZTEC&#160;</td><td class="fielddoc"><p>Represents Aztec 2D barcode </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da3ec867a8d076a412d224483c49e9530e"></a>BARCODE_TYPE_CODE128&#160;</td><td class="fielddoc"><p>Represents Code 128 1D barcode </p>
+<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8dabade58fc8941e640fb0aed1a460fd338"></a>MB_BARCODE_TYPE_CODE128&#160;</td><td class="fielddoc"><p>Represents Code 128 1D barcode </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da67a813d5385e94014187c1c18b338812"></a>BARCODE_TYPE_CODE39&#160;</td><td class="fielddoc"><p>Represents Code 39 1D barcode </p>
+<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da8c2f0f37558b68bf25b44ef47ced5209"></a>MB_BARCODE_TYPE_CODE39&#160;</td><td class="fielddoc"><p>Represents Code 39 1D barcode </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da8a33dfd1711f9845d1a23ca3f77c3c62"></a>BARCODE_TYPE_DATA_MATRIX&#160;</td><td class="fielddoc"><p>Represents DataMatrix 2D barcode </p>
+<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da3f16263b64bbbf14d34092c235667537"></a>MB_BARCODE_TYPE_DATA_MATRIX&#160;</td><td class="fielddoc"><p>Represents DataMatrix 2D barcode </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da17da06ad0bf223368602a0c28c072af9"></a>BARCODE_TYPE_EAN13&#160;</td><td class="fielddoc"><p>Represents EAN 13 1D barcode </p>
+<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8dae0073a93d9464e5c5d6a5bca01f52d24"></a>MB_BARCODE_TYPE_EAN13&#160;</td><td class="fielddoc"><p>Represents EAN 13 1D barcode </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da0810970891b56087c363c691253f35d3"></a>BARCODE_TYPE_EAN8&#160;</td><td class="fielddoc"><p>Represents EAN 8 1D barcode </p>
+<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da09418e2a05a455badbc1130dc59deb23"></a>MB_BARCODE_TYPE_EAN8&#160;</td><td class="fielddoc"><p>Represents EAN 8 1D barcode </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da42a2ea5192130217744a641a00cdf802"></a>BARCODE_TYPE_ITF&#160;</td><td class="fielddoc"><p>Represents ITF 1D barcode </p>
+<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da52ca0edd68adf0ce6a3cdfce4f7e240a"></a>MB_BARCODE_TYPE_ITF&#160;</td><td class="fielddoc"><p>Represents ITF 1D barcode </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da930859c1730f9c9de19262758d8b1f9b"></a>BARCODE_TYPE_QR&#160;</td><td class="fielddoc"><p>Represents QR code </p>
+<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da28818c0d3f3ec51b8f8a551a926138a3"></a>MB_BARCODE_TYPE_QR&#160;</td><td class="fielddoc"><p>Represents QR code </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da9704b8083c3b89005974161aee23274c"></a>BARCODE_TYPE_UPCA&#160;</td><td class="fielddoc"><p>Represents UPC A 1D barcode </p>
+<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8dae390060d2ed4fb69642416ad56d7c4ce"></a>MB_BARCODE_TYPE_UPCA&#160;</td><td class="fielddoc"><p>Represents UPC A 1D barcode </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da1bed685950770ad250bbc22fc0bcf333"></a>BARCODE_TYPE_UPCE&#160;</td><td class="fielddoc"><p>Represents UPC E 1D barcode </p>
+<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da66701d690a24276046fccb5ba697db99"></a>MB_BARCODE_TYPE_UPCE&#160;</td><td class="fielddoc"><p>Represents UPC E 1D barcode </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da59e1e819e82a08cf5ba3e04fcba912d6"></a>BARCODE_TYPE_PDF417&#160;</td><td class="fielddoc"><p>Represents PDF417 2D barcode </p>
+<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8da4a3b0fa76a479b85bd172d7cc948d96e"></a>MB_BARCODE_TYPE_PDF417&#160;</td><td class="fielddoc"><p>Represents PDF417 2D barcode </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8dad25ccb111ab21dfad31fc18a61f9bd94"></a>BARCODE_TYPE_NOT_BARCODE&#160;</td><td class="fielddoc"><p>This is returned when result is not a barcode </p>
+<tr><td class="fieldname"><a id="ad49854688c7eeeb03f03ce6384596a8daf61cfd1f8ba01042f40fbbcf347f819b"></a>MB_BARCODE_TYPE_NOT_BARCODE&#160;</td><td class="fielddoc"><p>This is returned when result is not a barcode </p>
 </td></tr>
 </table>
 

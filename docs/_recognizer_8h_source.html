@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.9.1</span>
+   &#160;<span id="projectnumber">version 5.10.0</span>
    </div>
   </td>
  </tr>
@@ -85,38 +85,40 @@ $(function() {
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0">   38</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0">MBRecognizerResultState</a></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a79517c9413859e87ae94af11c39d6260">   41</a></span>&#160;    <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a79517c9413859e87ae94af11c39d6260">RECOGNIZER_RESULT_STATE_EMPTY</a>,</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a3b0fe838f993433118214ad78f576aea">   46</a></span>&#160;    <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a3b0fe838f993433118214ad78f576aea">RECOGNIZER_RESULT_STATE_UNCERTAIN</a>,</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a24451877276e44b45cde575035dd7624">   51</a></span>&#160;    <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a24451877276e44b45cde575035dd7624">RECOGNIZER_RESULT_STATE_VALID</a>,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a774bba555a6ffe3cce0c5044f195d471">RECOGNIZER_RESULT_STATE_STAGE_VALID</a></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a774bba555a6ffe3cce0c5044f195d471">   57</a></span>&#160;};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="_recognizer_8h.html#ace7b0b0417762114e9509f5e6eb7cdb8">   62</a></span>&#160;MB_EXPORTED_TYPE <span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0">MBRecognizerResultState</a> <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0">MBRecognizerResultState</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="struct_m_b_base_recognizer_result.html">   68</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_m_b_base_recognizer_result.html">MBBaseRecognizerResult</a></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="struct_m_b_base_recognizer_result.html#a3f4909d58ada4b13bd2cfc78248bcaf1">   73</a></span>&#160;    <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0">MBRecognizerResultState</a> <a class="code" href="struct_m_b_base_recognizer_result.html#a3f4909d58ada4b13bd2cfc78248bcaf1">state</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="_recognizer_8h.html#ae22b5d3a75ffedcdb20148b58a90f5a7">   80</a></span>&#160;MB_EXPORTED_TYPE <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_m_b_base_recognizer_result.html">MBBaseRecognizerResult</a> <a class="code" href="struct_m_b_base_recognizer_result.html">MBBaseRecognizerResult</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0abff361f986231a47b21b3ffc48789ce5">   41</a></span>&#160;    <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0abff361f986231a47b21b3ffc48789ce5">MB_RECOGNIZER_RESULT_STATE_EMPTY</a>,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0aed79e2b77c06126fb897ed0a299d26e8">   47</a></span>&#160;    <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0aed79e2b77c06126fb897ed0a299d26e8">MB_RECOGNIZER_RESULT_STATE_UNCERTAIN</a>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0acf080e588b436871bfe3d009b2ce8bb3">   53</a></span>&#160;    <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0acf080e588b436871bfe3d009b2ce8bb3">MB_RECOGNIZER_RESULT_STATE_VALID</a>,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0aade69f578010a15cf92fa3166d4d1ce6">MB_RECOGNIZER_RESULT_STATE_STAGE_VALID</a></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0aade69f578010a15cf92fa3166d4d1ce6">   59</a></span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="_recognizer_8h.html#ace7b0b0417762114e9509f5e6eb7cdb8">   64</a></span>&#160;MB_EXPORTED_TYPE <span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0">MBRecognizerResultState</a> <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0">MBRecognizerResultState</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="struct_m_b_base_recognizer_result.html">   70</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_m_b_base_recognizer_result.html">MBBaseRecognizerResult</a></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="struct_m_b_base_recognizer_result.html#a3f4909d58ada4b13bd2cfc78248bcaf1">   75</a></span>&#160;    <a class="code" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0">MBRecognizerResultState</a> <a class="code" href="struct_m_b_base_recognizer_result.html#a3f4909d58ada4b13bd2cfc78248bcaf1">state</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="_recognizer_8h.html#ae22b5d3a75ffedcdb20148b58a90f5a7">   82</a></span>&#160;MB_EXPORTED_TYPE <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_m_b_base_recognizer_result.html">MBBaseRecognizerResult</a> <a class="code" href="struct_m_b_base_recognizer_result.html">MBBaseRecognizerResult</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="a_recognizer_8h_html_a5ceb086a453c18e3da30aabbb8406bc0a774bba555a6ffe3cce0c5044f195d471"><div class="ttname"><a href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a774bba555a6ffe3cce0c5044f195d471">RECOGNIZER_RESULT_STATE_STAGE_VALID</a></div><div class="ttdeci">@ RECOGNIZER_RESULT_STATE_STAGE_VALID</div><div class="ttdef"><b>Definition:</b> Recognizer.h:56</div></div>
-<div class="ttc" id="astruct_m_b_base_recognizer_result_html"><div class="ttname"><a href="struct_m_b_base_recognizer_result.html">MBBaseRecognizerResult</a></div><div class="ttdoc">This is base structure for all Recognizer results.</div><div class="ttdef"><b>Definition:</b> Recognizer.h:69</div></div>
+<div class="ttc" id="astruct_m_b_base_recognizer_result_html"><div class="ttname"><a href="struct_m_b_base_recognizer_result.html">MBBaseRecognizerResult</a></div><div class="ttdoc">This is base structure for all Recognizer results.</div><div class="ttdef"><b>Definition:</b> Recognizer.h:71</div></div>
 <div class="ttc" id="a_recognizer_8h_html_a5ceb086a453c18e3da30aabbb8406bc0"><div class="ttname"><a href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0">MBRecognizerResultState</a></div><div class="ttdeci">MBRecognizerResultState</div><div class="ttdef"><b>Definition:</b> Recognizer.h:39</div></div>
-<div class="ttc" id="a_recognizer_8h_html_a5ceb086a453c18e3da30aabbb8406bc0a3b0fe838f993433118214ad78f576aea"><div class="ttname"><a href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a3b0fe838f993433118214ad78f576aea">RECOGNIZER_RESULT_STATE_UNCERTAIN</a></div><div class="ttdeci">@ RECOGNIZER_RESULT_STATE_UNCERTAIN</div><div class="ttdef"><b>Definition:</b> Recognizer.h:46</div></div>
+<div class="ttc" id="a_recognizer_8h_html_a5ceb086a453c18e3da30aabbb8406bc0acf080e588b436871bfe3d009b2ce8bb3"><div class="ttname"><a href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0acf080e588b436871bfe3d009b2ce8bb3">MB_RECOGNIZER_RESULT_STATE_VALID</a></div><div class="ttdeci">@ MB_RECOGNIZER_RESULT_STATE_VALID</div><div class="ttdef"><b>Definition:</b> Recognizer.h:53</div></div>
+<div class="ttc" id="a_recognizer_8h_html_a5ceb086a453c18e3da30aabbb8406bc0abff361f986231a47b21b3ffc48789ce5"><div class="ttname"><a href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0abff361f986231a47b21b3ffc48789ce5">MB_RECOGNIZER_RESULT_STATE_EMPTY</a></div><div class="ttdeci">@ MB_RECOGNIZER_RESULT_STATE_EMPTY</div><div class="ttdef"><b>Definition:</b> Recognizer.h:41</div></div>
 <div class="ttc" id="a_export_8h_html"><div class="ttname"><a href="_export_8h.html">Export.h</a></div></div>
-<div class="ttc" id="a_recognizer_8h_html_a5ceb086a453c18e3da30aabbb8406bc0a79517c9413859e87ae94af11c39d6260"><div class="ttname"><a href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a79517c9413859e87ae94af11c39d6260">RECOGNIZER_RESULT_STATE_EMPTY</a></div><div class="ttdeci">@ RECOGNIZER_RESULT_STATE_EMPTY</div><div class="ttdef"><b>Definition:</b> Recognizer.h:41</div></div>
-<div class="ttc" id="astruct_m_b_base_recognizer_result_html_a3f4909d58ada4b13bd2cfc78248bcaf1"><div class="ttname"><a href="struct_m_b_base_recognizer_result.html#a3f4909d58ada4b13bd2cfc78248bcaf1">MBBaseRecognizerResult::state</a></div><div class="ttdeci">MBRecognizerResultState state</div><div class="ttdef"><b>Definition:</b> Recognizer.h:73</div></div>
+<div class="ttc" id="a_recognizer_8h_html_a5ceb086a453c18e3da30aabbb8406bc0aade69f578010a15cf92fa3166d4d1ce6"><div class="ttname"><a href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0aade69f578010a15cf92fa3166d4d1ce6">MB_RECOGNIZER_RESULT_STATE_STAGE_VALID</a></div><div class="ttdeci">@ MB_RECOGNIZER_RESULT_STATE_STAGE_VALID</div><div class="ttdef"><b>Definition:</b> Recognizer.h:58</div></div>
+<div class="ttc" id="astruct_m_b_base_recognizer_result_html_a3f4909d58ada4b13bd2cfc78248bcaf1"><div class="ttname"><a href="struct_m_b_base_recognizer_result.html#a3f4909d58ada4b13bd2cfc78248bcaf1">MBBaseRecognizerResult::state</a></div><div class="ttdeci">MBRecognizerResultState state</div><div class="ttdef"><b>Definition:</b> Recognizer.h:75</div></div>
 <div class="ttc" id="a_recognizer_8h_html_a9fc1bc211b4140f57bc0b55caa08acb8"><div class="ttname"><a href="_recognizer_8h.html#a9fc1bc211b4140f57bc0b55caa08acb8">MBRecognizerPtr</a></div><div class="ttdeci">void * MBRecognizerPtr</div><div class="ttdoc">Typedef for pointer to generic Recognizer object.</div><div class="ttdef"><b>Definition:</b> Recognizer.h:32</div></div>
-<div class="ttc" id="a_recognizer_8h_html_a5ceb086a453c18e3da30aabbb8406bc0a24451877276e44b45cde575035dd7624"><div class="ttname"><a href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a24451877276e44b45cde575035dd7624">RECOGNIZER_RESULT_STATE_VALID</a></div><div class="ttdeci">@ RECOGNIZER_RESULT_STATE_VALID</div><div class="ttdef"><b>Definition:</b> Recognizer.h:51</div></div>
+<div class="ttc" id="a_recognizer_8h_html_a5ceb086a453c18e3da30aabbb8406bc0aed79e2b77c06126fb897ed0a299d26e8"><div class="ttname"><a href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0aed79e2b77c06126fb897ed0a299d26e8">MB_RECOGNIZER_RESULT_STATE_UNCERTAIN</a></div><div class="ttdeci">@ MB_RECOGNIZER_RESULT_STATE_UNCERTAIN</div><div class="ttdef"><b>Definition:</b> Recognizer.h:47</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.19

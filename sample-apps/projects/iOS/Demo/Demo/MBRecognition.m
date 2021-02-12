@@ -11,7 +11,7 @@
 
 #import <RecognizerApi.h>
 
-#define LICENSE_KEY "sRwAAAEWTWljcm9ibGluay5CbGlua0lERGVtb8KLCAQy0L5OgWgSAKRm+dZdJvDiwEhGx3YGDCOoL8IJ58Z8j7NdBjCJciflAeIHf4SsNmmxCjUvUx2KC1gstVdIINEUfVtuP8KrgSgQar0hKJ6XF5Yw3kOPEzb3JeGFILUhfsMXVsCrW4cgSeTSnXQtUGxFOKV1t1vgIkg3g/T6DDzoR6iYVRXtBjhQdzjQO6SHN1uukRiRzLqlip++abcPqxzTBI+7Gwl7ElNIOhYtYOWNC6eNGezl7SZ8MI/LgtLnEDkSb0CbIegUxNoQf8PhZ0sRqFU0vPu8kGRO0cFDx69AbXwPh2lebkRJ7x6xr/Vk6u5A0w=="
+#define LICENSE_KEY "sRwAAAEWTWljcm9ibGluay5CbGlua0lERGVtb8KLCAQy0L5OgWgSAKJO0X0sd2DiG5dP3arRDM6pWQYEV8TJuskPg1QGpNIZ4bcmkKsl15hpAK5ttejAIPC6Vnx/gMzD10VzwxmOiZsNKCuul/K9R28UqC/leX7afsOlETeuEn8+iDVCyjYQQksFGavDcABGx33ldkFS69cAmOl/KQDkq4G09Ox7f4c7xDamVq8SOToGV0LoB2axrNvFaAfEI0TgyhfLjplaY4cFzmgZ9eTBw3fNXQu6uxiR2uY8p6rHMZhUrwwPUEhcZ/tIpUTtVnYsWkLDM5KIBX178O4vGHXAOqZMAnmY+Mteha1vq6GY0diLEO2m"
 
 
 @implementation MBRecognition
@@ -22,13 +22,13 @@
 
     MBRecognizerErrorStatus errorStatus = recognizerAPIUnlockWithLicenseKey( LICENSE_KEY );
 
-    NSAssert( errorStatus == RECOGNIZER_ERROR_STATUS_SUCCESS, @"Failed to unlock the app" );
+    NSAssert( errorStatus == MB_RECOGNIZER_ERROR_STATUS_SUCCESS, @"Failed to unlock the app" );
 
     // make sure you set here the path within the app bundle that contains all required resources
     // failure to do so will result in error during creation of recognizerRunner
     errorStatus = recognizerAPISetResourcesLocation( [resPath UTF8String] );
 
-    NSAssert( errorStatus == RECOGNIZER_ERROR_STATUS_SUCCESS, @"Failed to set SDK resources path!" );
+    NSAssert( errorStatus == MB_RECOGNIZER_ERROR_STATUS_SUCCESS, @"Failed to set SDK resources path!" );
 
     MBBlinkIdRecognizer * idRecognizer    = NULL;
     MBRecognizerRunner  * recognizerRunner = NULL;
@@ -39,7 +39,7 @@
 
     errorStatus = blinkIdRecognizerCreate( &idRecognizer, &idSett );
 
-    NSAssert( errorStatus == RECOGNIZER_ERROR_STATUS_SUCCESS, @"Failed to create ID recognizer" );
+    NSAssert( errorStatus == MB_RECOGNIZER_ERROR_STATUS_SUCCESS, @"Failed to create ID recognizer" );
 
     MBRecognizerRunnerSettings runnerSett;
 
@@ -52,7 +52,7 @@
 
     errorStatus = recognizerRunnerCreate( &recognizerRunner, &runnerSett );
 
-    NSAssert( errorStatus == RECOGNIZER_ERROR_STATUS_SUCCESS, @"Failed to create recognizer runner" );
+    NSAssert( errorStatus == MB_RECOGNIZER_ERROR_STATUS_SUCCESS, @"Failed to create recognizer runner" );
 
     // load image from resources
     NSString* imagePath = [NSString stringWithFormat:@"%@/id.jpg", resPath];
@@ -72,23 +72,23 @@
     CFDataRef rawData = CGDataProviderCopyData( CGImageGetDataProvider( imageRef ) );
     const void* buffer = CFDataGetBytePtr( rawData );
 
-    errorStatus = recognizerImageCreateFromRawImage( &image, buffer, image_width, image_height, image_stride, RAW_IMAGE_TYPE_BGRA );
+    errorStatus = recognizerImageCreateFromRawImage( &image, buffer, image_width, image_height, image_stride, MB_RAW_IMAGE_TYPE_BGRA );
 
-    NSAssert( errorStatus == RECOGNIZER_ERROR_STATUS_SUCCESS, @"Failed to create image" );
+    NSAssert( errorStatus == MB_RECOGNIZER_ERROR_STATUS_SUCCESS, @"Failed to create image" );
 
     MBRecognizerResultState resultState = recognizerRunnerRecognizeFromImage( recognizerRunner, image, MB_FALSE, NULL );
 
-    NSAssert( resultState == RECOGNIZER_RESULT_STATE_VALID, @"Recognition failed" );
+    NSAssert( resultState == MB_RECOGNIZER_RESULT_STATE_VALID, @"Recognition failed" );
 
     MBBlinkIdRecognizerResult result;
 
     blinkIdRecognizerResult( &result, idRecognizer );
 
-    NSLog(@"First name: %s, Last name: %s", result.firstName, result.lastName );
+    NSLog(@"First name: %s, Last name: %s", result.common.firstName, result.common.lastName );
 
     MBRecognitionResult *recognitionResult = [[MBRecognitionResult alloc] init];
-    recognitionResult.firstName = [NSString stringWithUTF8String:result.firstName];
-    recognitionResult.lastName = [NSString stringWithUTF8String:result.lastName];
+    recognitionResult.firstName = [NSString stringWithUTF8String:result.common.firstName];
+    recognitionResult.lastName = [NSString stringWithUTF8String:result.common.lastName];
 
     recognizerRunnerDelete( &recognizerRunner );
     blinkIdRecognizerDelete( &idRecognizer );

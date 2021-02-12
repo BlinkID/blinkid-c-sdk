@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.9.1</span>
+   &#160;<span id="projectnumber">version 5.10.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a09034aebf6ff97ae5f8b66c31f9a6432"><td class="memItemLeft" align="right" valign="top">MBBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_runner_settings.html#a09034aebf6ff97ae5f8b66c31f9a6432">allowMultipleResults</a></td></tr>
+<tr class="memitem:a09034aebf6ff97ae5f8b66c31f9a6432"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_runner_settings.html#a09034aebf6ff97ae5f8b66c31f9a6432">allowMultipleResults</a></td></tr>
 <tr class="separator:a09034aebf6ff97ae5f8b66c31f9a6432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfaa0d58a8248fddaadd5e838e7d6181"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_recognizer_8h.html#a9fc1bc211b4140f57bc0b55caa08acb8">MBRecognizerPtr</a> const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_runner_settings.html#abfaa0d58a8248fddaadd5e838e7d6181">recognizers</a></td></tr>
 <tr class="separator:abfaa0d58a8248fddaadd5e838e7d6181"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,11 +122,11 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">MBBool MBRecognizerRunnerSettings::allowMultipleResults</td>
+          <td class="memname"><a class="el" href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a> MBRecognizerRunnerSettings::allowMultipleResults</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Determines whether it is allowed to return multiple scan results from the same image. If this is not allowed (default), then during recognition if some recognizer changes its result's state into RECOGNIZER_RESULT_STATE_VALID, the <a class="el" href="struct_m_b_recognizer_runner.html" title="MBRecognizerRunner data structure.">MBRecognizerRunner</a> will immediately stop the recognition chain and recognizers that are later in chain will not get a chance to process that image. If you allow this, then even in that case all recognizers will get a chance to process the image, thus giving chance for producing multiple recognition results from the same image (although not guaranteed). </p>
+<p>Determines whether it is allowed to return multiple scan results from the same image. If this is not allowed (default), then during recognition if some recognizer changes its result's state into MB_RECOGNIZER_RESULT_STATE_VALID, the <a class="el" href="struct_m_b_recognizer_runner.html" title="MBRecognizerRunner data structure.">MBRecognizerRunner</a> will immediately stop the recognition chain and recognizers that are later in chain will not get a chance to process that image. If you allow this, then even in that case all recognizers will get a chance to process the image, thus giving chance for producing multiple recognition results from the same image (although not guaranteed). </p>
 
 </div>
 </div>

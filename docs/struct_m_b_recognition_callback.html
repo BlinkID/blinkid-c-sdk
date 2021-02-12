@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.9.1</span>
+   &#160;<span id="projectnumber">version 5.10.0</span>
    </div>
   </td>
  </tr>
@@ -87,7 +87,7 @@ Data Fields</h2></td></tr>
 <tr class="separator:ad2ec0d6c499a029642d4f25bf7a1b22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5773890a9578720eb942f0fa225ba00e"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognition_callback.html#a5773890a9578720eb942f0fa225ba00e">onDetectionMidway</a> )(<a class="el" href="struct_m_b_point.html">MBPoint</a> const *points, size_t pointsSize)</td></tr>
 <tr class="separator:a5773890a9578720eb942f0fa225ba00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3560bd42da8670d6acd8f5652ccf94b"><td class="memItemLeft" align="right" valign="top">MBBool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognition_callback.html#ac3560bd42da8670d6acd8f5652ccf94b">onDetectedObject</a> )(<a class="el" href="struct_m_b_point.html">MBPoint</a> const *points, size_t pointsSize, <a class="el" href="_recognizer_runner_8h.html#a233b5c71a0779f0346df9f5b39250505">MBDetectionStatus</a> detectionStatus)</td></tr>
+<tr class="memitem:ac3560bd42da8670d6acd8f5652ccf94b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognition_callback.html#ac3560bd42da8670d6acd8f5652ccf94b">onDetectedObject</a> )(<a class="el" href="struct_m_b_point.html">MBPoint</a> const *points, size_t pointsSize, <a class="el" href="_recognizer_runner_8h.html#a233b5c71a0779f0346df9f5b39250505">MBDetectionStatus</a> detectionStatus)</td></tr>
 <tr class="separator:ac3560bd42da8670d6acd8f5652ccf94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53516539901863f13d7b88d30f06dee7"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognition_callback.html#a53516539901863f13d7b88d30f06dee7">onDetectionFailed</a> )()</td></tr>
 <tr class="separator:a53516539901863f13d7b88d30f06dee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,7 +99,7 @@ Data Fields</h2></td></tr>
 <tr class="separator:a854a24a2877f14b8837eb2e87bfd2ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add2434ba02549bb7a912dc376083df54"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognition_callback.html#add2434ba02549bb7a912dc376083df54">onFirstSideResult</a> )()</td></tr>
 <tr class="separator:add2434ba02549bb7a912dc376083df54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a682167aa1ce661a8094388fdd7c62552"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognition_callback.html#a682167aa1ce661a8094388fdd7c62552">onGlare</a> )(MBBool hasGlare)</td></tr>
+<tr class="memitem:a682167aa1ce661a8094388fdd7c62552"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognition_callback.html#a682167aa1ce661a8094388fdd7c62552">onGlare</a> )(<a class="el" href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a> hasGlare)</td></tr>
 <tr class="separator:a682167aa1ce661a8094388fdd7c62552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -135,7 +135,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">MBBool(* MBRecognitionCallback::onDetectedObject) (<a class="el" href="struct_m_b_point.html">MBPoint</a> const *points, size_t pointsSize, <a class="el" href="_recognizer_runner_8h.html#a233b5c71a0779f0346df9f5b39250505">MBDetectionStatus</a> detectionStatus)</td>
+          <td class="memname"><a class="el" href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a>(* MBRecognitionCallback::onDetectedObject) (<a class="el" href="struct_m_b_point.html">MBPoint</a> const *points, size_t pointsSize, <a class="el" href="_recognizer_runner_8h.html#a233b5c71a0779f0346df9f5b39250505">MBDetectionStatus</a> detectionStatus)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -226,7 +226,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* MBRecognitionCallback::onGlare) (MBBool hasGlare)</td>
+          <td class="memname">void(* MBRecognitionCallback::onGlare) (<a class="el" href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a> hasGlare)</td>
         </tr>
       </table>
 </div><div class="memdoc">

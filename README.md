@@ -13,7 +13,7 @@ You should use _BlinkID C SDK_ if you are developing:
 
 - Windows, Linux or macOS desktop applications
 - Custom hardware that runs a Linux-based OS on an Intel-compatible CPU, such as airport document readers and ATM machines
-- C++, Java, Python or Ruby applications (you wrap the C-API in your target language)
+- C++, C#, Java, Python, Go or Ruby applications (you wrap the C-API in your target language)
 - Server-side solutions where quick runtime is essential and a docker-based integration cannot meet your performance or compliance needs
 - mobile apps that run on native code and need to work without the extra overhead incurred by Objective C (iOS) or Java (Android) callbacks
 
@@ -49,7 +49,6 @@ You should use _BlinkID C SDK_ if you are developing:
 * [FAQ and known issues](#faq)
     * [Linux-specific known issues](#faq-linux)
     * [Android-specific known issues](#faq-android)
-    * [iOS-specific known issues](#faq-ios)
 * [Additional info](#info)
 
 
@@ -61,6 +60,7 @@ You should use _BlinkID C SDK_ if you are developing:
 
 - _BlinkID C SDK_ supports any `x86_64` compatible processor
     - x86, ARM, MIPS, SPARC, Power, Itanium and other non-x86_64-compatible CPUs are **not supported**
+    - the exception is only Apple Silicon Macs, which are ARM-based, but supported
 - 20 MB of available hard disk space
 - 1 GB of RAM
     - the software may work even on systems with less RAM, but may fail to perform recognition of very large images
@@ -85,7 +85,7 @@ You should use _BlinkID C SDK_ if you are developing:
 
 ### MacOS
 
-- _BlinkID C SDK_ supports 64-bit Intel-based Macs with **Mac OS X 10.14 (Mojave)** or newer
+- _BlinkID C SDK_ supports 64-bit Intel-based and Apple Silicon-based Macs with **Mac OS X 10.14 (Mojave)** or newer
 - Note that SDK may work on earlier versions of MacOS, but we do not give any support nor guarantees for that.
 
 ### Linux
@@ -110,7 +110,7 @@ You should use _BlinkID C SDK_ if you are developing:
 
 ### iOS
 
-- _BlinkID C SDK_ supports iOS 8.0 or newer. The binary has been built using the latest Xcode version available at the time of the release.
+- _BlinkID C SDK_ supports iOS 9.0 or newer. The binary has been built using the latest Xcode version available at the time of the release.
 
 # <a name="integration"></a> Integration instructions
 
@@ -123,13 +123,13 @@ The _BlinkID C SDK_ consists of:
     - located in [include](include) directory
     - on Apple platforms (MacOS and iOS), headers are bundled within the respective frameworks
         - iOS framework is available [here](lib/iOS)
-        - MacOS framework is available [here](lib/MacOS)
+        - MacOS framework is available [here](lib/macOS)
 - dynamic library that contains the implementation of the SDK
-    - Android shared objects are available [here](lib/Android)
-    - Linux shared objects are available [here](lib/Linux)
+    - Android shared objects are available [here](lib/android)
+    - Linux shared objects are available [here](lib/linux)
     - iOS dynamic framework is available [here](lib/iOS)
-    - MacOS dynamic framework is available [here](lib/MacOS)
-    - Windows DLL and import lib is available [here](lib/Windows)
+    - MacOS dynamic framework is available [here](lib/macOS)
+    - Windows DLL and import lib is available [here](lib/windows)
 - resources that _BlinkID_ requires at runtime
     - resources for Android are available [here](resources/android)
     - resources for all other platforms are available [here](resources/non-android)
@@ -140,27 +140,27 @@ In order to be able to use _BlinkID_ in your application, you first need to conf
 
 ### <a name="configure-linux"></a> Linux
 
-On Linux, please make sure that you instruct your compiler to search for headers in [include](include) directory and to link with `libRecognizerApi.so`, which is located in [Linux lib folder](lib/Linux/x64). Also, make sure that your Linux distribution has `OpenSSL` installed (`libssl.so.10` and `libcrypto.so.10` need to be available). When running your app, make sure that `libRecognizerApi.so` is available in library search path by installing it to the default library directory (usually `/usr/lib`) or by setting `LD_LIBRARY_PATH` environment variable to folder containing the `libRecognizerApi.so`. While deploying your application, make sure that you also include the [resources](resources/non-android) that are needed at runtime. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan).
+On Linux, please make sure that you instruct your compiler to search for headers in [include](include) directory and to link with `libRecognizerApi.so`, which is located in [Linux lib folder](lib/linux/x64). Also, make sure that your Linux distribution has `OpenSSL` installed (`libssl.so.10` and `libcrypto.so.10` need to be available). When running your app, make sure that `libRecognizerApi.so` is available in library search path by installing it to the default library directory (usually `/usr/lib`) or by setting `LD_LIBRARY_PATH` environment variable to folder containing the `libRecognizerApi.so`. While deploying your application, make sure that you also include the [resources](resources/non-android) that are needed at runtime. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan).
 
-Please check [the Linux sample-app](sample-apps/projects/Linux/x64) for an example of integration of _BlinkID C SDK_ on Linux.
+Please check [the Linux sample-app](sample-apps/projects/linux/x64) for an example of integration of _BlinkID C SDK_ on Linux.
 
 ### <a name="configure-macos"></a> MacOS
 
-On MacOS, _BlinkID C SDK_ is available as [dynamic framework](lib/MacOS). You can simply drag and drop the framework in your Xcode project and Xcode should automatically setup header and framework search paths for you. While deploying your application, make sure that you also include the [resources](resources/non-android) that are needed at runtime. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan).
+On MacOS, _BlinkID C SDK_ is available as [dynamic framework](lib/macOS). You can simply drag and drop the framework in your Xcode project and Xcode should automatically setup header and framework search paths for you. While deploying your application, make sure that you also include the [resources](resources/non-android) that are needed at runtime. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan).
 
-Please check [the MacOS sample-app](sample-apps/projects/MacOS) for an example of integration of _BlinkID C SDK_ on MacOS.
+Please check [the MacOS sample-app](sample-apps/projects/macOS) for an example of integration of _BlinkID C SDK_ on MacOS.
 
 ### <a name="configure-windows"></a> Windows
 
-On Windows, _BlinkID C SDK_ is available as [dynamic library](lib/Windows). You need to instruct your compiler to search for headers in [include](include) directory and link with `RecognizerApi.lib`, which is located in [Windows lib folder](lib/Windows/x64). When running your app, make sure that `RecognizerApi.dll` is available in the same directory as your application's executable file. While deploying your application, make sure that you also include the [resources](resources/non-android) that are needed at runtime. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan). In order for _BlinkID C SDK_ to work, a  [Visual C++ 2019 redistributable package](https://aka.ms/vs/16/release/VC_redist.x64.exe) needs to be installed on the system.
+On Windows, _BlinkID C SDK_ is available as [dynamic library](lib/windows). You need to instruct your compiler to search for headers in [include](include) directory and link with `RecognizerApi.lib`, which is located in [Windows lib folder](lib/windows/x64). When running your app, make sure that `RecognizerApi.dll` is available in the same directory as your application's executable file. While deploying your application, make sure that you also include the [resources](resources/non-android) that are needed at runtime. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan). In order for _BlinkID C SDK_ to work, a  [Visual C++ 2019 redistributable package](https://aka.ms/vs/16/release/VC_redist.x64.exe) needs to be installed on the system.
 
-Please check [the Windows sample-app](sample-apps/projects/Windows/x64) for an example of integration of _BlinkID C SDK_ on Windows.
+Please check [the Windows sample-app](sample-apps/projects/windows/x64) for an example of integration of _BlinkID C SDK_ on Windows.
 
 ### <a name="configure-android"></a> Android
 
-On Android, please make sure that you instruct your compiler to search for headers in [include](include) directory and to link with `libRecognizerApi.so` for each android ABI. Libraries for all supported Android ABIs are located in [Android lib folder](lib/Android). When running your app, make sure that you load the `RecognizerApi` in Java code prior loading your own library, otherwise you will get `UnsatisfiedLinkException`. While deploying your application, make sure to include the [resources](resources/android) in your app's assets. You can put the resource files into any folder within your app's assets. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan). On Android, this path must be relative with respect to your app's assets folder. Also, make sure that you initialize the _BlinkID C SDK_ with your application's context using [`recognizerAPIInitializeAndroidApplication`](https://blinkid.github.io/blinkid-c-sdk/_recognizer_api_utils_8h.html#a6a39476a55beb625a6063e9129e02ff6) before making any other API calls.
+On Android, please make sure that you instruct your compiler to search for headers in [include](include) directory and to link with `libRecognizerApi.so` for each android ABI. Libraries for all supported Android ABIs are located in [Android lib folder](lib/android). When running your app, make sure that you load the `RecognizerApi` in Java code prior loading your own library, otherwise you will get `UnsatisfiedLinkException`. While deploying your application, make sure to include the [resources](resources/android) in your app's assets. You can put the resource files into any folder within your app's assets. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan). On Android, this path must be relative with respect to your app's assets folder. Also, make sure that you initialize the _BlinkID C SDK_ with your application's context using [`recognizerAPIInitializeAndroidApplication`](https://blinkid.github.io/blinkid-c-sdk/_recognizer_api_utils_8h.html#a6a39476a55beb625a6063e9129e02ff6) before making any other API calls.
 
-Please check [the Android sample-app](sample-apps/projects/Android) for an example of integration of _BlinkID C SDK_ on Android.
+Please check [the Android sample-app](sample-apps/projects/android) for an example of integration of _BlinkID C SDK_ on Android.
 
 ### <a name="configure-ios"></a> iOS
 
@@ -177,18 +177,17 @@ You can obtain a free trial license key by registering to [Microblink dashboard]
 - On Android, the license key is bound to the [application ID](https://developer.android.com/studio/build/application-id.html) of your app.
 - On iOS, the license key is bound to the [bundle identifier](https://stackoverflow.com/a/11347680/213057) of your app.
 - On Linux, the license key is bound to the [machine ID](https://man7.org/linux/man-pages/man5/machine-id.5.html) of the computer that will run your app.
-    - you can obtain the ID by running a [license request tool](lib/Linux/LicenseRequestTool). This utility will print the machine ID as `Licensee` to the standard output and also into file `MicroblinkLicenseRequest.txt`
+    - you can obtain the ID by running a [license request tool](lib/linux/LicenseRequestTool). This utility will print the machine ID as `Licensee` to the standard output and also into file `MicroblinkLicenseRequest.txt`
     - if you need a linux license eligible for multiple machines, please [contact us](https://help.microblink.com)
 - On MacOS, the license key is bound to the [Mac's UUID](https://www.engadget.com/2013-07-25-mac-101-finding-your-macs-uuid.html?guccounter=1)
-    - you can obtain the ID by running a [license request tool](lib/MacOS/LicenseRequestTool). This utility will print the machine ID as `Licensee` to the standard output and also into file `MicroblinkLicenseRequest.txt`
+    - you can obtain the ID by running a [license request tool](lib/macOS/LicenseRequestTool). This utility will print the machine ID as `Licensee` to the standard output and also into file `MicroblinkLicenseRequest.txt`
     - if you need a macOS license eligible for multiple machines, please [contact us](https://help.microblink.com)
 - On Windows, the license key is bound to the [Windows product ID](https://superuser.com/a/886764)
-    - you can obtain the ID by running a [license request tool](lib/Windows/LicenseRequestTool.exe). This utility will print the product ID as `Licensee` to the standard output and also into file `MicroblinkLicenseRequest.txt`
+    - you can obtain the ID by running a [license request tool](lib/windows/LicenseRequestTool.exe). This utility will print the product ID as `Licensee` to the standard output and also into file `MicroblinkLicenseRequest.txt`
     - if you need a Windows license eligible for multiple machines, please [contact us](https://help.microblink.com)
 
-**Keep in mind:** Versions 5.8.0 and above require a public network access under our License Management Program.
-We’re only asking you to do this so we can validate your trial license key. Scanning or data extraction of identity documents still happens offline, on the device itself. Once the validation is complete, you can continue using the SDK in offline mode (or over a private network) until the next check. If there is a network error during trial license check, functions `recognizerAPIUnlock*` will fail with `RECOGNIZER_ERROR_STATUS_NETWORK_ERROR` error code and functions `recognizerRunnerRecognizeFrom*` will immediately return with `RECOGNIZER_RESULT_STATE_EMPTY`. Note that License Management Program can be disabled for production licenses - in that case no Internet connection will be required for SDK to work.
-
+**Keep in mind:** Under our License Management Program a public network access is required.
+We’re only asking you to do this so we can validate your trial license key. Scanning or data extraction of identity documents still happens offline, on the device itself. Once the validation is complete, you can continue using the SDK in offline mode (or over a private network) until the next check. If there is a network error during trial license check, functions `recognizerAPIUnlock*` will fail with `MB_RECOGNIZER_ERROR_STATUS_NETWORK_ERROR` error code and functions `recognizerRunnerRecognizeFrom*` will immediately return with `MB_RECOGNIZER_RESULT_STATE_EMPTY`. Note that License Management Program can be disabled for production licenses - in that case no Internet connection will be required for SDK to work.
 
 ## <a name="first-scan"></a> Performing your first scan
 
@@ -215,7 +214,7 @@ We’re only asking you to do this so we can validate your trial license key. Sc
 1. Insert your license key
     ```c
     MBRecognizerErrorStatus errorStatus = recognizerAPIUnlockWithLicenseKey( "Add license key here" );
-    if ( errorStatus != RECOGNIZER_ERROR_STATUS_SUCCESS )
+    if ( errorStatus != MB_RECOGNIZER_ERROR_STATUS_SUCCESS )
     {
         // handle failure
     }
@@ -224,7 +223,7 @@ We’re only asking you to do this so we can validate your trial license key. Sc
 1. Set path to folder containing resources required by the library. The function `recognizerAPISetResourcesLocation` requires absolute path to folder containing all files from `resources/non-android` folder from the distribution on all platforms except Android. On Android it requires relative path to folder within `assets` containing all files from the `resources/android` folder from the distribution. For more information about that, check [the Android sample-app](sample-apps/projects/Android)
     ```c
     MBRecognizerErrorStatus errorStatus = recognizerAPISetResourcesLocation( "/path/to/resources/non-android" );
-    if ( errorStatus != RECOGNIZER_ERROR_STATUS_SUCCESS )
+    if ( errorStatus != MB_RECOGNIZER_ERROR_STATUS_SUCCESS )
     {
         // handle failure
     }
@@ -242,7 +241,7 @@ We’re only asking you to do this so we can validate your trial license key. Sc
     // optionally tweak settings for your needs
 
     MBRecognizerErrorStatus errorStatus = = blinkIdRecognizerCreate( &blinkIdRecognizer, &settings );
-    if ( errorStatus != RECOGNIZER_ERROR_STATUS_SUCCESS )
+    if ( errorStatus != MB_RECOGNIZER_ERROR_STATUS_SUCCESS )
     {
         // handle failure
     }
@@ -261,7 +260,7 @@ We’re only asking you to do this so we can validate your trial license key. Sc
     MBRecognizerRunner * recognizerRunner = NULL;
 
     errorStatus = recognizerRunnerCreate( &recognizerRunner, &runnerSett );
-    if ( errorStatus != RECOGNIZER_ERROR_STATUS_SUCCESS )
+    if ( errorStatus != MB_RECOGNIZER_ERROR_STATUS_SUCCESS )
     {
         // handle failure
     }
@@ -275,8 +274,8 @@ We’re only asking you to do this so we can validate your trial license key. Sc
     // populate above variables (i.e. by loading image file or capturing image with camera)
 
     MBRecognizerImage * img;
-    MBRecognizerErrorStatus status = recognizerImageCreateFromRawImage( &img, image_buffer, image_width, image_height, image_stride, RAW_IMAGE_TYPE_BGR );
-    if (status != RECOGNIZER_ERROR_STATUS_SUCCESS) {
+    MBRecognizerErrorStatus status = recognizerImageCreateFromRawImage( &img, image_buffer, image_width, image_height, image_stride, MB_RAW_IMAGE_TYPE_BGR );
+    if (status != MB_RECOGNIZER_ERROR_STATUS_SUCCESS) {
         printf("Failed to create image. Reason: %s", recognizerErrorToString(status));
     }
     ```
@@ -285,19 +284,19 @@ We’re only asking you to do this so we can validate your trial license key. Sc
     ```c
     MBRecognizerResultState resultState = recognizerRunnerRecognizeFromImage( recognizerRunner, imageWrapper.recognizerImage, MB_FALSE, NULL );
 
-    if ( resultState != RECOGNIZER_RESULT_STATE_EMPTY )
+    if ( resultState != MB_RECOGNIZER_RESULT_STATE_EMPTY )
     {
         // obtain results from recognizers (see Step 4)
     }
     ```
 
-1. Obtain result structure from each of the recognizers. If some recognizer's result's state is [`RECOGNIZER_RESULT_STATE_VALID`](https://blinkid.github.io/blinkid-c-sdk/_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0), then it contains recognized data.
+1. Obtain result structure from each of the recognizers. If some recognizer's result's state is [`MB_RECOGNIZER_RESULT_STATE_VALID`](https://blinkid.github.io/blinkid-c-sdk/_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0), then it contains recognized data.
     ```c
     MBBlinkIdRecognizerResult result;
 
     blinkIdRecognizerResult( &result, blinkIdRecognizer );
 
-    if ( result.baseResult.state == RECOGNIZER_RESULT_STATE_VALID )
+    if ( result.baseResult.state == MB_RECOGNIZER_RESULT_STATE_VALID )
     {
         // you can use data from the result
     }
@@ -331,15 +330,15 @@ While in _idle state_, you are allowed to call `<recognizerName>RecognizerUpdate
 
 After you create a `RecognizerRunner` with array containing your recognizer, the state of the `Recognizer` will change to _working state_, in which `Recognizer` object will be used for processing. While being in _working state_, it is not possible to call function `<recognizerName>RecognizerUpdate` with it as a parameter (calling it will crash your app). If you need to change configuration of your recognizer while its being used, you need to create a new `Recognizer` of the same type with your modified configuration and replace the original `Recognizer` within the `RecognizerRunner` by calling its [`recognizerRunnerUpdateSettings`](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_recognizer_runner.html#a9477518625bb5348140af7dc9edb85c1) method.
 
-While `Recognizer` object works, it changes its internal state and its result. The `Recognizer` object's `Result` always starts in [`RECOGNIZER_RESULT_STATE_EMPTY`](https://blinkid.github.io/blinkid-c-sdk/_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0) state. When corresponding `Recognizer` object performs the recognition of given image, its `Result` can either stay in `RECOGNIZER_RESULT_STATE_EMPTY` state (in case `Recognizer` failed to perform recognition), move to `RECOGNIZER_RESULT_STATE_UNCERTAIN` state (in case `Recognizer` performed the recognition, but not all mandatory information was extracted) or move to `RECOGNIZER_RESULT_STATE_VALID` state (in case `Recognizer` performed recognition and all mandatory information was successfully extracted from the image).
+While `Recognizer` object works, it changes its internal state and its result. The `Recognizer` object's `Result` always starts in [`MB_RECOGNIZER_RESULT_STATE_EMPTY`](https://blinkid.github.io/blinkid-c-sdk/_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0) state. When corresponding `Recognizer` object performs the recognition of given image, its `Result` can either stay in `MB_RECOGNIZER_RESULT_STATE_EMPTY` state (in case `Recognizer` failed to perform recognition), move to `MB_RECOGNIZER_RESULT_STATE_UNCERTAIN` state (in case `Recognizer` performed the recognition, but not all mandatory information was extracted), move to `MB_RECOGNIZER_RESULT_STATE_STAGE_VALID` (in case multi-stage `Recognizer` performed some stage of the recognition, such as scanning the front side of the document) or move to `MB_RECOGNIZER_RESULT_STATE_VALID` state (in case `Recognizer` performed recognition and all mandatory information was successfully extracted from the image).
 
 ## <a name="recognizer-runner"></a> `RecognizerRunner`
 
-The `RecognizerRunner` is the object that manages the chain of individual `Recognizer` objects within the recognition process. It's created by [`recognizerRunnerCreate`](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_recognizer_runner.html#a5c3e9b7dae397fcc7b86853abb3b61f2) function, which requires a [settings structure](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_recognizer_runner_settings.html) which contains an array of `Recognizer` objects that will be used for processing and a [`MBBool allowMultipleResults` member](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_recognizer_runner_settings.html#a09034aebf6ff97ae5f8b66c31f9a6432) indicating whether multiple `Recognizer` objects are allowed to have their `Results` enter the `RECOGNIZER_RESULT_STATE_VALID` state.
+The `RecognizerRunner` is the object that manages the chain of individual `Recognizer` objects within the recognition process. It's created by [`recognizerRunnerCreate`](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_recognizer_runner.html#a5c3e9b7dae397fcc7b86853abb3b61f2) function, which requires a [settings structure](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_recognizer_runner_settings.html) which contains an array of `Recognizer` objects that will be used for processing and a [`MBBool allowMultipleResults` member](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_recognizer_runner_settings.html#a09034aebf6ff97ae5f8b66c31f9a6432) indicating whether multiple `Recognizer` objects are allowed to have their `Results` enter the `MB_RECOGNIZER_RESULT_STATE_VALID` state.
 
 To explain further the `allowMultipleResults` parameter, we first need to understand how `RecognizerRunner` performs image processing.
 
-When the [`recognizerRunnerRecognizeFromImage`](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_recognizer_runner.html#a50678935556a9718df4ed4aaf89286c0) function is called, it processes the image with the first `Recognizer` in chain. If the `Recognizer's` `Result` object changes its state to `RECOGNIZER_RESULT_STATE_VALID`, then if the `allowMultipleResults` parameter is `MB_FALSE`, the recognition chain will be broken and `recognizerRunnerRecognizeFromImage` function will immediately return. If the `allowMultipleResults` parameter is `MB_TRUE`, then the image will also be processed with other `Recognizer` objects in chain, regardless of the state of their `Result` objects. If, after processing the image with the first `Recognizer` in chain, its `Result` object's state is not changed to `Valid`, the `RecognizerRunner` will use the next `Recognizer` object in chain for processing the image and so on - until the end of the chain (if no results become valid or always if `allowMultipleResults` parameter is `MB_TRUE`) or until it finds the `Recognizer` that has successfully processed the image and changed its `Result's` state to `RECOGNIZER_RESULT_STATE_VALID` (if `allowMultipleResults` parameter is `MB_FALSE`).
+When the [`recognizerRunnerRecognizeFromImage`](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_recognizer_runner.html#a50678935556a9718df4ed4aaf89286c0) function is called, it processes the image with the first `Recognizer` in chain. If the `Recognizer's` `Result` object changes its state to `MB_RECOGNIZER_RESULT_STATE_VALID`, then if the `allowMultipleResults` parameter is `MB_FALSE`, the recognition chain will be broken and `recognizerRunnerRecognizeFromImage` function will immediately return. If the `allowMultipleResults` parameter is `MB_TRUE`, then the image will also be processed with other `Recognizer` objects in chain, regardless of the state of their `Result` objects. If, after processing the image with the first `Recognizer` in chain, its `Result` object's state is not changed to `Valid`, the `RecognizerRunner` will use the next `Recognizer` object in chain for processing the image and so on - until the end of the chain (if no results become valid or always if `allowMultipleResults` parameter is `MB_TRUE`) or until it finds the `Recognizer` that has successfully processed the image and changed its `Result's` state to `MB_RECOGNIZER_RESULT_STATE_VALID` (if `allowMultipleResults` parameter is `MB_FALSE`).
 
 You cannot change the order of the `Recognizer` objects within the chain - no matter the order in which you give `Recognizer` objects to `RecognizerRunner`, they are internally ordered in a way that provides best possible performance and accuracy.
 
@@ -423,13 +422,13 @@ Each license key contains information about which features are allowed to use an
 
 Please check that you have correctly set the license key and that you have correctly set the path to resources that need to be loaded at runtime. For more information, see [_performing your first scan_ article](#first-scan)
 
-#### Unlocking the SDK fails with `RECOGNIZER_ERROR_STATUS_NETWORK_ERROR`
+#### Unlocking the SDK fails with `MB_RECOGNIZER_ERROR_STATUS_NETWORK_ERROR`
 
 If you are using trial license key or production license key under License Management Program, it will require Internet connection to periodically validate the license key. Scanning or data extraction of identity documents still happens offline, on the device itself. For more information, check [Obtaining a license key](#obtaining-a-license-key) paragraph.
 
 ## <a name="faq-linux"></a> Linux-specific known issues
 
-#### Unlocking the SDK fails with `RECOGNIZER_ERROR_STATUS_NETWORK_ERROR` even if my machine is online
+#### Unlocking the SDK fails with `MB_RECOGNIZER_ERROR_STATUS_NETWORK_ERROR` even if my machine is online
 
 This can happen if online license is used, which requires server permission for unlocking the SDK and the server is not reachable. First, make sure that your system has CA certificates installed. Most systems have that as soon as OpenSSL package is installed, however, Ubuntu-based Linux distribution contain CA certificates in `ca-certificates` package. You can install that by issuing command `sudo apt install ca-certificates`.
 
@@ -454,47 +453,6 @@ If you are getting this error also in our integration demo app, then it may indi
 #### Application crashes as soon as any _BlinkID C SDK_ API function is called
 
 Make sure that you have initialized the SDK with your app's Application context before calling any other API function. For more information about that, check [this article in our BlinkID Android SDK documentation](https://github.com/blinkid/blinkid-android#combineNativeLibraries).
-
-## <a name="faq-ios"></a> iOS-specific known issues
-
-#### Unsupported architectures when submitting app to App Store
-
-RecognizerApi.framework is a dynamic framework which contains slices for all architectures - device and simulator. If you intend to extract .ipa file for ad hoc distribution, you'll need to preprocess the framework to remove simulator architectures.
-
-Ideal solution is to add a build phase after embed frameworks build phase, which strips unused slices from embedded frameworks.
-
-Build step is based on the one provided here: https://ikennd.ac/blog/2015/02/stripping-unwanted-architectures-from-dynamic-libraries-in-xcode/
-
-```shell
-APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
-
-# This script loops through the frameworks embedded in the application and
-# removes unused architectures.
-find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
-do
-FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
-FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
-echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
-
-EXTRACTED_ARCHS=()
-
-for ARCH in $ARCHS
-do
-echo "Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME"
-lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
-EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
-done
-
-echo "Merging extracted architectures: ${ARCHS}"
-lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
-rm "${EXTRACTED_ARCHS[@]}"
-
-echo "Replacing original executable with thinned version"
-rm "$FRAMEWORK_EXECUTABLE_PATH"
-mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
-
-done
-```
 # <a name="info"></a> Additional info
 
 For any other questions, feel free to contact us at [help.microblink.com](http://help.microblink.com) or open a [new issue on GitHub](https://github.com/BlinkID/blinkid-c-sdk/issues).

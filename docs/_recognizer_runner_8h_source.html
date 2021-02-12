@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.9.1</span>
+   &#160;<span id="projectnumber">version 5.10.0</span>
    </div>
   </td>
  </tr>
@@ -79,7 +79,7 @@ $(function() {
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_recognizer_error_8h.html">RecognizerError.h</a>&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_recognizer_image_8h.html">RecognizerImage.h</a>&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_rectangle_8h.html">Rectangle.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;Types.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_types_8h.html">Types.h</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
@@ -100,7 +100,7 @@ $(function() {
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="struct_m_b_recognizer_runner_settings.html">   64</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_m_b_recognizer_runner_settings.html">MBRecognizerRunnerSettings</a></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="struct_m_b_recognizer_runner_settings.html#a09034aebf6ff97ae5f8b66c31f9a6432">   73</a></span>&#160;    MBBool <a class="code" href="struct_m_b_recognizer_runner_settings.html#a09034aebf6ff97ae5f8b66c31f9a6432">allowMultipleResults</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="struct_m_b_recognizer_runner_settings.html#a09034aebf6ff97ae5f8b66c31f9a6432">   73</a></span>&#160;    <a class="code" href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a> <a class="code" href="struct_m_b_recognizer_runner_settings.html#a09034aebf6ff97ae5f8b66c31f9a6432">allowMultipleResults</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="struct_m_b_recognizer_runner_settings.html#abfaa0d58a8248fddaadd5e838e7d6181">   79</a></span>&#160;    <a class="code" href="_recognizer_8h.html#a9fc1bc211b4140f57bc0b55caa08acb8">MBRecognizerPtr</a> <span class="keyword">const</span> * <a class="code" href="struct_m_b_recognizer_runner_settings.html#abfaa0d58a8248fddaadd5e838e7d6181">recognizers</a>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
@@ -165,7 +165,7 @@ $(function() {
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
 <div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="struct_m_b_recognition_callback.html#a5773890a9578720eb942f0fa225ba00e">  215</a></span>&#160;    void (*<a class="code" href="struct_m_b_recognition_callback.html#a5773890a9578720eb942f0fa225ba00e">onDetectionMidway</a>)( <a class="code" href="struct_m_b_point.html">MBPoint</a> <span class="keyword">const</span> * points, <span class="keywordtype">size_t</span> pointsSize );</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="struct_m_b_recognition_callback.html#ac3560bd42da8670d6acd8f5652ccf94b">  228</a></span>&#160;    MBBool (*<a class="code" href="struct_m_b_recognition_callback.html#ac3560bd42da8670d6acd8f5652ccf94b">onDetectedObject</a>)( <a class="code" href="struct_m_b_point.html">MBPoint</a> <span class="keyword">const</span> * points, <span class="keywordtype">size_t</span> pointsSize, <a class="code" href="_recognizer_runner_8h.html#a233b5c71a0779f0346df9f5b39250505">MBDetectionStatus</a> detectionStatus );</div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="struct_m_b_recognition_callback.html#ac3560bd42da8670d6acd8f5652ccf94b">  228</a></span>&#160;    <a class="code" href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a> (*<a class="code" href="struct_m_b_recognition_callback.html#ac3560bd42da8670d6acd8f5652ccf94b">onDetectedObject</a>)( <a class="code" href="struct_m_b_point.html">MBPoint</a> <span class="keyword">const</span> * points, <span class="keywordtype">size_t</span> pointsSize, <a class="code" href="_recognizer_runner_8h.html#a233b5c71a0779f0346df9f5b39250505">MBDetectionStatus</a> detectionStatus );</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
 <div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="struct_m_b_recognition_callback.html#a53516539901863f13d7b88d30f06dee7">  240</a></span>&#160;    void (*<a class="code" href="struct_m_b_recognition_callback.html#a53516539901863f13d7b88d30f06dee7">onDetectionFailed</a>)();</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
@@ -177,7 +177,7 @@ $(function() {
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
 <div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="struct_m_b_recognition_callback.html#add2434ba02549bb7a912dc376083df54">  262</a></span>&#160;    void (*<a class="code" href="struct_m_b_recognition_callback.html#add2434ba02549bb7a912dc376083df54">onFirstSideResult</a>)();</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="struct_m_b_recognition_callback.html#a682167aa1ce661a8094388fdd7c62552">  268</a></span>&#160;    void (*<a class="code" href="struct_m_b_recognition_callback.html#a682167aa1ce661a8094388fdd7c62552">onGlare</a>)( MBBool hasGlare );</div>
+<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="struct_m_b_recognition_callback.html#a682167aa1ce661a8094388fdd7c62552">  268</a></span>&#160;    void (*<a class="code" href="struct_m_b_recognition_callback.html#a682167aa1ce661a8094388fdd7c62552">onGlare</a>)( <a class="code" href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a> hasGlare );</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
@@ -200,7 +200,7 @@ $(function() {
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;(</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <a class="code" href="struct_m_b_recognizer_runner.html">MBRecognizerRunner</a>          * recognizerRunner,</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <a class="code" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a>     <span class="keyword">const</span> * image,</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    MBBool                        imageIsVideoFrame,</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <a class="code" href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a>                        imageIsVideoFrame,</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <a class="code" href="struct_m_b_recognition_callback.html">MBRecognitionCallback</a> <span class="keyword">const</span> * callback</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;);</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
@@ -259,6 +259,8 @@ $(function() {
 <div class="ttc" id="astruct_m_b_recognizer_runner_html_a5c3e9b7dae397fcc7b86853abb3b61f2"><div class="ttname"><a href="struct_m_b_recognizer_runner.html#a5c3e9b7dae397fcc7b86853abb3b61f2">MBRecognizerRunner::recognizerRunnerCreate</a></div><div class="ttdeci">MB_API MBRecognizerErrorStatus MB_CALL recognizerRunnerCreate(MBRecognizerRunner **recognizerRunner, MBRecognizerRunnerSettings const *settings)</div><div class="ttdoc">Allocates and initializes the recognizer runner object.</div></div>
 <div class="ttc" id="astruct_m_b_recognizer_runner_html_a3c9698959d1383a45f2bd5cf99508eba"><div class="ttname"><a href="struct_m_b_recognizer_runner.html#a3c9698959d1383a45f2bd5cf99508eba">MBRecognizerRunner::recognizerRunnerReset</a></div><div class="ttdeci">MB_API MBRecognizerErrorStatus MB_CALL recognizerRunnerReset(MBRecognizerRunner *recognizerRunner)</div><div class="ttdoc">Resets all recognizers used by the MBRecognizerRunner to the default state.</div></div>
 <div class="ttc" id="astruct_m_b_size_html_a92da63a3be8666a2a53480265448d83f"><div class="ttname"><a href="struct_m_b_size.html#a92da63a3be8666a2a53480265448d83f">MBSize::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> RecognizerRunner.h:118</div></div>
+<div class="ttc" id="a_types_8h_html"><div class="ttname"><a href="_types_8h.html">Types.h</a></div></div>
+<div class="ttc" id="a_types_8h_html_a2f1df9511957661b7b39516b961df061"><div class="ttname"><a href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a></div><div class="ttdeci">unsigned char MBBool</div><div class="ttdoc">Boolean type for C SDK.</div><div class="ttdef"><b>Definition:</b> Types.h:20</div></div>
 <div class="ttc" id="a_recognizer_runner_8h_html_af6b3bb72748cbe49659e8bbc61c13d9da9b43c16ea11e1595a98b808781eb4bca"><div class="ttname"><a href="_recognizer_runner_8h.html#af6b3bb72748cbe49659e8bbc61c13d9da9b43c16ea11e1595a98b808781eb4bca">SHOW_IMAGE_TYPE_ORIGINAL</a></div><div class="ttdeci">@ SHOW_IMAGE_TYPE_ORIGINAL</div><div class="ttdef"><b>Definition:</b> RecognizerRunner.h:162</div></div>
 <div class="ttc" id="a_recognizer_runner_8h_html_a233b5c71a0779f0346df9f5b39250505a3a222a57cc14f56ddaec3d09103fc099"><div class="ttname"><a href="_recognizer_runner_8h.html#a233b5c71a0779f0346df9f5b39250505a3a222a57cc14f56ddaec3d09103fc099">DETECTION_STATUS_CAMERA_TOO_NEAR</a></div><div class="ttdeci">@ DETECTION_STATUS_CAMERA_TOO_NEAR</div><div class="ttdef"><b>Definition:</b> RecognizerRunner.h:145</div></div>
 <div class="ttc" id="a_recognizer_runner_8h_html_a233b5c71a0779f0346df9f5b39250505a30680ae8dbea07a8e25c5e169eb7b3be"><div class="ttname"><a href="_recognizer_runner_8h.html#a233b5c71a0779f0346df9f5b39250505a30680ae8dbea07a8e25c5e169eb7b3be">DETECTION_STATUS_CAMERA_AT_ANGLE</a></div><div class="ttdeci">@ DETECTION_STATUS_CAMERA_AT_ANGLE</div><div class="ttdef"><b>Definition:</b> RecognizerRunner.h:143</div></div>

@@ -53,7 +53,7 @@ int main( int argc, char * argv[] )
     errorStatus = recognizerAPIUnlockWithLicenseKey( "Add license key here" );
 #endif
 
-    if ( errorStatus != RECOGNIZER_ERROR_STATUS_SUCCESS )
+    if ( errorStatus != MB_RECOGNIZER_ERROR_STATUS_SUCCESS )
     {
         printf( "Failed to unlock! Reason: %s\n", recognizerErrorToString( errorStatus ) );
         return EXIT_FAILURE;
@@ -62,7 +62,7 @@ int main( int argc, char * argv[] )
     /* Define path to resource directory */
     errorStatus = recognizerAPISetResourcesLocation( argv[ 1 ] );
 
-    if ( errorStatus != RECOGNIZER_ERROR_STATUS_SUCCESS )
+    if ( errorStatus != MB_RECOGNIZER_ERROR_STATUS_SUCCESS )
     {
         printf( "Failed to set resources location!\n" );
         return EXIT_FAILURE;
@@ -81,7 +81,7 @@ int main( int argc, char * argv[] )
 
         /* To create Generic ID recognizer using settings structure, you shuold call blinkIdRecognizerCreate function. */
         errorStatus = blinkIdRecognizerCreate( &idRecognizer, &idSett );
-        if ( errorStatus != RECOGNIZER_ERROR_STATUS_SUCCESS )
+        if ( errorStatus != MB_RECOGNIZER_ERROR_STATUS_SUCCESS )
         {
             printf( "Failed to create Generic ID recognizer!\n" );
             /* avoid memory leaks - free already allocated things */
@@ -115,7 +115,7 @@ int main( int argc, char * argv[] )
         runnerSett.recognizers = recognizers;
 
         errorStatus = recognizerRunnerCreate( &recognizerRunner, &runnerSett );
-        if ( errorStatus != RECOGNIZER_ERROR_STATUS_SUCCESS )
+        if ( errorStatus != MB_RECOGNIZER_ERROR_STATUS_SUCCESS )
         {
             printf( "Failed to create recognizer runner!\n" );
             /* avoid memory leaks - free already allocated things */
@@ -132,18 +132,18 @@ int main( int argc, char * argv[] )
         resultState = recognizerRunnerRecognizeFromImage( recognizerRunner, imageWrapper.recognizerImage, MB_FALSE, NULL );
 
         /* if at least one recognizer produced a result */
-        if ( resultState != RECOGNIZER_RESULT_STATE_EMPTY )
+        if ( resultState != MB_RECOGNIZER_RESULT_STATE_EMPTY )
         {
             /* Step 4: obtain results from the generic ID recognizer */
             MBBlinkIdRecognizerResult result;
 
             blinkIdRecognizerResult( &result, idRecognizer );
 
-            if ( result.baseResult.state == RECOGNIZER_RESULT_STATE_VALID )
+            if ( result.common.baseResult.state == MB_RECOGNIZER_RESULT_STATE_VALID )
             {
                 printf( "Result is valid!\n" );
-                printf( "First name: %s.\n", result.firstName );
-                printf( "Last name: %s\n"  , result.lastName );
+                printf( "First name: %s.\n", result.common.firstName );
+                printf( "Last name: %s\n"  , result.common.lastName );
 
                 recognitionSuccessfull = MB_TRUE;
             }

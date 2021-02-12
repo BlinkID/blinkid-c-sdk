@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.9.1</span>
+   &#160;<span id="projectnumber">version 5.10.0</span>
    </div>
   </td>
  </tr>
@@ -133,6 +133,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a68334127ed5e6bf1925eba66961f06c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b9b204322c92c22cf473e6ffa11661d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_b_driver_license_detailed_info.html">MBDriverLicenseDetailedInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_id_barcode_recognizer_result.html#a9b9b204322c92c22cf473e6ffa11661d">driverLicenseDetailedInfo</a></td></tr>
 <tr class="separator:a9b9b204322c92c22cf473e6ffa11661d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27e73c59fd636cb0a89a7ee4d09fb0e"><td class="memItemLeft" align="right" valign="top">char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_id_barcode_recognizer_result.html#ab27e73c59fd636cb0a89a7ee4d09fb0e">extendedElements</a> [<a class="el" href="_barcode_element_key_8h.html#abe14eb9bfca2f891fc0c2c2a8e9a1588a32777b3e6f46997af4bb098f0a41e9f2">MB_BARCODE_ELEMENT_KEY_COUNT</a>]</td></tr>
+<tr class="separator:ab27e73c59fd636cb0a89a7ee4d09fb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The IdBarcodeRecognizer scans barcodes from identity documents and returns the parsed information. </p>
@@ -329,6 +331,23 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The employer of the document owner. </p>
+
+</div>
+</div>
+<a id="ab27e73c59fd636cb0a89a7ee4d09fb0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27e73c59fd636cb0a89a7ee4d09fb0e">&#9670;&nbsp;</a></span>extendedElements</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char const* MBIdBarcodeRecognizerResult::extendedElements[<a class="el" href="_barcode_element_key_8h.html#abe14eb9bfca2f891fc0c2c2a8e9a1588a32777b3e6f46997af4bb098f0a41e9f2">MB_BARCODE_ELEMENT_KEY_COUNT</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Document specific extended elements that contain all barcode fields in their original form.</p>
+<p>Currently this is only filled for AAMVACompliant documents.</p>
+<p>NOTE: Access to elements of this array should be done only through MBBarcodeElementKey. </p>
 
 </div>
 </div>

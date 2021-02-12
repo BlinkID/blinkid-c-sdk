@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.9.1</span>
+   &#160;<span id="projectnumber">version 5.10.0</span>
    </div>
   </td>
  </tr>
@@ -76,8 +76,8 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_driver_license_detailed_info_8h.html">Recognizer/BlinkID/Generic/Common/DriverLicenseDetailedInfo.h</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_export_8h.html">Recognizer/Export.h</a>&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;Recognizer/Types.h&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;Utils/Date.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_types_8h.html">Recognizer/Types.h</a>&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_date_8h.html">Utils/Date.h</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_m_b_v_i_z_result.html">   24</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_m_b_v_i_z_result.html">MBVIZResult</a></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
@@ -104,7 +104,7 @@ $(function() {
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="struct_m_b_v_i_z_result.html#a6522592c4c435cfc40e2768482104db7">   64</a></span>&#160;    <a class="code" href="struct_m_b_date.html">MBDate</a> <a class="code" href="struct_m_b_v_i_z_result.html#a6522592c4c435cfc40e2768482104db7">dateOfIssue</a>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="struct_m_b_v_i_z_result.html#a85add92aa357c7290472a5a877a5380d">   66</a></span>&#160;    <a class="code" href="struct_m_b_date.html">MBDate</a> <a class="code" href="struct_m_b_v_i_z_result.html#a85add92aa357c7290472a5a877a5380d">dateOfExpiry</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="struct_m_b_v_i_z_result.html#aaae5b26c204697c45dcef50e01d90778">   69</a></span>&#160;    MBBool <a class="code" href="struct_m_b_v_i_z_result.html#aaae5b26c204697c45dcef50e01d90778">dateOfExpiryPermanent</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="struct_m_b_v_i_z_result.html#aaae5b26c204697c45dcef50e01d90778">   69</a></span>&#160;    <a class="code" href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a> <a class="code" href="struct_m_b_v_i_z_result.html#aaae5b26c204697c45dcef50e01d90778">dateOfExpiryPermanent</a>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="struct_m_b_v_i_z_result.html#a01f629fa00e51fe55cd477a800b06f19">   72</a></span>&#160;    <span class="keywordtype">char</span> <span class="keyword">const</span> * <a class="code" href="struct_m_b_v_i_z_result.html#a01f629fa00e51fe55cd477a800b06f19">documentNumber</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="struct_m_b_v_i_z_result.html#aae37980dc4f7b6d0f7c34bc47cda90be">   74</a></span>&#160;    <span class="keywordtype">char</span> <span class="keyword">const</span> * <a class="code" href="struct_m_b_v_i_z_result.html#aae37980dc4f7b6d0f7c34bc47cda90be">personalIdNumber</a>;</div>
@@ -114,11 +114,13 @@ $(function() {
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="struct_m_b_v_i_z_result.html#a28ae0618ecadeb144a1533cf07a8b2ea">   82</a></span>&#160;    <span class="keywordtype">char</span> <span class="keyword">const</span> * <a class="code" href="struct_m_b_v_i_z_result.html#a28ae0618ecadeb144a1533cf07a8b2ea">issuingAuthority</a>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="struct_m_b_v_i_z_result.html#a9c335c67d938cd3818b9b258d25e5bb2">   85</a></span>&#160;    <a class="code" href="struct_m_b_driver_license_detailed_info.html">MBDriverLicenseDetailedInfo</a> <a class="code" href="struct_m_b_v_i_z_result.html#a9c335c67d938cd3818b9b258d25e5bb2">driverLicenseDetailedInfo</a>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="_v_i_z_result_8h.html#abfe839d741d23fb1be86bf30c4c339d5">   91</a></span>&#160;MB_EXPORTED_TYPE <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_m_b_v_i_z_result.html">MBVIZResult</a> <a class="code" href="struct_m_b_v_i_z_result.html">MBVIZResult</a>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="struct_m_b_v_i_z_result.html#aa8b5b5c5a427a95065dd0841c538af6a">   88</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_m_b_v_i_z_result.html#aa8b5b5c5a427a95065dd0841c538af6a">empty</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="_v_i_z_result_8h.html#abfe839d741d23fb1be86bf30c4c339d5">   94</a></span>&#160;MB_EXPORTED_TYPE <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_m_b_v_i_z_result.html">MBVIZResult</a> <a class="code" href="struct_m_b_v_i_z_result.html">MBVIZResult</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astruct_m_b_v_i_z_result_html_a9c335c67d938cd3818b9b258d25e5bb2"><div class="ttname"><a href="struct_m_b_v_i_z_result.html#a9c335c67d938cd3818b9b258d25e5bb2">MBVIZResult::driverLicenseDetailedInfo</a></div><div class="ttdeci">MBDriverLicenseDetailedInfo driverLicenseDetailedInfo</div><div class="ttdef"><b>Definition:</b> VIZResult.h:85</div></div>
 <div class="ttc" id="astruct_m_b_v_i_z_result_html_a4b9cb85dfb34f611ac0ecda6aa3e213d"><div class="ttname"><a href="struct_m_b_v_i_z_result.html#a4b9cb85dfb34f611ac0ecda6aa3e213d">MBVIZResult::placeOfBirth</a></div><div class="ttdeci">char const  * placeOfBirth</div><div class="ttdef"><b>Definition:</b> VIZResult.h:42</div></div>
@@ -136,7 +138,8 @@ $(function() {
 <div class="ttc" id="astruct_m_b_v_i_z_result_html_a0869e81895ea1f10cc7cf4dc33b3b2b6"><div class="ttname"><a href="struct_m_b_v_i_z_result.html#a0869e81895ea1f10cc7cf4dc33b3b2b6">MBVIZResult::additionalNameInformation</a></div><div class="ttdeci">char const  * additionalNameInformation</div><div class="ttdef"><b>Definition:</b> VIZResult.h:33</div></div>
 <div class="ttc" id="astruct_m_b_v_i_z_result_html_a3cb3a8bb58ce241884294742b2f64ea9"><div class="ttname"><a href="struct_m_b_v_i_z_result.html#a3cb3a8bb58ce241884294742b2f64ea9">MBVIZResult::address</a></div><div class="ttdeci">char const  * address</div><div class="ttdef"><b>Definition:</b> VIZResult.h:38</div></div>
 <div class="ttc" id="astruct_m_b_v_i_z_result_html_aae37980dc4f7b6d0f7c34bc47cda90be"><div class="ttname"><a href="struct_m_b_v_i_z_result.html#aae37980dc4f7b6d0f7c34bc47cda90be">MBVIZResult::personalIdNumber</a></div><div class="ttdeci">char const  * personalIdNumber</div><div class="ttdef"><b>Definition:</b> VIZResult.h:74</div></div>
-<div class="ttc" id="astruct_m_b_date_html"><div class="ttname"><a href="struct_m_b_date.html">MBDate</a></div><div class="ttdoc">Date structure which can hold date information returned by recognizers.</div><div class="ttdef"><b>Definition:</b> Date.h:27</div></div>
+<div class="ttc" id="astruct_m_b_date_html"><div class="ttname"><a href="struct_m_b_date.html">MBDate</a></div><div class="ttdoc">Date structure which can hold date information returned by recognizers.</div><div class="ttdef"><b>Definition:</b> Date.h:29</div></div>
+<div class="ttc" id="astruct_m_b_v_i_z_result_html_aa8b5b5c5a427a95065dd0841c538af6a"><div class="ttname"><a href="struct_m_b_v_i_z_result.html#aa8b5b5c5a427a95065dd0841c538af6a">MBVIZResult::empty</a></div><div class="ttdeci">int empty</div><div class="ttdef"><b>Definition:</b> VIZResult.h:88</div></div>
 <div class="ttc" id="astruct_m_b_v_i_z_result_html"><div class="ttname"><a href="struct_m_b_v_i_z_result.html">MBVIZResult</a></div><div class="ttdef"><b>Definition:</b> VIZResult.h:25</div></div>
 <div class="ttc" id="astruct_m_b_v_i_z_result_html_abb3b59edbbb46321e2576fd2da0dc352"><div class="ttname"><a href="struct_m_b_v_i_z_result.html#abb3b59edbbb46321e2576fd2da0dc352">MBVIZResult::additionalAddressInformation</a></div><div class="ttdeci">char const  * additionalAddressInformation</div><div class="ttdef"><b>Definition:</b> VIZResult.h:40</div></div>
 <div class="ttc" id="astruct_m_b_v_i_z_result_html_a42ef4f8cdb49de7fa2594593d6c0de77"><div class="ttname"><a href="struct_m_b_v_i_z_result.html#a42ef4f8cdb49de7fa2594593d6c0de77">MBVIZResult::additionalPersonalIdNumber</a></div><div class="ttdeci">char const  * additionalPersonalIdNumber</div><div class="ttdef"><b>Definition:</b> VIZResult.h:80</div></div>
@@ -146,6 +149,9 @@ $(function() {
 <div class="ttc" id="astruct_m_b_v_i_z_result_html_a524f5883a9be8cb99cac95005341ce82"><div class="ttname"><a href="struct_m_b_v_i_z_result.html#a524f5883a9be8cb99cac95005341ce82">MBVIZResult::lastName</a></div><div class="ttdeci">char const  * lastName</div><div class="ttdef"><b>Definition:</b> VIZResult.h:29</div></div>
 <div class="ttc" id="astruct_m_b_v_i_z_result_html_a6522592c4c435cfc40e2768482104db7"><div class="ttname"><a href="struct_m_b_v_i_z_result.html#a6522592c4c435cfc40e2768482104db7">MBVIZResult::dateOfIssue</a></div><div class="ttdeci">MBDate dateOfIssue</div><div class="ttdef"><b>Definition:</b> VIZResult.h:64</div></div>
 <div class="ttc" id="astruct_m_b_v_i_z_result_html_aac20f1ec984641d587f62fd8e0c385fa"><div class="ttname"><a href="struct_m_b_v_i_z_result.html#aac20f1ec984641d587f62fd8e0c385fa">MBVIZResult::employer</a></div><div class="ttdeci">char const  * employer</div><div class="ttdef"><b>Definition:</b> VIZResult.h:57</div></div>
+<div class="ttc" id="a_types_8h_html"><div class="ttname"><a href="_types_8h.html">Types.h</a></div></div>
+<div class="ttc" id="a_types_8h_html_a2f1df9511957661b7b39516b961df061"><div class="ttname"><a href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a></div><div class="ttdeci">unsigned char MBBool</div><div class="ttdoc">Boolean type for C SDK.</div><div class="ttdef"><b>Definition:</b> Types.h:20</div></div>
+<div class="ttc" id="a_date_8h_html"><div class="ttname"><a href="_date_8h.html">Date.h</a></div></div>
 <div class="ttc" id="astruct_m_b_v_i_z_result_html_a28ae0618ecadeb144a1533cf07a8b2ea"><div class="ttname"><a href="struct_m_b_v_i_z_result.html#a28ae0618ecadeb144a1533cf07a8b2ea">MBVIZResult::issuingAuthority</a></div><div class="ttdeci">char const  * issuingAuthority</div><div class="ttdef"><b>Definition:</b> VIZResult.h:82</div></div>
 <div class="ttc" id="astruct_m_b_v_i_z_result_html_a01f629fa00e51fe55cd477a800b06f19"><div class="ttname"><a href="struct_m_b_v_i_z_result.html#a01f629fa00e51fe55cd477a800b06f19">MBVIZResult::documentNumber</a></div><div class="ttdeci">char const  * documentNumber</div><div class="ttdef"><b>Definition:</b> VIZResult.h:72</div></div>
 <div class="ttc" id="a_driver_license_detailed_info_8h_html"><div class="ttname"><a href="_driver_license_detailed_info_8h.html">DriverLicenseDetailedInfo.h</a></div></div>
