@@ -51,7 +51,7 @@
 - We've added the missing `empty` field in `MBDate`, `MBBarcodeResult` and `MBVIZResult`
 - We've unified `MBBlinkIdRecognizerResult` and `MBBlinkIdCombinedRecognizerResult`
     - Common fields (contained in both of those structures) are now in the `MBBlinkIdRecognizerCommonResult` structure (field `common`)
-    - This helps with keeping BlinkIdRecognizer and BlinkIdCombinedRecognizer APIs in sy
+    - This helps with keeping BlinkIdRecognizer and BlinkIdCombinedRecognizer APIs in sync
 
 ## 5.9.1
 
