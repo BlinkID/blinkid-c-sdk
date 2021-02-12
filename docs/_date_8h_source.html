@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.9.1</span>
+   &#160;<span id="projectnumber">version 5.10.0</span>
    </div>
   </td>
  </tr>
@@ -70,41 +70,48 @@ $(function() {
 <div class="title">Date.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef UTILS_DATE_H_INCLUDED</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define UTILS_DATE_H_INCLUDED</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_export_8h.html">Recognizer/Export.h</a>&gt;</span></div>
+<a href="_date_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef UTILS_DATE_H_INCLUDED</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define UTILS_DATE_H_INCLUDED</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef _cplusplus</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_m_b_date.html">   26</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_m_b_date.html">MBDate</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_m_b_date.html#a31d340c81e16ee45e6f07b1bd97f4c07">   31</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_m_b_date.html#a31d340c81e16ee45e6f07b1bd97f4c07">day</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_m_b_date.html#a12403323cc744fa5eac2efcb19be5474">   35</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_m_b_date.html#a12403323cc744fa5eac2efcb19be5474">month</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct_m_b_date.html#ab72999a9d46aeb14edc2c224d49e4e74">   39</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_m_b_date.html#ab72999a9d46aeb14edc2c224d49e4e74">year</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_m_b_date.html#ad1386f4733997fa39f721f3832cda102">   43</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_m_b_date.html#ad1386f4733997fa39f721f3832cda102">successfullyParsed</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_m_b_date.html#ae7f9539a75e771e9629d9f1d4503f9dd">   48</a></span>&#160;    <span class="keywordtype">char</span> <span class="keyword">const</span> * <a class="code" href="struct_m_b_date.html#ae7f9539a75e771e9629d9f1d4503f9dd">originalString</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">typedef</span> MB_EXPORTED_TYPE <span class="keyword">struct </span><a class="code" href="struct_m_b_date.html">MBDate</a> <a class="code" href="struct_m_b_date.html">MBDate</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_export_8h.html">Recognizer/Export.h</a>&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifdef _cplusplus</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_m_b_date.html">   28</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_m_b_date.html">MBDate</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_m_b_date.html#a31d340c81e16ee45e6f07b1bd97f4c07">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_m_b_date.html#a31d340c81e16ee45e6f07b1bd97f4c07">day</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct_m_b_date.html#a12403323cc744fa5eac2efcb19be5474">   38</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_m_b_date.html#a12403323cc744fa5eac2efcb19be5474">month</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_m_b_date.html#ab72999a9d46aeb14edc2c224d49e4e74">   43</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_m_b_date.html#ab72999a9d46aeb14edc2c224d49e4e74">year</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_m_b_date.html#ad1386f4733997fa39f721f3832cda102">   48</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_m_b_date.html#ad1386f4733997fa39f721f3832cda102">successfullyParsed</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="struct_m_b_date.html#ae7f9539a75e771e9629d9f1d4503f9dd">   54</a></span>&#160;    <span class="keywordtype">char</span> <span class="keyword">const</span> * <a class="code" href="struct_m_b_date.html#ae7f9539a75e771e9629d9f1d4503f9dd">originalString</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#ifdef _cplusplus</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="struct_m_b_date.html#a0df06ce48204c3e9bd1df93105a2955d">   57</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_m_b_date.html#a0df06ce48204c3e9bd1df93105a2955d">empty</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="_date_8h.html#a386f0c7503b1c12694d1ef3a5e1b6a84">   63</a></span>&#160;<span class="keyword">typedef</span> MB_EXPORTED_TYPE <span class="keyword">struct </span><a class="code" href="struct_m_b_date.html">MBDate</a> <a class="code" href="struct_m_b_date.html">MBDate</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#ifdef _cplusplus</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astruct_m_b_date_html"><div class="ttname"><a href="struct_m_b_date.html">MBDate</a></div><div class="ttdoc">Date structure which can hold date information returned by recognizers.</div><div class="ttdef"><b>Definition:</b> Date.h:27</div></div>
+<div class="ttc" id="astruct_m_b_date_html"><div class="ttname"><a href="struct_m_b_date.html">MBDate</a></div><div class="ttdoc">Date structure which can hold date information returned by recognizers.</div><div class="ttdef"><b>Definition:</b> Date.h:29</div></div>
+<div class="ttc" id="astruct_m_b_date_html_a0df06ce48204c3e9bd1df93105a2955d"><div class="ttname"><a href="struct_m_b_date.html#a0df06ce48204c3e9bd1df93105a2955d">MBDate::empty</a></div><div class="ttdeci">int empty</div><div class="ttdef"><b>Definition:</b> Date.h:57</div></div>
 <div class="ttc" id="a_export_8h_html"><div class="ttname"><a href="_export_8h.html">Export.h</a></div></div>
-<div class="ttc" id="astruct_m_b_date_html_a31d340c81e16ee45e6f07b1bd97f4c07"><div class="ttname"><a href="struct_m_b_date.html#a31d340c81e16ee45e6f07b1bd97f4c07">MBDate::day</a></div><div class="ttdeci">int day</div><div class="ttdef"><b>Definition:</b> Date.h:31</div></div>
-<div class="ttc" id="astruct_m_b_date_html_ad1386f4733997fa39f721f3832cda102"><div class="ttname"><a href="struct_m_b_date.html#ad1386f4733997fa39f721f3832cda102">MBDate::successfullyParsed</a></div><div class="ttdeci">int successfullyParsed</div><div class="ttdef"><b>Definition:</b> Date.h:43</div></div>
-<div class="ttc" id="astruct_m_b_date_html_ae7f9539a75e771e9629d9f1d4503f9dd"><div class="ttname"><a href="struct_m_b_date.html#ae7f9539a75e771e9629d9f1d4503f9dd">MBDate::originalString</a></div><div class="ttdeci">char const  * originalString</div><div class="ttdef"><b>Definition:</b> Date.h:48</div></div>
-<div class="ttc" id="astruct_m_b_date_html_a12403323cc744fa5eac2efcb19be5474"><div class="ttname"><a href="struct_m_b_date.html#a12403323cc744fa5eac2efcb19be5474">MBDate::month</a></div><div class="ttdeci">int month</div><div class="ttdef"><b>Definition:</b> Date.h:35</div></div>
-<div class="ttc" id="astruct_m_b_date_html_ab72999a9d46aeb14edc2c224d49e4e74"><div class="ttname"><a href="struct_m_b_date.html#ab72999a9d46aeb14edc2c224d49e4e74">MBDate::year</a></div><div class="ttdeci">int year</div><div class="ttdef"><b>Definition:</b> Date.h:39</div></div>
+<div class="ttc" id="astruct_m_b_date_html_a31d340c81e16ee45e6f07b1bd97f4c07"><div class="ttname"><a href="struct_m_b_date.html#a31d340c81e16ee45e6f07b1bd97f4c07">MBDate::day</a></div><div class="ttdeci">int day</div><div class="ttdef"><b>Definition:</b> Date.h:33</div></div>
+<div class="ttc" id="astruct_m_b_date_html_ad1386f4733997fa39f721f3832cda102"><div class="ttname"><a href="struct_m_b_date.html#ad1386f4733997fa39f721f3832cda102">MBDate::successfullyParsed</a></div><div class="ttdeci">int successfullyParsed</div><div class="ttdef"><b>Definition:</b> Date.h:48</div></div>
+<div class="ttc" id="astruct_m_b_date_html_ae7f9539a75e771e9629d9f1d4503f9dd"><div class="ttname"><a href="struct_m_b_date.html#ae7f9539a75e771e9629d9f1d4503f9dd">MBDate::originalString</a></div><div class="ttdeci">char const  * originalString</div><div class="ttdef"><b>Definition:</b> Date.h:54</div></div>
+<div class="ttc" id="astruct_m_b_date_html_a12403323cc744fa5eac2efcb19be5474"><div class="ttname"><a href="struct_m_b_date.html#a12403323cc744fa5eac2efcb19be5474">MBDate::month</a></div><div class="ttdeci">int month</div><div class="ttdef"><b>Definition:</b> Date.h:38</div></div>
+<div class="ttc" id="astruct_m_b_date_html_ab72999a9d46aeb14edc2c224d49e4e74"><div class="ttname"><a href="struct_m_b_date.html#ab72999a9d46aeb14edc2c224d49e4e74">MBDate::year</a></div><div class="ttdeci">int year</div><div class="ttdef"><b>Definition:</b> Date.h:43</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.19

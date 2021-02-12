@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['image_5forientation_5fno_5frotation_758',['IMAGE_ORIENTATION_NO_ROTATION',['../_recognizer_image_8h.html#af5ef4ed34aa18118ba3c8605f4c4305fa12d7057c369e219f3b422a016b79793f',1,'RecognizerImage.h']]],
-  ['image_5forientation_5frotated_5f180_759',['IMAGE_ORIENTATION_ROTATED_180',['../_recognizer_image_8h.html#af5ef4ed34aa18118ba3c8605f4c4305faa0c261e50ddc3810637c3ac081273377',1,'RecognizerImage.h']]],
-  ['image_5forientation_5frotated_5fleft_5f90_760',['IMAGE_ORIENTATION_ROTATED_LEFT_90',['../_recognizer_image_8h.html#af5ef4ed34aa18118ba3c8605f4c4305faca94a45557b09bad87f1ed32d5d86421',1,'RecognizerImage.h']]],
-  ['image_5forientation_5frotated_5fright_5f90_761',['IMAGE_ORIENTATION_ROTATED_RIGHT_90',['../_recognizer_image_8h.html#af5ef4ed34aa18118ba3c8605f4c4305faeb848124edd0130339e176ab0f3fb7c5',1,'RecognizerImage.h']]]
+  ['show_5fimage_5ftype_5fdewarped_1038',['SHOW_IMAGE_TYPE_DEWARPED',['../_recognizer_runner_8h.html#af6b3bb72748cbe49659e8bbc61c13d9da94800126c9d7cdfc166747d75ead8a7e',1,'RecognizerRunner.h']]],
+  ['show_5fimage_5ftype_5foriginal_1039',['SHOW_IMAGE_TYPE_ORIGINAL',['../_recognizer_runner_8h.html#af6b3bb72748cbe49659e8bbc61c13d9da9b43c16ea11e1595a98b808781eb4bca',1,'RecognizerRunner.h']]],
+  ['show_5fimage_5ftype_5fsuccessful_5fscan_1040',['SHOW_IMAGE_TYPE_SUCCESSFUL_SCAN',['../_recognizer_runner_8h.html#af6b3bb72748cbe49659e8bbc61c13d9dacaca276639928e84c801ff1b42d835a6',1,'RecognizerRunner.h']]]
 ];

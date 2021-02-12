@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.9.1</span>
+   &#160;<span id="projectnumber">version 5.10.0</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="_class_info_8h_source.html">Recognizer/BlinkID/Generic/Common/ClassInfo.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_driver_license_detailed_info_8h_source.html">Recognizer/BlinkID/Generic/Common/DriverLicenseDetailedInfo.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_image_analysis_result_8h_source.html">Recognizer/BlinkID/Generic/Common/ImageAnalysisResult.h</a>&gt;</code><br />
-<code>#include &lt;Recognizer/BlinkID/Generic/Common/ImageOptions.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="_image_options_8h_source.html">Recognizer/BlinkID/Generic/Common/ImageOptions.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_image_result_8h_source.html">Recognizer/BlinkID/Generic/Common/ImageResult.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_processing_status_8h_source.html">Recognizer/BlinkID/Generic/Common/ProcessingStatus.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_recognition_mode_8h_source.html">Recognizer/BlinkID/Generic/Common/RecognitionMode.h</a>&gt;</code><br />
@@ -88,8 +88,8 @@ $(function() {
 <code>#include &lt;<a class="el" href="_export_8h_source.html">Recognizer/Export.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_recognizer_8h_source.html">Recognizer/Recognizer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_recognizer_error_8h_source.html">Recognizer/RecognizerError.h</a>&gt;</code><br />
-<code>#include &lt;Recognizer/Types.h&gt;</code><br />
-<code>#include &lt;Utils/Date.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="_types_8h_source.html">Recognizer/Types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_date_8h_source.html">Utils/Date.h</a>&gt;</code><br />
 </div>
 <p><a href="_id_recognizer_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -97,6 +97,9 @@ $(function() {
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_blink_id_recognizer_settings.html">MBBlinkIdRecognizerSettings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings for configuring <a class="el" href="struct_m_b_blink_id_recognizer.html" title="A recognizer that can scan and parse identity cards.">MBBlinkIdRecognizer</a>.  <a href="struct_m_b_blink_id_recognizer_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_blink_id_recognizer_common_result.html">MBBlinkIdRecognizerCommonResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure containing common fields for both result of the <a class="el" href="struct_m_b_blink_id_recognizer.html" title="A recognizer that can scan and parse identity cards.">MBBlinkIdRecognizer</a> and <a class="el" href="struct_m_b_blink_id_combined_recognizer.html" title="A recognizer that can scan and parse identity cards.">MBBlinkIdCombinedRecognizer</a>.  <a href="struct_m_b_blink_id_recognizer_common_result.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_blink_id_recognizer_result.html">MBBlinkIdRecognizerResult</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of the <a class="el" href="struct_m_b_blink_id_recognizer.html" title="A recognizer that can scan and parse identity cards.">MBBlinkIdRecognizer</a>.  <a href="struct_m_b_blink_id_recognizer_result.html#details">More...</a><br /></td></tr>
@@ -108,6 +111,10 @@ Typedefs</h2></td></tr>
 typedef typedefMB_EXPORTED_TYPE struct <a class="el" href="struct_m_b_blink_id_recognizer_settings.html">MBBlinkIdRecognizerSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_id_recognizer_8h.html#a8b380095a10ea3f1cc06c20f0ed91597">MBBlinkIdRecognizerSettings</a></td></tr>
 <tr class="memdesc:a8b380095a10ea3f1cc06c20f0ed91597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for the <a class="el" href="struct_m_b_blink_id_recognizer_settings.html" title="Settings for configuring MBBlinkIdRecognizer.">MBBlinkIdRecognizerSettings</a> structure. <br /></td></tr>
 <tr class="separator:a8b380095a10ea3f1cc06c20f0ed91597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a820ca18ee15a9a116841f6cda13635fb"><td class="memItemLeft" align="right" valign="top"><a id="a820ca18ee15a9a116841f6cda13635fb"></a>
+typedef typedefMB_EXPORTED_TYPE struct <a class="el" href="struct_m_b_blink_id_recognizer_common_result.html">MBBlinkIdRecognizerCommonResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_id_recognizer_8h.html#a820ca18ee15a9a116841f6cda13635fb">MBBlinkIdRecognizerCommonResult</a></td></tr>
+<tr class="memdesc:a820ca18ee15a9a116841f6cda13635fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for the <a class="el" href="struct_m_b_blink_id_recognizer_common_result.html" title="Structure containing common fields for both result of the MBBlinkIdRecognizer and MBBlinkIdCombinedRe...">MBBlinkIdRecognizerCommonResult</a> structure. <br /></td></tr>
+<tr class="separator:a820ca18ee15a9a116841f6cda13635fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9b71132d79d6f2ada0cf74f0ac55c33"><td class="memItemLeft" align="right" valign="top"><a id="ad9b71132d79d6f2ada0cf74f0ac55c33"></a>
 typedef typedefMB_EXPORTED_TYPE struct <a class="el" href="struct_m_b_blink_id_recognizer_result.html">MBBlinkIdRecognizerResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_id_recognizer_8h.html#ad9b71132d79d6f2ada0cf74f0ac55c33">MBBlinkIdRecognizerResult</a></td></tr>
 <tr class="memdesc:ad9b71132d79d6f2ada0cf74f0ac55c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for the GenericIDRecognizerResult structure. <br /></td></tr>

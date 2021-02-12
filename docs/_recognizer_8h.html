@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.9.1</span>
+   &#160;<span id="projectnumber">version 5.10.0</span>
    </div>
   </td>
  </tr>
@@ -100,10 +100,10 @@ typedef typedefMB_EXPORTED_TYPE struct <a class="el" href="struct_m_b_base_recog
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a5ceb086a453c18e3da30aabbb8406bc0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0">MBRecognizerResultState</a> { <a class="el" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a79517c9413859e87ae94af11c39d6260">RECOGNIZER_RESULT_STATE_EMPTY</a>, 
-<a class="el" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a3b0fe838f993433118214ad78f576aea">RECOGNIZER_RESULT_STATE_UNCERTAIN</a>, 
-<a class="el" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a24451877276e44b45cde575035dd7624">RECOGNIZER_RESULT_STATE_VALID</a>, 
-<a class="el" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0a774bba555a6ffe3cce0c5044f195d471">RECOGNIZER_RESULT_STATE_STAGE_VALID</a>
+<tr class="memitem:a5ceb086a453c18e3da30aabbb8406bc0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0">MBRecognizerResultState</a> { <a class="el" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0abff361f986231a47b21b3ffc48789ce5">MB_RECOGNIZER_RESULT_STATE_EMPTY</a>, 
+<a class="el" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0aed79e2b77c06126fb897ed0a299d26e8">MB_RECOGNIZER_RESULT_STATE_UNCERTAIN</a>, 
+<a class="el" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0acf080e588b436871bfe3d009b2ce8bb3">MB_RECOGNIZER_RESULT_STATE_VALID</a>, 
+<a class="el" href="_recognizer_8h.html#a5ceb086a453c18e3da30aabbb8406bc0aade69f578010a15cf92fa3166d4d1ce6">MB_RECOGNIZER_RESULT_STATE_STAGE_VALID</a>
  }</td></tr>
 <tr class="separator:a5ceb086a453c18e3da30aabbb8406bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -142,13 +142,13 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Possible states of Recognizer's Result. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5ceb086a453c18e3da30aabbb8406bc0a79517c9413859e87ae94af11c39d6260"></a>RECOGNIZER_RESULT_STATE_EMPTY&#160;</td><td class="fielddoc"><p>Indicates that Recognizer's result is empty </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5ceb086a453c18e3da30aabbb8406bc0abff361f986231a47b21b3ffc48789ce5"></a>MB_RECOGNIZER_RESULT_STATE_EMPTY&#160;</td><td class="fielddoc"><p>Indicates that Recognizer's result is empty </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a5ceb086a453c18e3da30aabbb8406bc0a3b0fe838f993433118214ad78f576aea"></a>RECOGNIZER_RESULT_STATE_UNCERTAIN&#160;</td><td class="fielddoc"><p>Indicates that Recognizer's result is uncertain, i.e. some data exists in it, but some data may be missing or be incomplete </p>
+<tr><td class="fieldname"><a id="a5ceb086a453c18e3da30aabbb8406bc0aed79e2b77c06126fb897ed0a299d26e8"></a>MB_RECOGNIZER_RESULT_STATE_UNCERTAIN&#160;</td><td class="fielddoc"><p>Indicates that Recognizer's result is uncertain, i.e. some data exists in it, but some data may be missing or be incomplete </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a5ceb086a453c18e3da30aabbb8406bc0a24451877276e44b45cde575035dd7624"></a>RECOGNIZER_RESULT_STATE_VALID&#160;</td><td class="fielddoc"><p>Indicates that Recognizer's result is valid, i.e. all required data is present. </p>
+<tr><td class="fieldname"><a id="a5ceb086a453c18e3da30aabbb8406bc0acf080e588b436871bfe3d009b2ce8bb3"></a>MB_RECOGNIZER_RESULT_STATE_VALID&#160;</td><td class="fielddoc"><p>Indicates that Recognizer's result is valid, i.e. all required data is present. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a5ceb086a453c18e3da30aabbb8406bc0a774bba555a6ffe3cce0c5044f195d471"></a>RECOGNIZER_RESULT_STATE_STAGE_VALID&#160;</td><td class="fielddoc"><p>All mandatory information from one side of the document was extracted. </p>
+<tr><td class="fieldname"><a id="a5ceb086a453c18e3da30aabbb8406bc0aade69f578010a15cf92fa3166d4d1ce6"></a>MB_RECOGNIZER_RESULT_STATE_STAGE_VALID&#160;</td><td class="fielddoc"><p>All mandatory information from one side of the document was extracted. </p>
 </td></tr>
 </table>
 

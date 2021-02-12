@@ -1,5 +1,58 @@
 # Release notes
 
+## 5.10.0
+​
+**Newly supported identity documents**
+​
+*   Saudi Arabia - DL (front)
+*   Saudi Arabia - Resident ID (front)
+​
+### Changes to the BlinkId(Combined)Recognizer:
+​
+*   We're now able to extract the additional address on Hungary Address Cards
+*   We've improved data extraction through the MRZ:
+    *   We now return the document type through `MBClassInfo`, regardless of the `MBRecognitionMode` you're using (`MB_RECOGNITION_MODE_MRZ_ID`, `MB_RECOGNITION_MODE_MRZ_PASSPORT` or `MB_RECOGNITION_MODE_MRZ_VISA`).
+    *   This means you can now use `classFilter` to filter these documents by their type.
+    *   We now return the document number on Nigeria IDs complete with its check digit.
+    *   We now support Italy Residence Permits with a *CR* document code.
+*   We've extended the `MBClassInfo` structure with helper methods so you can filter documents by country more easily:
+    *   Use `countryName`, `isoNumericCountryCode`, `isoAlpha2CountryCode` and `isoAlpha3CountryCode` to get the full country names or their representative codes defined by [ISO](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
+*   We've extended the `MBBarcodeResult` structure with `extendedElements`
+    *   You can find all data from AAMVA-compliant barcodes under their respective [BarcodeElementKey](https://blinkid.github.io/blinkid-c-sdk/_barcode_element_key_8h.html) in the [extendedElements](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_barcode_result.html#ac00661f60071ab1b0d304556c397828d) array
+    *   For a full list of keys please see [here](https://blinkid.github.io/blinkid-c-sdk/_barcode_element_key_8h.html#abe14eb9bfca2f891fc0c2c2a8e9a1588)
+*   We've added another `MBProcessingStatus` called `MB_PROCESSING_STATUS_AWAITING_OTHER_SIDE`
+    *   This status is triggered once BlinkID has finished with the first side of a document and expects the other side, too.
+*   We're now able to extract the date of birth from the CURP field on Mexico Voter IDs
+*   We've added a new recognition mode for recognizing still images of documents that have already been cropped:
+	*   Set the `scanCroppedDocumentImage` to `MB_TRUE` when you're feeding BlinkID images of documents that have already been cropped and don't require detection.
+	*   Keep in mind that this setting won't work on document images that haven't been properly cropped.
+​
+### Changes to the IdBarcodeRecognizer:
+​
+*   We've extended the results with `extendedElements`
+    *   You can find all data from AAMVA-compliant barcodes under their respective [BarcodeElementKey](https://blinkid.github.io/blinkid-c-sdk/_barcode_element_key_8h.html) in the [extendedElements](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_id_barcode_recognizer_result.html#ab27e73c59fd636cb0a89a7ee4d09fb0e) array
+    *   For a full list of keys please see [here](https://blinkid.github.io/blinkid-c-sdk/_barcode_element_key_8h.html#abe14eb9bfca2f891fc0c2c2a8e9a1588)
+​
+### New features
+​
+- We've added support for ARM-based Macs
+    - The MacOS binary is now a fat binary, containing Intel x64 and ARM64 slices
+    - The iOS binary is now packaged as a XCFramework containing slices for device (armv7 + arm64), simulator (arm64 + x86_64 + i386) and Mac Catalyst (arm64 + x86_64)
+​
+### Fixes
+​
+- We've increased the time before a connection timeout is declared, while obtaining server-side license permission or reporting usage statistics
+- We've ensured the `barcodeData` field is filled for `IDBarcodeRecognizer`, `BlinkIdRecognizer` and `BlinkIdCombinedRecognizer`
+- We're now correctly initializing the `blurred` field in `MBImageAnalysisResult` (it was always uninitialized)
+​
+### Minor API changes
+​
+- We've fixed the naming prefix in `MBBarcodeType`, `MBRecognizerErrorStatus`, `MBMRTDDocumentType`, `MBDataMatch`, `MBRecognizerResultState`, `MBMRTDDocumentType`, `MBRawImageType` and `MBImageOrientation` enums
+- We've added the missing `empty` field in `MBDate`, `MBBarcodeResult` and `MBVIZResult`
+- We've unified `MBBlinkIdRecognizerResult` and `MBBlinkIdCombinedRecognizerResult`
+    - Common fields (contained in both of those structures) are now in the `MBBlinkIdRecognizerCommonResult` structure (field `common`)
+    - This helps with keeping BlinkIdRecognizer and BlinkIdCombinedRecognizer APIs in sy
+
 ## 5.9.1
 
 - fix implicit resetting of recognizers when using `recognizerRunnerRecognizeFromImage` for still images
