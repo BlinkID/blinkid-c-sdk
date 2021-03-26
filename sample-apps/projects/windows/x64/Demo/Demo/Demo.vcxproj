@@ -90,7 +90,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>LICENSEE="test";LICENSE_KEY="sRwAAAMEdGVzdFS3yg5yTcUzoLqiiS4gVxrsVpbSRwNQDfgPLVGnrZwSSAaASfwpNsMe26gZWAE6jjlSyjuhJ8c+Bkij81PBUM2cusS4Rz7ybUvpKZu2iphr7cASDz5/aracdXq9ajejYIxDAU4QZMdRHOEI0WAAYzLsgF//P/PxxH2DJYNdK6bWjBjFyL9TQNG6cl0S/SFgoIRoY4wUzzlWVxYzhX0KSokt8fg2hHvia5u6O4KBBkq7zuapKv26E4eoW9NhUllb/aTR8k5FulVXcfEWWp0kjLWXNVx1ktPh3+SV4bp6VKskm6JQ/rjYB1KolUOQmrXMZV6KpyQFkeMi";NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LICENSEE="test";LICENSE_KEY="sRwAAAMEdGVzdFS3yg5yTcUzoLqiiSqAUxpUs4oWbMHGBvhQTkwGMbqKnk7n4tIJrZkrv1YdfR859CFPvSyikyBVdU6KEYePN103WzIMZVT4BqtQQLcQP1sVplbMfSbSQ0YTnMIH0tSajlomHSdIDdCF6UME8+51ceke1RWH2J6W4MOeG4/2T/boVa56BUpb2hm+wDcYPSA9FlqIs7B0BkQ3io2j+wdcFihr2l2LyrhQZ8uh+wa6KdC6inMo25VQYTuChvShLPBXf9a1rqLi5kjMElME1XqzLEFLvqk1bQ8d2nCBTy80rrA2+pnDRaV+PjJN/55cIloFwGOFRojxEyvT0a3GiRRdbcAmCA==";NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>..\..\..\..\..\..\include;..\..\..\..\..\src\utils\windows;..\..\..\..\..\src\utils;</AdditionalIncludeDirectories>
@@ -127,7 +127,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>LICENSEE="test";LICENSE_KEY="sRwAAAMEdGVzdFS3yg5yTcUzoLqiiS4gVxrsVpbSRwNQDfgPLVGnrZwSSAaASfwpNsMe26gZWAE6jjlSyjuhJ8c+Bkij81PBUM2cusS4Rz7ybUvpKZu2iphr7cASDz5/aracdXq9ajejYIxDAU4QZMdRHOEI0WAAYzLsgF//P/PxxH2DJYNdK6bWjBjFyL9TQNG6cl0S/SFgoIRoY4wUzzlWVxYzhX0KSokt8fg2hHvia5u6O4KBBkq7zuapKv26E4eoW9NhUllb/aTR8k5FulVXcfEWWp0kjLWXNVx1ktPh3+SV4bp6VKskm6JQ/rjYB1KolUOQmrXMZV6KpyQFkeMi";_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LICENSEE="test";LICENSE_KEY="sRwAAAMEdGVzdFS3yg5yTcUzoLqiiSqAUxpUs4oWbMHGBvhQTkwGMbqKnk7n4tIJrZkrv1YdfR859CFPvSyikyBVdU6KEYePN103WzIMZVT4BqtQQLcQP1sVplbMfSbSQ0YTnMIH0tSajlomHSdIDdCF6UME8+51ceke1RWH2J6W4MOeG4/2T/boVa56BUpb2hm+wDcYPSA9FlqIs7B0BkQ3io2j+wdcFihr2l2LyrhQZ8uh+wa6KdC6inMo25VQYTuChvShLPBXf9a1rqLi5kjMElME1XqzLEFLvqk1bQ8d2nCBTy80rrA2+pnDRaV+PjJN/55cIloFwGOFRojxEyvT0a3GiRRdbcAmCA==";_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>..\..\..\..\..\..\include;..\..\..\..\..\src\utils\windows;..\..\..\..\..\src\utils;</AdditionalIncludeDirectories>
