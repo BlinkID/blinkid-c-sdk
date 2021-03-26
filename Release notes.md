@@ -1,5 +1,159 @@
 # Release notes
 
+## 5.11.0
+
+### New documents added to BlinkID(Combined)Recognizer:
+#### Europe
+- Albania - Driver Card (front only)
+- Albania - Professional DL (front only)
+- Belarus - Driving Licence (front only, beta)
+- Belgium - Minors ID (beta)
+- Czechia - Residence Permit
+- Finland - Alien ID
+- Finland - Residence Permit (beta)
+- Georgia - Driving Licence (front only)
+- Greece - Residence Permit
+- Ireland - Passport Card (beta)
+- Ireland - Public Services Card (beta)
+- Kosovo - Driving Licence (front only, beta)
+- Latvia - Alien ID
+- Luxembourg - ID Card
+- Moldova - ID Card (beta)
+- North Macedonia - Driving Licence (front only)
+- North Macedonia - ID Card
+- Poland - Passport (beta)
+- Slovenia - Residence Permit (beta)
+- Spain - Alien ID
+- UK - Passport (beta)
+
+#### MEA
+- Algeria - Driving Licence
+- Burkina Faso - ID Card (front only)
+- Cameroon - ID Card (beta)
+- Democratic Republic Of The Congo - Driving Licence (front only, beta)
+- Egypt - Driving Licence (beta)
+- Ghana - ID Card (beta)
+- Iraq - ID Card (beta)
+- Ivory Coast - Driving Licence (front only, beta)
+- Ivory Coast - ID Card
+- Lebanon - ID Card (beta)
+- Morocco - Driving Licence
+- Mozambique - Driving Licence (front only, beta)
+- Oman - Driving Licence (beta)
+- Rwanda - ID Card (front only)
+- Senegal - ID Card
+- Tanzania - Driving Licence (front only, beta)
+- Tunisia - Driving Licence (front only)
+- Uganda - Driving Licence (front only, beta)
+
+#### Latin America & the Caribbean
+- Argentina - Alien ID (beta)
+- Bahamas - ID Card (front only, beta)
+- Bolivia - Minors ID (beta)
+- Jamaica - Driving Licence
+- Mexico - Residence Permit (beta)
+- Mexico - Chiapas - Driving Licence (front only)
+- Mexico - Coahuila - Driving Licence (beta)
+- Mexico - Durango - Driving Licence (front only, beta)
+- Mexico - Guerrero-cocula - Driving Licence (beta)
+- Mexico - Guerrero-juchitan - Driving Licence (beta)
+- Mexico - Guerrero-tepecoacuilco - Driving Licence (front only, beta)
+- Mexico - Guerrero-tlacoapa - Driving Licence (front only, beta)
+- Mexico - Hidalgo - Driving Licence
+- Mexico - Mexico - Driving Licence (beta)
+- Mexico - Morelos - Driving Licence (front only)
+- Mexico - Oaxaca - Driving Licence
+- Mexico - Puebla - Driving Licence (front only, beta)
+- Mexico - San Luis Potosi - Driving Licence (front only)
+- Mexico - Sinaloa - Driving Licence (front only, beta)
+- Mexico - Sonora - Driving Licence (beta)
+- Mexico - Tabasco - Driving Licence (beta)
+- Mexico - Yucatan - Driving Licence (beta)
+- Mexico - Zacatecas - Driving Licence (beta)
+- Panama - Temporary Residence Permit (beta)
+- Peru - Minors ID (beta)
+- Trinidad And Tobago - Driving Licence (front only, beta)
+- Trinidad And Tobago - ID Card
+
+#### Oceania
+- Australia - South Australia - Proof Of Age Card (front only, beta)
+
+#### Asia
+- Armenia - ID Card
+- Bangladesh - Driving Licence (beta)
+- Cambodia - Driving Licence (front only, beta)
+- India - Gujarat - Driving Licence (front only, beta)
+- India - Karnataka - Driving Licence (front only, beta)
+- India - Kerala - Driving Licence (beta)
+- India - Madhya Pradesh - Driving Licence (front only, beta)
+- India - Maharashtra - Driving Licence (front only, beta)
+- India - Punjab - Driving Licence (front only, beta)
+- India - Tamil Nadu - Driving Licence (beta)
+- Kyrgyzstan - ID Card
+- Malaysia - Mypolis (beta)
+- Malaysia - Refugee ID (front only)
+- Myanmar - Driving Licence (beta)
+- Pakistan - Punjab - Driving Licence (front only, beta)
+- Sri Lanka - Driving Licence (front only)
+- Thailand - Alien ID (front only)
+- Thailand - Driving Licence (beta)
+- Uzbekistan - Driving Licence (front only, beta)
+
+#### Northern America
+- Canada - Tribal ID (beta)
+- Canada - Nova Scotia - ID Card (beta)
+- Canada - Saskatchewan - ID Card (beta)
+- USA - Border Crossing Card (front only)
+- USA - Global Entry Card (beta)
+- USA - Nexus Card (beta)
+- USA - Veteran ID (front only)
+- USA - Work Permit
+- USA - Mississippi - ID Card (beta)
+- USA - Montana - ID Card
+- USA - New Mexico - ID Card (beta)
+- USA - Wisconsin - ID Card (beta)
+
+#### Back side support added:
+- Hungary - Residence Permit
+- Luxembourg - Residence Permit (no longer beta)
+- Mauritius - ID Card
+- Colombia - Alien ID (no longer beta)
+- Mexico - Baja California - Driving Licence
+- Mexico - Chihuahua - Driving Licence
+- Mexico - Guanajuato - Driving Licence
+- Mexico - Michoacan - Driving Licence
+- Malaysia - MyKid
+- Malaysia - MyPR
+
+#### No longer beta:
+- Albania - Passport
+- Malta - Residence Permit
+- Switzerland - Residence Permit
+- Bolivia - Driving Licence
+- Chile - Passport
+- El Salvador - ID Card
+- Peru - ID Card
+- Singapore - S Pass (front only)
+
+### Changes to the BlinkId(Combined)Recognizer:
+- We enabled retrieving the face image and cropped document image on all documents with AAMVA-compliant barcodes. This behavior activates the `MB_RECOGNITION_MODE_BARCODE_ID` `MBRecognitionMode`. You can opt-out of this behavior by setting `enableBarcodeId` to `MB_FALSE` in the `MBRecognitionModeFilter`.
+	- This enables scanning US driver licenses and IDs on which OCR isn't [supported](https://github.com/BlinkID/blinkid-c-sdk/blob/master/BlinkIdRecognizer.md). Use this new recognition mode to extract:
+		- Face image from the front side
+		- Barcode data from the back side
+		- Cropped document images for both sides.
+- We've improved data extraction through the MRZ:
+	- We now allow standard M/F values for gender on Mexican documents (along with localized H/M values)
+- We're now converting dates to the Gregorian calendar:
+	- On Taiwan documents with ROC calendar dates
+	- On Saudi documents with Islamic calendar dates
+- We're now filling all date fields when dates are written in a 'partial' form (year only or month-year only):
+	- Date of issue will be converted to the first day of the (first) month
+		- E.g. '1999' will be converted to '01.01.1999.'
+		- E.g. '03.1999.' will be converted to '01.03.1999.'
+	- Date of expiry will be converted to the last day of the (last) month
+		- E.g. '1999' will be converted to '31.12.1999.'
+		- E.g. '03.1999.' will be converted to '31.03.1999.'
+
 ## 5.10.0
 ​
 **Newly supported identity documents**

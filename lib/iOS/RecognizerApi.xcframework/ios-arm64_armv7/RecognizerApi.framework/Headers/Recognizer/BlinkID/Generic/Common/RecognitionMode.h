@@ -38,8 +38,11 @@ enum MBRecognitionMode
     /** Detailed document recognition. */
     MB_RECOGNITION_MODE_FULL_RECOGNITION = 5,
 
+    /** Recognition of barcode document. */
+    MB_RECOGNITION_MODE_BARCODE_ID       = 6,
+
     /** Number of possible values */
-    MB_RECOGNITION_MODE_COUNT            = 6
+    MB_RECOGNITION_MODE_COUNT            = 7
 };
 
 /**

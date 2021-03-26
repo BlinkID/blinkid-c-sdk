@@ -145,11 +145,6 @@ struct MBBarcodeRecognizerSettings
 };
 
 /**
- * @brief Typedef for MBBarcodeRecognizerSettings structure.
- */
-MB_EXPORTED_TYPE typedef struct MBBarcodeRecognizerSettings MBBarcodeRecognizerSettings;
-
-/**
  * @struct MBBarcodeRecognizerResult
  * @brief A result that can be obtained from MBBarcodeRecognizer.
  */
