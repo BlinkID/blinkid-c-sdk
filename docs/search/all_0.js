@@ -10,10 +10,11 @@ var searchData=
   ['allowblurfilter_7',['allowBlurFilter',['../struct_m_b_blink_id_recognizer_settings.html#a5cea8e309d433ab05c046b18aafb663e',1,'MBBlinkIdRecognizerSettings']]],
   ['allowmultipleresults_8',['allowMultipleResults',['../struct_m_b_recognizer_runner_settings.html#a09034aebf6ff97ae5f8b66c31f9a6432',1,'MBRecognizerRunnerSettings']]],
   ['allowsignature_9',['allowSignature',['../struct_m_b_blink_id_combined_recognizer_settings.html#aa80fba5d8ab5a4df6d690d9ab45b4907',1,'MBBlinkIdCombinedRecognizerSettings']]],
-  ['allowunparsedmrzresults_10',['allowUnparsedMrzResults',['../struct_m_b_blink_id_recognizer_settings.html#ab9189847a46310adfdec5a84a32f4404',1,'MBBlinkIdRecognizerSettings']]],
-  ['allowunverifiedmrzresults_11',['allowUnverifiedMrzResults',['../struct_m_b_blink_id_recognizer_settings.html#afddc98c65082e2775236d46dd8837dc9',1,'MBBlinkIdRecognizerSettings']]],
-  ['anonymizationmode_12',['anonymizationMode',['../struct_m_b_blink_id_recognizer_settings.html#a7380f9f50db2019a1585cc64a828f54e',1,'MBBlinkIdRecognizerSettings']]],
-  ['anonymizationmode_2eh_13',['AnonymizationMode.h',['../_anonymization_mode_8h.html',1,'']]],
-  ['applicationreceiptnumber_14',['applicationReceiptNumber',['../struct_m_b_m_r_z_result.html#a020938280f8c779f9b721efa6a2c8833',1,'MBMRZResult']]],
-  ['availablerecognizers_2eh_15',['AvailableRecognizers.h',['../_available_recognizers_8h.html',1,'']]]
+  ['allowuncertainfrontsidescan_10',['allowUncertainFrontSideScan',['../struct_m_b_blink_id_combined_recognizer_settings.html#aaa7004e732dfa8b296dc758a77cda857',1,'MBBlinkIdCombinedRecognizerSettings']]],
+  ['allowunparsedmrzresults_11',['allowUnparsedMrzResults',['../struct_m_b_blink_id_recognizer_settings.html#ab9189847a46310adfdec5a84a32f4404',1,'MBBlinkIdRecognizerSettings']]],
+  ['allowunverifiedmrzresults_12',['allowUnverifiedMrzResults',['../struct_m_b_blink_id_recognizer_settings.html#afddc98c65082e2775236d46dd8837dc9',1,'MBBlinkIdRecognizerSettings']]],
+  ['anonymizationmode_13',['anonymizationMode',['../struct_m_b_blink_id_recognizer_settings.html#a7380f9f50db2019a1585cc64a828f54e',1,'MBBlinkIdRecognizerSettings']]],
+  ['anonymizationmode_2eh_14',['AnonymizationMode.h',['../_anonymization_mode_8h.html',1,'']]],
+  ['applicationreceiptnumber_15',['applicationReceiptNumber',['../struct_m_b_m_r_z_result.html#a020938280f8c779f9b721efa6a2c8833',1,'MBMRZResult']]],
+  ['availablerecognizers_2eh_16',['AvailableRecognizers.h',['../_available_recognizers_8h.html',1,'']]]
 ];

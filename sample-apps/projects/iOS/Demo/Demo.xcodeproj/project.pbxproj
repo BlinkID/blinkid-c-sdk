@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B449ABF326241AB300DBBF56 /* RecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B449ABF226241AB300DBBF56 /* RecognizerViewController.m */; };
+		B449AC17262489D000DBBF56 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B449AC16262489D000DBBF56 /* AVFoundation.framework */; };
+		B449AC1A262489F300DBBF56 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B449AC19262489F300DBBF56 /* CoreMedia.framework */; };
+		B449AC222624943600DBBF56 /* MBImageRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B449AC212624943600DBBF56 /* MBImageRecognizer.m */; };
+		B449AC2D2625A6EF00DBBF56 /* MBImageRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B449AC212624943600DBBF56 /* MBImageRecognizer.m */; };
 		C900CCE624E57F37000E2AEF /* BlinkIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C938049A24E2DF7C0060507E /* BlinkIDTests.m */; };
-		C900CCE724E57F41000E2AEF /* MBRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = C938049624E2DF710060507E /* MBRecognition.m */; };
 		C900CCE924E57F6B000E2AEF /* MBRecognitionResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C938049724E2DF710060507E /* MBRecognitionResult.m */; };
 		C938045E24E2A15C0060507E /* id.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C938045D24E2A15C0060507E /* id.jpg */; };
-		C938049824E2DF710060507E /* MBRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = C938049624E2DF710060507E /* MBRecognition.m */; };
 		C938049924E2DF710060507E /* MBRecognitionResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C938049724E2DF710060507E /* MBRecognitionResult.m */; };
 		C938049D24E2DF7C0060507E /* Demo.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = C938049B24E2DF7C0060507E /* Demo.xctestplan */; };
 		C956CDB121CD5CA0003B4B6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C956CDB021CD5CA0003B4B6F /* AppDelegate.m */; };
-		C956CDB421CD5CA0003B4B6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C956CDB321CD5CA0003B4B6F /* ViewController.m */; };
 		C956CDB721CD5CA0003B4B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C956CDB521CD5CA0003B4B6F /* Main.storyboard */; };
 		C956CDB921CD5CA2003B4B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C956CDB821CD5CA2003B4B6F /* Assets.xcassets */; };
 		C956CDBC21CD5CA2003B4B6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C956CDBA21CD5CA2003B4B6F /* LaunchScreen.storyboard */; };
@@ -24,12 +26,12 @@
 		C97EC6FE260CC24D0079B2EA /* ccc_lookup_table.zzip in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F1260CC24D0079B2EA /* ccc_lookup_table.zzip */; };
 		C97EC6FF260CC24D0079B2EA /* BlinkID_MoireClassifier_malaysia_6.0.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F2260CC24D0079B2EA /* BlinkID_MoireClassifier_malaysia_6.0.0.strop */; };
 		C97EC700260CC24D0079B2EA /* BlinkID_MoireClassifier_malaysia_6.0.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F2260CC24D0079B2EA /* BlinkID_MoireClassifier_malaysia_6.0.0.strop */; };
-		C97EC701260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.1.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F3260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.1.0.strop */; };
-		C97EC702260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.1.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F3260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.1.0.strop */; };
+		C97EC701260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.2.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F3260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.2.0.strop */; };
+		C97EC702260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.2.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F3260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.2.0.strop */; };
 		C97EC703260CC24D0079B2EA /* face_detector_model.zzip in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F4260CC24D0079B2EA /* face_detector_model.zzip */; };
 		C97EC704260CC24D0079B2EA /* face_detector_model.zzip in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F4260CC24D0079B2EA /* face_detector_model.zzip */; };
-		C97EC705260CC24D0079B2EA /* BlinkID_Segmentator_general_6.13.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F5260CC24D0079B2EA /* BlinkID_Segmentator_general_6.13.0.strop */; };
-		C97EC706260CC24D0079B2EA /* BlinkID_Segmentator_general_6.13.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F5260CC24D0079B2EA /* BlinkID_Segmentator_general_6.13.0.strop */; };
+		C97EC705260CC24D0079B2EA /* BlinkID_Segmentator_general_6.14.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F5260CC24D0079B2EA /* BlinkID_Segmentator_general_6.14.0.strop */; };
+		C97EC706260CC24D0079B2EA /* BlinkID_Segmentator_general_6.14.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F5260CC24D0079B2EA /* BlinkID_Segmentator_general_6.14.0.strop */; };
 		C97EC707260CC24D0079B2EA /* BlinkID_MonochromeClassifier_general_6.0.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F6260CC24D0079B2EA /* BlinkID_MonochromeClassifier_general_6.0.0.strop */; };
 		C97EC708260CC24D0079B2EA /* BlinkID_MonochromeClassifier_general_6.0.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F6260CC24D0079B2EA /* BlinkID_MonochromeClassifier_general_6.0.0.strop */; };
 		C97EC709260CC24D0079B2EA /* BlinkID_BlurClassifier_general_6.2.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F7260CC24D0079B2EA /* BlinkID_BlurClassifier_general_6.2.0.strop */; };
@@ -38,12 +40,12 @@
 		C97EC70C260CC24D0079B2EA /* BlinkID_Detector_general_6.6.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F8260CC24D0079B2EA /* BlinkID_Detector_general_6.6.0.strop */; };
 		C97EC70D260CC24D0079B2EA /* BlinkID_Ocr_mrz_6.4.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F9260CC24D0079B2EA /* BlinkID_Ocr_mrz_6.4.0.strop */; };
 		C97EC70E260CC24D0079B2EA /* BlinkID_Ocr_mrz_6.4.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6F9260CC24D0079B2EA /* BlinkID_Ocr_mrz_6.4.0.strop */; };
-		C97EC70F260CC24D0079B2EA /* BlinkID_Classifier_general_6.13.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6FA260CC24D0079B2EA /* BlinkID_Classifier_general_6.13.0.strop */; };
-		C97EC710260CC24D0079B2EA /* BlinkID_Classifier_general_6.13.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6FA260CC24D0079B2EA /* BlinkID_Classifier_general_6.13.0.strop */; };
+		C97EC70F260CC24D0079B2EA /* BlinkID_Classifier_general_6.14.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6FA260CC24D0079B2EA /* BlinkID_Classifier_general_6.14.0.strop */; };
+		C97EC710260CC24D0079B2EA /* BlinkID_Classifier_general_6.14.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6FA260CC24D0079B2EA /* BlinkID_Classifier_general_6.14.0.strop */; };
 		C97EC711260CC24D0079B2EA /* BlinkID_Analyzer_general_6.5.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6FB260CC24D0079B2EA /* BlinkID_Analyzer_general_6.5.0.strop */; };
 		C97EC712260CC24D0079B2EA /* BlinkID_Analyzer_general_6.5.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6FB260CC24D0079B2EA /* BlinkID_Analyzer_general_6.5.0.strop */; };
-		C97EC713260CC24D0079B2EA /* BlinkID_Ocr_general_6.12.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6FC260CC24D0079B2EA /* BlinkID_Ocr_general_6.12.0.strop */; };
-		C97EC714260CC24D0079B2EA /* BlinkID_Ocr_general_6.12.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6FC260CC24D0079B2EA /* BlinkID_Ocr_general_6.12.0.strop */; };
+		C97EC713260CC24D0079B2EA /* BlinkID_Ocr_general_6.13.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6FC260CC24D0079B2EA /* BlinkID_Ocr_general_6.13.0.strop */; };
+		C97EC714260CC24D0079B2EA /* BlinkID_Ocr_general_6.13.0.strop in Resources */ = {isa = PBXBuildFile; fileRef = C97EC6FC260CC24D0079B2EA /* BlinkID_Ocr_general_6.13.0.strop */; };
 		C9A368FD25D53427000871AD /* RecognizerApi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A368FB25D53427000871AD /* RecognizerApi.xcframework */; };
 		C9A368FE25D5344D000871AD /* RecognizerApi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A368FB25D53427000871AD /* RecognizerApi.xcframework */; };
 		C9A368FF25D5344D000871AD /* RecognizerApi.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A368FB25D53427000871AD /* RecognizerApi.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -74,20 +76,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B449ABF226241AB300DBBF56 /* RecognizerViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = RecognizerViewController.m; sourceTree = "<group>"; };
+		B449ABF526241ABE00DBBF56 /* RecognizerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecognizerViewController.h; sourceTree = "<group>"; };
+		B449AC16262489D000DBBF56 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		B449AC19262489F300DBBF56 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		B449AC1F262493CA00DBBF56 /* MBImageRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBImageRecognizer.h; sourceTree = "<group>"; };
+		B449AC212624943600DBBF56 /* MBImageRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBImageRecognizer.m; sourceTree = "<group>"; };
 		C900CCDC24E57EDE000E2AEF /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C900CCE024E57EDE000E2AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C938045D24E2A15C0060507E /* id.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = id.jpg; path = ../../../../src/demo/id.jpg; sourceTree = "<group>"; };
-		C938049424E2DF710060507E /* MBRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRecognition.h; sourceTree = "<group>"; };
 		C938049524E2DF710060507E /* MBRecognitionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRecognitionResult.h; sourceTree = "<group>"; };
-		C938049624E2DF710060507E /* MBRecognition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRecognition.m; sourceTree = "<group>"; };
 		C938049724E2DF710060507E /* MBRecognitionResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRecognitionResult.m; sourceTree = "<group>"; };
 		C938049A24E2DF7C0060507E /* BlinkIDTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlinkIDTests.m; sourceTree = "<group>"; };
 		C938049B24E2DF7C0060507E /* Demo.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Demo.xctestplan; sourceTree = "<group>"; };
 		C956CDAC21CD5CA0003B4B6F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C956CDAF21CD5CA0003B4B6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C956CDB021CD5CA0003B4B6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C956CDB221CD5CA0003B4B6F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C956CDB321CD5CA0003B4B6F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C956CDB621CD5CA0003B4B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C956CDB821CD5CA2003B4B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C956CDBB21CD5CA2003B4B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,16 +99,16 @@
 		C956CDBE21CD5CA2003B4B6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C97EC6F1260CC24D0079B2EA /* ccc_lookup_table.zzip */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccc_lookup_table.zzip; sourceTree = "<group>"; };
 		C97EC6F2260CC24D0079B2EA /* BlinkID_MoireClassifier_malaysia_6.0.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_MoireClassifier_malaysia_6.0.0.strop; sourceTree = "<group>"; };
-		C97EC6F3260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.1.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_RotationClassifier_general_6.1.0.strop; sourceTree = "<group>"; };
+		C97EC6F3260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.2.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_RotationClassifier_general_6.2.0.strop; sourceTree = "<group>"; };
 		C97EC6F4260CC24D0079B2EA /* face_detector_model.zzip */ = {isa = PBXFileReference; lastKnownFileType = file; path = face_detector_model.zzip; sourceTree = "<group>"; };
-		C97EC6F5260CC24D0079B2EA /* BlinkID_Segmentator_general_6.13.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Segmentator_general_6.13.0.strop; sourceTree = "<group>"; };
+		C97EC6F5260CC24D0079B2EA /* BlinkID_Segmentator_general_6.14.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Segmentator_general_6.14.0.strop; sourceTree = "<group>"; };
 		C97EC6F6260CC24D0079B2EA /* BlinkID_MonochromeClassifier_general_6.0.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_MonochromeClassifier_general_6.0.0.strop; sourceTree = "<group>"; };
 		C97EC6F7260CC24D0079B2EA /* BlinkID_BlurClassifier_general_6.2.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_BlurClassifier_general_6.2.0.strop; sourceTree = "<group>"; };
 		C97EC6F8260CC24D0079B2EA /* BlinkID_Detector_general_6.6.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Detector_general_6.6.0.strop; sourceTree = "<group>"; };
 		C97EC6F9260CC24D0079B2EA /* BlinkID_Ocr_mrz_6.4.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Ocr_mrz_6.4.0.strop; sourceTree = "<group>"; };
-		C97EC6FA260CC24D0079B2EA /* BlinkID_Classifier_general_6.13.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Classifier_general_6.13.0.strop; sourceTree = "<group>"; };
+		C97EC6FA260CC24D0079B2EA /* BlinkID_Classifier_general_6.14.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Classifier_general_6.14.0.strop; sourceTree = "<group>"; };
 		C97EC6FB260CC24D0079B2EA /* BlinkID_Analyzer_general_6.5.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Analyzer_general_6.5.0.strop; sourceTree = "<group>"; };
-		C97EC6FC260CC24D0079B2EA /* BlinkID_Ocr_general_6.12.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Ocr_general_6.12.0.strop; sourceTree = "<group>"; };
+		C97EC6FC260CC24D0079B2EA /* BlinkID_Ocr_general_6.13.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Ocr_general_6.13.0.strop; sourceTree = "<group>"; };
 		C9A368FB25D53427000871AD /* RecognizerApi.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RecognizerApi.xcframework; path = ../../../../../lib/iOS/RecognizerApi.xcframework; sourceTree = "<group>"; };
 		C9A3690325D5350E000871AD /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +126,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B449AC1A262489F300DBBF56 /* CoreMedia.framework in Frameworks */,
+				B449AC17262489D000DBBF56 /* AVFoundation.framework in Frameworks */,
 				C9A368FE25D5344D000871AD /* RecognizerApi.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,10 +169,10 @@
 				C9A3690325D5350E000871AD /* Demo.entitlements */,
 				C956CDAF21CD5CA0003B4B6F /* AppDelegate.h */,
 				C956CDB021CD5CA0003B4B6F /* AppDelegate.m */,
-				C956CDB221CD5CA0003B4B6F /* ViewController.h */,
-				C956CDB321CD5CA0003B4B6F /* ViewController.m */,
-				C938049424E2DF710060507E /* MBRecognition.h */,
-				C938049624E2DF710060507E /* MBRecognition.m */,
+				B449ABF526241ABE00DBBF56 /* RecognizerViewController.h */,
+				B449ABF226241AB300DBBF56 /* RecognizerViewController.m */,
+				B449AC1F262493CA00DBBF56 /* MBImageRecognizer.h */,
+				B449AC212624943600DBBF56 /* MBImageRecognizer.m */,
 				C938049524E2DF710060507E /* MBRecognitionResult.h */,
 				C938049724E2DF710060507E /* MBRecognitionResult.m */,
 				C938049A24E2DF7C0060507E /* BlinkIDTests.m */,
@@ -183,6 +189,8 @@
 		C956CDC521CD5CDE003B4B6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B449AC19262489F300DBBF56 /* CoreMedia.framework */,
+				B449AC16262489D000DBBF56 /* AVFoundation.framework */,
 				C9A368FB25D53427000871AD /* RecognizerApi.xcframework */,
 			);
 			path = Frameworks;
@@ -202,16 +210,16 @@
 			children = (
 				C97EC6F1260CC24D0079B2EA /* ccc_lookup_table.zzip */,
 				C97EC6F2260CC24D0079B2EA /* BlinkID_MoireClassifier_malaysia_6.0.0.strop */,
-				C97EC6F3260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.1.0.strop */,
+				C97EC6F3260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.2.0.strop */,
 				C97EC6F4260CC24D0079B2EA /* face_detector_model.zzip */,
-				C97EC6F5260CC24D0079B2EA /* BlinkID_Segmentator_general_6.13.0.strop */,
+				C97EC6F5260CC24D0079B2EA /* BlinkID_Segmentator_general_6.14.0.strop */,
 				C97EC6F6260CC24D0079B2EA /* BlinkID_MonochromeClassifier_general_6.0.0.strop */,
 				C97EC6F7260CC24D0079B2EA /* BlinkID_BlurClassifier_general_6.2.0.strop */,
 				C97EC6F8260CC24D0079B2EA /* BlinkID_Detector_general_6.6.0.strop */,
 				C97EC6F9260CC24D0079B2EA /* BlinkID_Ocr_mrz_6.4.0.strop */,
-				C97EC6FA260CC24D0079B2EA /* BlinkID_Classifier_general_6.13.0.strop */,
+				C97EC6FA260CC24D0079B2EA /* BlinkID_Classifier_general_6.14.0.strop */,
 				C97EC6FB260CC24D0079B2EA /* BlinkID_Analyzer_general_6.5.0.strop */,
-				C97EC6FC260CC24D0079B2EA /* BlinkID_Ocr_general_6.12.0.strop */,
+				C97EC6FC260CC24D0079B2EA /* BlinkID_Ocr_general_6.13.0.strop */,
 			);
 			name = "non-android";
 			path = "../../../../../resources/non-android";
@@ -298,17 +306,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C97EC710260CC24D0079B2EA /* BlinkID_Classifier_general_6.13.0.strop in Resources */,
+				C97EC710260CC24D0079B2EA /* BlinkID_Classifier_general_6.14.0.strop in Resources */,
 				C97EC708260CC24D0079B2EA /* BlinkID_MonochromeClassifier_general_6.0.0.strop in Resources */,
 				C97EC70E260CC24D0079B2EA /* BlinkID_Ocr_mrz_6.4.0.strop in Resources */,
 				C97EC70A260CC24D0079B2EA /* BlinkID_BlurClassifier_general_6.2.0.strop in Resources */,
 				C97EC700260CC24D0079B2EA /* BlinkID_MoireClassifier_malaysia_6.0.0.strop in Resources */,
 				C97EC712260CC24D0079B2EA /* BlinkID_Analyzer_general_6.5.0.strop in Resources */,
-				C97EC706260CC24D0079B2EA /* BlinkID_Segmentator_general_6.13.0.strop in Resources */,
+				C97EC706260CC24D0079B2EA /* BlinkID_Segmentator_general_6.14.0.strop in Resources */,
 				C97EC70C260CC24D0079B2EA /* BlinkID_Detector_general_6.6.0.strop in Resources */,
-				C97EC702260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.1.0.strop in Resources */,
+				C97EC702260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.2.0.strop in Resources */,
 				C97EC6FE260CC24D0079B2EA /* ccc_lookup_table.zzip in Resources */,
-				C97EC714260CC24D0079B2EA /* BlinkID_Ocr_general_6.12.0.strop in Resources */,
+				C97EC714260CC24D0079B2EA /* BlinkID_Ocr_general_6.13.0.strop in Resources */,
 				C97EC704260CC24D0079B2EA /* face_detector_model.zzip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,8 +325,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C97EC701260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.1.0.strop in Resources */,
-				C97EC705260CC24D0079B2EA /* BlinkID_Segmentator_general_6.13.0.strop in Resources */,
+				C97EC701260CC24D0079B2EA /* BlinkID_RotationClassifier_general_6.2.0.strop in Resources */,
+				C97EC705260CC24D0079B2EA /* BlinkID_Segmentator_general_6.14.0.strop in Resources */,
 				C938045E24E2A15C0060507E /* id.jpg in Resources */,
 				C956CDBC21CD5CA2003B4B6F /* LaunchScreen.storyboard in Resources */,
 				C97EC70B260CC24D0079B2EA /* BlinkID_Detector_general_6.6.0.strop in Resources */,
@@ -330,9 +338,9 @@
 				C97EC709260CC24D0079B2EA /* BlinkID_BlurClassifier_general_6.2.0.strop in Resources */,
 				C97EC707260CC24D0079B2EA /* BlinkID_MonochromeClassifier_general_6.0.0.strop in Resources */,
 				C97EC711260CC24D0079B2EA /* BlinkID_Analyzer_general_6.5.0.strop in Resources */,
-				C97EC70F260CC24D0079B2EA /* BlinkID_Classifier_general_6.13.0.strop in Resources */,
+				C97EC70F260CC24D0079B2EA /* BlinkID_Classifier_general_6.14.0.strop in Resources */,
 				C938049D24E2DF7C0060507E /* Demo.xctestplan in Resources */,
-				C97EC713260CC24D0079B2EA /* BlinkID_Ocr_general_6.12.0.strop in Resources */,
+				C97EC713260CC24D0079B2EA /* BlinkID_Ocr_general_6.13.0.strop in Resources */,
 				C956CDB721CD5CA0003B4B6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,7 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C900CCE724E57F41000E2AEF /* MBRecognition.m in Sources */,
+				B449AC2D2625A6EF00DBBF56 /* MBImageRecognizer.m in Sources */,
 				C900CCE624E57F37000E2AEF /* BlinkIDTests.m in Sources */,
 				C900CCE924E57F6B000E2AEF /* MBRecognitionResult.m in Sources */,
 			);
@@ -354,11 +362,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C956CDB421CD5CA0003B4B6F /* ViewController.m in Sources */,
 				C938049924E2DF710060507E /* MBRecognitionResult.m in Sources */,
 				C956CDBF21CD5CA2003B4B6F /* main.m in Sources */,
-				C938049824E2DF710060507E /* MBRecognition.m in Sources */,
+				B449ABF326241AB300DBBF56 /* RecognizerViewController.m in Sources */,
 				C956CDB121CD5CA0003B4B6F /* AppDelegate.m in Sources */,
+				B449AC222624943600DBBF56 /* MBImageRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +497,8 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -543,6 +553,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

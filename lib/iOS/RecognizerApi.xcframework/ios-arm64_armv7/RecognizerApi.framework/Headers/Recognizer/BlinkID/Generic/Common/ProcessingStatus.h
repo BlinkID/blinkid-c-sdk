@@ -63,6 +63,9 @@ enum MBProcessingStatus
     /** Front side recognition has completed successfully, and recognizer is waiting for the other side to be scanned. */
     MB_PROCESSING_STATUS_AWAITING_OTHER_SIDE,
 
+    /** Side not scanned. */
+    MB_PROCESSING_STATUS_NOT_SCANNED,
+
     /** Number of possible values */
     MB_PROCESSING_STATUS_COUNT
 };

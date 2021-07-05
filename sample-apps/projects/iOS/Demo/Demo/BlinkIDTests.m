@@ -6,7 +6,7 @@
 //  Copyright © 2020 Microblink. All rights reserved.
 //
 
-#import "MBRecognition.h"
+#import "MBImageRecognizer.h"
 #import <XCTest/XCTest.h>
 
 @interface BlinkIDTests : XCTestCase
@@ -24,12 +24,26 @@
 }
 
 - (void)testRecognition {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-    MBRecognitionResult *result = [MBRecognition performRecognition];
+    NSString * resPath = [[NSBundle mainBundle] resourcePath];
+    NSString * imagePath = [NSString stringWithFormat:@"%@/id.jpg", resPath];
+    UIImage * img = [UIImage imageWithContentsOfFile:imagePath];
+    CGImageRef imageRef = [img CGImage];
+
+    int image_width = (int) CGImageGetWidth(imageRef);
+    int image_height = (int) CGImageGetHeight(imageRef);
+    int image_stride = (int) CGImageGetBytesPerRow(imageRef);
+    
+    CFDataRef rawData = CGDataProviderCopyData(CGImageGetDataProvider(imageRef));
+    const void * buffer = CFDataGetBytePtr(rawData);
+    
+    MBRecognizerImage * image;
+    recognizerImageCreateFromRawImage(&image, buffer, image_width, image_height, image_stride, MB_RAW_IMAGE_TYPE_BGRA);
+    
+    MBImageRecognizer * imageRecognizer = [[MBImageRecognizer alloc] init];
+    MBRecognitionResult * result = [imageRecognizer performRecognition:image];
+    
     XCTAssertEqualObjects(@"SAMPLE", result.firstName);
     XCTAssertEqualObjects(@"SPECIMEN", result.lastName);
 }
-
 
 @end
