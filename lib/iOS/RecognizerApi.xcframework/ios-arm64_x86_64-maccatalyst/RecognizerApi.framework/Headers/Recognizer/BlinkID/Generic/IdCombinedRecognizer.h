@@ -61,6 +61,15 @@ struct MBBlinkIdCombinedRecognizerSettings
     /** Skip back side capture and processing step when back side of the document is not supported. */
     MBBool skipUnsupportedBack;
 
+    /**
+     * Proceed with scanning the back side even if the front side result is uncertain.
+     * This only works for still images - video feeds will ignore this setting.
+     */
+    MBBool allowUncertainFrontSideScan;
+
+    /** Configure the number of characters per field that are allowed to be inconsistent in data match. */
+    size_t maxAllowedMismatchesPerField;
+
 #ifdef __cplusplus
     MBBlinkIdCombinedRecognizerSettings()
     {
@@ -104,6 +113,12 @@ struct MBBlinkIdCombinedRecognizerResult
 
     /** Contains the digital signature */
     MBDigitalSignatureResult digitalSignature;
+
+    /** Status of the last front side recognition process. */
+    MBProcessingStatus frontProcessingStatus;
+
+    /** Status of the last back side recognition process.  */
+    MBProcessingStatus backProcessingStatus;
 };
 
 /**

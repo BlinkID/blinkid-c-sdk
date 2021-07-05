@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.11.0</span>
+   &#160;<span id="projectnumber">version 5.12.0</span>
    </div>
   </td>
  </tr>
@@ -89,6 +89,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:aa80fba5d8ab5a4df6d690d9ab45b4907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4f5a4fc00f95f3fdd8d96c78744e1fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_blink_id_combined_recognizer_settings.html#aa4f5a4fc00f95f3fdd8d96c78744e1fd">skipUnsupportedBack</a></td></tr>
 <tr class="separator:aa4f5a4fc00f95f3fdd8d96c78744e1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7004e732dfa8b296dc758a77cda857"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_blink_id_combined_recognizer_settings.html#aaa7004e732dfa8b296dc758a77cda857">allowUncertainFrontSideScan</a></td></tr>
+<tr class="separator:aaa7004e732dfa8b296dc758a77cda857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b8a5d8ebdd64f242d3d3c0eccbe3b8c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_blink_id_combined_recognizer_settings.html#a5b8a5d8ebdd64f242d3d3c0eccbe3b8c">maxAllowedMismatchesPerField</a></td></tr>
+<tr class="separator:a5b8a5d8ebdd64f242d3d3c0eccbe3b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Settings for configuring <a class="el" href="struct_m_b_blink_id_combined_recognizer.html" title="A recognizer that can scan and parse identity cards.">MBBlinkIdCombinedRecognizer</a>. </p>
@@ -130,6 +134,21 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="aaa7004e732dfa8b296dc758a77cda857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa7004e732dfa8b296dc758a77cda857">&#9670;&nbsp;</a></span>allowUncertainFrontSideScan</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_types_8h.html#a2f1df9511957661b7b39516b961df061">MBBool</a> MBBlinkIdCombinedRecognizerSettings::allowUncertainFrontSideScan</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Proceed with scanning the back side even if the front side result is uncertain. This only works for still images - video feeds will ignore this setting. </p>
+
+</div>
+</div>
 <a id="a6de9981554deed7f9378be47ca1fff06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6de9981554deed7f9378be47ca1fff06">&#9670;&nbsp;</a></span>baseSettings</h2>
 
@@ -142,6 +161,21 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>All settings as for <a class="el" href="struct_m_b_blink_id_recognizer.html" title="A recognizer that can scan and parse identity cards.">MBBlinkIdRecognizer</a> </p>
+
+</div>
+</div>
+<a id="a5b8a5d8ebdd64f242d3d3c0eccbe3b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b8a5d8ebdd64f242d3d3c0eccbe3b8c">&#9670;&nbsp;</a></span>maxAllowedMismatchesPerField</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t MBBlinkIdCombinedRecognizerSettings::maxAllowedMismatchesPerField</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configure the number of characters per field that are allowed to be inconsistent in data match. </p>
 
 </div>
 </div>

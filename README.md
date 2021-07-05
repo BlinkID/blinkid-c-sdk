@@ -312,7 +312,18 @@ We’re only asking you to do this so we can validate your trial license key. Sc
 
 ## <a name="thread-safety"></a> Thread safety
 
-_BlinkID C SDK_ is thread-safe, except for functions for setting the license key. Those are not thread safe and should be called before launching any processing threads. However, [recognizers and RecognizerRunner](#available-recognizers) should not be shared between different threads without synchronization. Each Recognizer, when associated with `RecognizerRunner` can only be used from the single thread at the time. This means that if you plan to process multiple images in different threads in parallel, you should use specific `RecognizerRunner` and recognizer objects for each of your threads. Failure to do so will result in undefined behaviour.
+_BlinkID C SDK_ can be used in a thread-safe manner, however some synchronization may be required on your side. The functions that are used for setting the license key are not thread-safe and should not be used concurrently from different threads. Furthermore, [recognizers and RecognizerRunner](#available-recognizers) should not be shared between different threads without synchronization. Each Recognizer, when associated with `RecognizerRunner` can only be used from the single thread at the time. This means that if you plan to process multiple images in different threads in parallel, you should use specific `RecognizerRunner` and recognizer objects for each of your threads. Failure to do so will result in undefined behaviour. Also, initialization of the `RecognizerRunner` should not be done concurrently with initialization of different `RecognizerRunner` or concurrently with image processing (even with different `RecognizerRunner`). However, once initialized, different instances of `RecognizerRunner` can be safely used concurrently from different threads as long as they are not using the same instances of recognizers.
+
+So, to summarize:
+
+- license key should be set before launching any threads - this is not thread safe
+    - this also hold for other global initialization functions, such as [recognizerAPIInitializeAndroidApplication](https://blinkid.github.io/blinkid-c-sdk/_recognizer_api_utils_8h.html#a6a39476a55beb625a6063e9129e02ff6) on Android and [recognizerAPISetCacheLocation](https://blinkid.github.io/blinkid-c-sdk/_recognizer_api_utils_8h.html#adc944adfb3f0295cd6d905f64292a853)
+- each thread needs to have their own set of recognizer objects and `RecognizerRunner`
+- [`RecognizerRunner` initialization](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_recognizer_runner.html#a5c3e9b7dae397fcc7b86853abb3b61f2) must not be performed concurrently neither with initialization of the `RecognizerRunner` on different thread nor with [image processing](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_recognizer_runner.html#a50678935556a9718df4ed4aaf89286c0)
+- [image processing](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_recognizer_runner.html#a50678935556a9718df4ed4aaf89286c0) can be safely performed concurrently on different threads, provided that:
+    - each thread uses its own instance of `RecognizerRunner`
+    - recognizer objects are not shared between those instances
+- [`RecognizerRunner` cleanup](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_recognizer_runner.html#a2293aa6a9dafccd7cdc052f7ed47b063) must not be performed concurrently
 
 # <a name="available-recognizers"></a> The `Recognizer` concept and the `RecognizerRunner`
 

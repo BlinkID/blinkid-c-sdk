@@ -394,7 +394,12 @@ enum MBRegion
     MB_REGION_TAMIL_NADU                   = 106,
     MB_REGION_YUCATAN                      = 107,
     MB_REGION_ZACATECAS                    = 108,
-    MB_REGION_COUNT                        = 109,
+    MB_REGION_AGUASCALIENTES               = 109,
+    MB_REGION_BAJA_CALIFORNIA_SUR          = 110,
+    MB_REGION_CAMPECHE                     = 111,
+    MB_REGION_COLIMA                       = 112,
+    MB_REGION_QUINTANA_ROO_BENITO_JUAREZ   = 113,
+    MB_REGION_COUNT                        = 114,
 };
 
 /**
@@ -452,7 +457,8 @@ enum MBDocumentType
     MB_DOCUMENT_TYPE_REFUGEE_ID                 = 44,
     MB_DOCUMENT_TYPE_TRIBAL_ID                  = 45,
     MB_DOCUMENT_TYPE_VETERAN_ID                 = 46,
-    MB_DOCUMENT_TYPE_COUNT                      = 47,
+    MB_DOCUMENT_TYPE_CITIZENSHIP_CERTIFICATE    = 47,
+    MB_DOCUMENT_TYPE_COUNT                      = 48,
 };
 
 /**
