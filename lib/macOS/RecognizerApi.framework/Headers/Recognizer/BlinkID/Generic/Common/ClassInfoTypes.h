@@ -251,7 +251,7 @@ enum MBCountry
     MB_COUNTRY_SUDAN                                        = 229,
     MB_COUNTRY_SURINAME                                     = 230,
     MB_COUNTRY_SVALBARD_AND_JAN_MAYEN                       = 231,
-    MB_COUNTRY_SWAZILAND                                    = 232,
+    MB_COUNTRY_ESWATINI                                     = 232,
     MB_COUNTRY_SYRIA                                        = 233,
     MB_COUNTRY_TAJIKISTAN                                   = 234,
     MB_COUNTRY_TANZANIA                                     = 235,
@@ -274,7 +274,7 @@ enum MBCountry
     MB_COUNTRY_YUGOSLAVIA                                   = 252,
     MB_COUNTRY_ZAMBIA                                       = 253,
     MB_COUNTRY_ZIMBABWE                                     = 254,
-    MB_COUNTRY_COUNT                                        = 255
+    MB_COUNTRY_COUNT                                        = 255,
 };
 
 /**

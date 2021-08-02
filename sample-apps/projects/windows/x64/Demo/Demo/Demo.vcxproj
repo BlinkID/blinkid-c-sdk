@@ -90,7 +90,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>LICENSEE="test";LICENSE_KEY="sRwAAAMEdGVzdFS3yg5yTcUzoLqiiS2oeL2uebwPdxXwuQHHhAn5afj7nT25fy0QlM0c9IU1ep5uzSsubl3hFmaTYHB8XA1AvDZ5MP3DnyHA2GmIXNIlnQQqv1wbgJGMlmfZ1J1pvteLPEk+/XXGP6lseHlD3CWOXw4Zr7zPljcsK8WlGIp6qOn/Wwb4KbAD6gSSHISq+AFGquHQ3XqC1gR6Eeno4gU+51d1GtQtUXKtTGz23D5SMw7wW9IInb+T3RPcefbG7dnyiS1zP+nNL3aCPjP76MVoqwb+pNBVZ7+EnTGXBgghXq45XLLugT6Gqys+j2XrOkHeU8NHSOftz9fQ43Yer2nCuSI0/Ew=";NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LICENSEE="test";LICENSE_KEY="sRwAAAMEdGVzdFS3yg5yTcUzoLqiiSlId71fuOnG6CgYPgIR+oIxDUvOZ/sDOZJDGfTm7rpoOuWtGiRVgXJN5gYfxHjgwNVkGssXAJlcUo8jZxZ4bNTJerhsr5be50hoGIaWxCovtO6JRgwJABDjf5DxFqNPNfmQtQLvskvriX1qxKiaSlMKV+Mi1Pg9Rwt/eloZYwgHvmThB7GS1JxCVAqRj9dc6ELz5u8lDnSyFWVv577X0fVgnrSYoycGejScNweGFsCgszV8N/lQXVnvMIE6XXqKshMNSQHg7titD7z1XBcTa1Ou0fetb6YDr+AZx7C9Mz6b26wR4eOZe29yIaRjjdaIwsKlV/mx7Q==";NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>..\..\..\..\..\..\include;..\..\..\..\..\src\utils\windows;..\..\..\..\..\src\utils;</AdditionalIncludeDirectories>
@@ -100,7 +100,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>..\..\..\..\..\..\lib\windows\x64\RecognizerApi.lib;windowscodecs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\..\..\..\..\..\lib\windows\x64\RecognizerApi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
       <Command>copy ..\..\..\..\..\..\lib\windows\x64\RecognizerApi.dll "$(OutputPath)"</Command>
@@ -127,7 +127,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>LICENSEE="test";LICENSE_KEY="sRwAAAMEdGVzdFS3yg5yTcUzoLqiiS2oeL2uebwPdxXwuQHHhAn5afj7nT25fy0QlM0c9IU1ep5uzSsubl3hFmaTYHB8XA1AvDZ5MP3DnyHA2GmIXNIlnQQqv1wbgJGMlmfZ1J1pvteLPEk+/XXGP6lseHlD3CWOXw4Zr7zPljcsK8WlGIp6qOn/Wwb4KbAD6gSSHISq+AFGquHQ3XqC1gR6Eeno4gU+51d1GtQtUXKtTGz23D5SMw7wW9IInb+T3RPcefbG7dnyiS1zP+nNL3aCPjP76MVoqwb+pNBVZ7+EnTGXBgghXq45XLLugT6Gqys+j2XrOkHeU8NHSOftz9fQ43Yer2nCuSI0/Ew=";_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LICENSEE="test";LICENSE_KEY="sRwAAAMEdGVzdFS3yg5yTcUzoLqiiSlId71fuOnG6CgYPgIR+oIxDUvOZ/sDOZJDGfTm7rpoOuWtGiRVgXJN5gYfxHjgwNVkGssXAJlcUo8jZxZ4bNTJerhsr5be50hoGIaWxCovtO6JRgwJABDjf5DxFqNPNfmQtQLvskvriX1qxKiaSlMKV+Mi1Pg9Rwt/eloZYwgHvmThB7GS1JxCVAqRj9dc6ELz5u8lDnSyFWVv577X0fVgnrSYoycGejScNweGFsCgszV8N/lQXVnvMIE6XXqKshMNSQHg7titD7z1XBcTa1Ou0fetb6YDr+AZx7C9Mz6b26wR4eOZe29yIaRjjdaIwsKlV/mx7Q==";_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>..\..\..\..\..\..\include;..\..\..\..\..\src\utils\windows;..\..\..\..\..\src\utils;</AdditionalIncludeDirectories>
@@ -135,7 +135,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>..\..\..\..\..\..\lib\windows\x64\RecognizerApi.lib;windowscodecs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\..\..\..\..\..\lib\windows\x64\RecognizerApi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
       <Command>copy ..\..\..\..\..\..\lib\windows\x64\RecognizerApi.dll "$(OutputPath)"</Command>
@@ -161,15 +161,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\src\utils\windows\RecognizerImageWrapper.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\src\demo\demo.c" />
-    <ClCompile Include="..\..\..\..\..\src\utils\windows\RecognizerImageWrapper.c">
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

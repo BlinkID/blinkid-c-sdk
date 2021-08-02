@@ -106,6 +106,15 @@
  *      }
  *    @endcode
  *
+ *    Alternatively, you can use ::recognizerImageLoadFromFile to directly create MBRecognizerImage by loading a supported file.
+ *    @code
+ *      MBRecognizerImage* img;
+ *      MBRecognizerErrorStatus status = recognizerImageLoadFromFile( &img, "path/to/image.jpg" );
+ *      if (status != MB_RECOGNIZER_ERROR_STATUS_SUCCESS) {
+ *          printf("Failed to load image from file. Reason: %s", recognizerErrorToString(status));
+ *      }
+ *    @endcode
+ *
  * -# Once you have created an image, you can perform recognition using method ::recognizerRunnerRecognizeFromImage.
  *    @code
  *      MBRecognizerResultState resultState = recognizerRunnerRecognizeFromImage( recognizerRunner, imageWrapper.recognizerImage, MB_FALSE, NULL );

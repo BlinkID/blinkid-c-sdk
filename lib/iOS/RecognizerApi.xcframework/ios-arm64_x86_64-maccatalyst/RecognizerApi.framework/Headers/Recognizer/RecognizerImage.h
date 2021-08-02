@@ -19,6 +19,7 @@
 #include "Types.h"
 
 #include <stddef.h>
+#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C"
@@ -120,6 +121,9 @@ typedef MB_EXPORTED_TYPE enum MBImageOrientation MBImageOrientation;
 /**
   @memberof MBRecognizerImage
   @brief Allocates and creates MBRecognizerImage object from raw image.
+  NOTE: This function will not make copy of the given buffer, so make sure that buffer stays alive and unchanged while
+  this MBRecognizerImage is in use.
+
   Example:
   @code
     int image_width, image_height, image_stride;
@@ -142,27 +146,60 @@ typedef MB_EXPORTED_TYPE enum MBImageOrientation MBImageOrientation;
         // use MBRecognizerImage object
     }
 
-    recognizerImageDelete(image);
+    recognizerImageDelete(&image);
   @endcode
 
   Raw image type is the type without any encoding. List of supported raw image types is given in enum MBRawImageType.
   @see MBRawImageType
 
   @param     image               Pointer to pointer referencing the created MBRecognizerImage object, set to NULL if error occured.
-  @param     input               Pointer to a buffer with raw image pixels
+  @param     input               Pointer to a buffer with raw image pixels.
   @param     width               Width of the image, in pixels
   @param     height              Height of the image, in pixels
   @param     bytesPerRow         Number of bytes contained in every row of the image
   @param     rawType             Type of the image. @see MBRawImageType
   @return    errorStatus         Status of the operation.
  */
-MB_API MBRecognizerErrorStatus MB_CALL recognizerImageCreateFromRawImage( MBRecognizerImage** image, MBByte const * input, int width, int height, size_t bytesPerRow, MBRawImageType rawType );
+MB_API MBRecognizerErrorStatus MB_CALL recognizerImageCreateFromRawImage( MBRecognizerImage** image, MBByte const * input, uint16_t width, uint16_t height, uint16_t bytesPerRow, MBRawImageType rawType );
+
+/**
+  @memberof MBRecognizerImage
+  @brief Allocates and creates MBRecognizerImage object from given file.
+  NOTE: Only JPG and PNG file types are supported. All other file types will fail to load. If you need to load a different file type,
+        please load it manually and then create MBRecognizerImage using recognizerImageCreateFromRawImage.
+
+  Example:
+  @code
+    MBRecognizerImage *image;
+    MBRecognizerErrorStatus status = recognizerImageLoadFromFile(&img, "path/to/image.jpg");
+
+    if (status != MB_RECOGNIZER_ERROR_STATUS_SUCCESS) {
+        const char* status_string = recognizerErrorToString(status);
+        printf("LoadFromFile method returned status: %s\n", status_string);
+
+        // handle error
+    } else {
+        // use MBRecognizerImage object
+    }
+
+    recognizerImageDelete(&image);
+  @endcode
+
+  Image metadata, such as orientation, will not be read from the image. Instead, the loaded image will always have the default
+  orientation ::MB_IMAGE_ORIENTATION_NO_ROTATION.
+
+  @param     image               Pointer to pointer referencing the created MBRecognizerImage object, set to NULL if error occured.
+  @param     path                Path to file to be loaded.
+  @return    errorStatus         Status of the operation.
+ */
+MB_API MBRecognizerErrorStatus MB_CALL recognizerImageLoadFromFile( MBRecognizerImage ** image, char const * path );
 
 /**
   @memberof MBRecognizerImage
   @brief Sets a new buffer to the given MBRecognizerImage.
   NOTE: This function will not make copy of the given buffer, so make sure that buffer stays alive and unchanged while
   this MBRecognizerImage is in use.
+
   Example:
   @code
     int image_width, image_height, image_stride;
@@ -189,21 +226,21 @@ MB_API MBRecognizerErrorStatus MB_CALL recognizerImageCreateFromRawImage( MBReco
         // use MBRecognizerImage object
     }
 
-    recognizerImageDelete(image);
+    recognizerImageDelete(&image);
   @endcode
 
   Raw image type is the type without any encoding. List of supported raw image types is given in enum MBRawImageType.
   @see MBRawImageType
 
   @param     image               Pointer referencing the created MBRecognizerImage object, must be non-NULL.
-  @param     input               Pointer to a buffer with raw image pixels
+  @param     input               Pointer to a buffer with raw image pixels.
   @param     width               Width of the image, in pixels
   @param     height              Height of the image, in pixels
   @param     bytesPerRow         Number of bytes contained in every row of the image
   @param     rawType             Type of the image. @see MBRawImageType
   @return    errorStatus         Status of the operation.
  */
-MB_API MBRecognizerErrorStatus MB_CALL recognizerImageSetNewRawBuffer( MBRecognizerImage* image, MBByte const * input, int width, int height, size_t bytesPerRow, MBRawImageType rawType );
+MB_API MBRecognizerErrorStatus MB_CALL recognizerImageSetNewRawBuffer( MBRecognizerImage* image, MBByte const * input, uint16_t width, uint16_t height, uint16_t bytesPerRow, MBRawImageType rawType );
 
 /**
  * @memberof MBRecognizerImage
@@ -269,7 +306,7 @@ MB_API MBByte * MB_CALL recognizerImageGetMutableRawBytes( MBRecognizerImage * i
   @param    image           Pointer to MBRecognizerImage object of interest.
   @return   width of image in pixels
   */
-MB_API int MB_CALL recognizerImageGetWidth( MBRecognizerImage const * image );
+MB_API uint16_t MB_CALL recognizerImageGetWidth( MBRecognizerImage const * image );
 
 /**
   @memberof MBRecognizerImage
@@ -278,7 +315,7 @@ MB_API int MB_CALL recognizerImageGetWidth( MBRecognizerImage const * image );
   @param    image           Pointer to MBRecognizerImage object of interest.
   @return   height of image in pixels
   */
-MB_API int MB_CALL recognizerImageGetHeight( MBRecognizerImage const * image );
+MB_API uint16_t MB_CALL recognizerImageGetHeight( MBRecognizerImage const * image );
 
 /**
   @memberof MBRecognizerImage
@@ -287,7 +324,7 @@ MB_API int MB_CALL recognizerImageGetHeight( MBRecognizerImage const * image );
   @param    image           Pointer to MBRecognizerImage object of interest.
   @return   bytes per row in image
   */
-MB_API int MB_CALL recognizerImageGetBytesPerRow( MBRecognizerImage const * image );
+MB_API uint16_t MB_CALL recognizerImageGetBytesPerRow( MBRecognizerImage const * image );
 
 /**
   @memberof MBRecognizerImage

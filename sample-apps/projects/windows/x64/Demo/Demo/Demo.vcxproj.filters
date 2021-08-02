@@ -18,14 +18,8 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\src\utils\Windows\RecognizerImageWrapper.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\src\utils\Windows\RecognizerImageWrapper.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\..\src\demo\demo.c">
       <Filter>Source Files</Filter>
     </ClCompile>
