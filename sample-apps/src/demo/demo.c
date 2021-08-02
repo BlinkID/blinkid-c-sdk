@@ -9,8 +9,8 @@
 * REVERSE ENGINEER, DECOMPILE, OR DISASSEMBLE IT.
 */
 
+#include "Recognizer/RecognizerImage.h"
 #include <LicenseKey.h>
-#include <RecognizerImageWrapper.h>
 
 #include <RecognizerApi.h>
 
@@ -23,8 +23,8 @@ int main( int argc, char * argv[] )
     MBBlinkIdRecognizer * idRecognizer    = NULL;
     /* Recognizer runner is the main object that orchestrates recognition using one or more recognizers */
     MBRecognizerRunner * recognizerRunner = NULL;
-    /* This is a helper struct for loading MBRecognizerImage from file */
-    RecognizerImageWrapper imageWrapper;
+    /* This is the image that will be processed */
+    MBRecognizerImage * image = NULL;
     /* Most of the functions from the Recognizer API return error status to indicate whether operation succeeded or not */
     MBRecognizerErrorStatus errorStatus;
 
@@ -36,9 +36,6 @@ int main( int argc, char * argv[] )
     }
 
     recognizerAPISetCacheLocation( "." );
-
-    /* load the image from given path */
-    imageWrapper = loadImageFromFile( argv[ 2 ] );
 
     /* Unlock the Recognizer API with your license key */
 
@@ -68,6 +65,14 @@ int main( int argc, char * argv[] )
         return EXIT_FAILURE;
     }
 
+    /* load the image from given path */
+    errorStatus = recognizerImageLoadFromFile( &image, argv[ 2 ] );
+    if ( errorStatus != MB_RECOGNIZER_ERROR_STATUS_SUCCESS )
+    {
+        printf( "Failed to load image '%s'. Reason: %s\n", argv[ 2 ], recognizerErrorToString( errorStatus ) );
+        return EXIT_FAILURE;
+    }
+
     /* Step 1: Create and configure Generic ID recognizer */
     {
         /*
@@ -85,7 +90,7 @@ int main( int argc, char * argv[] )
         {
             printf( "Failed to create Generic ID recognizer!\n" );
             /* avoid memory leaks - free already allocated things */
-            terminateImageWrapper( &imageWrapper );
+            recognizerImageDelete( &image );
             return EXIT_FAILURE;
         }
     }
@@ -120,7 +125,7 @@ int main( int argc, char * argv[] )
             printf( "Failed to create recognizer runner!\n" );
             /* avoid memory leaks - free already allocated things */
             blinkIdRecognizerDelete( &idRecognizer );
-            terminateImageWrapper  ( &imageWrapper );
+            recognizerImageDelete( &image );
             return EXIT_FAILURE;
         }
     }
@@ -129,7 +134,7 @@ int main( int argc, char * argv[] )
     {
         MBRecognizerResultState resultState;
 
-        resultState = recognizerRunnerRecognizeFromImage( recognizerRunner, imageWrapper.recognizerImage, MB_FALSE, NULL );
+        resultState = recognizerRunnerRecognizeFromImage( recognizerRunner, image, MB_FALSE, NULL );
 
         /* if at least one recognizer produced a result */
         if ( resultState != MB_RECOGNIZER_RESULT_STATE_EMPTY )
@@ -159,7 +164,7 @@ int main( int argc, char * argv[] )
     }
 
     /* Step 5: free all allocated resources */
-    terminateImageWrapper( &imageWrapper );
+    recognizerImageDelete( &image );
 
     /*
      * NOTE: You must delete Recognizer runner before deleting any of the recognizers it

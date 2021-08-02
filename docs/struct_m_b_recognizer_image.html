@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BlinkID C SDK
-   &#160;<span id="projectnumber">version 5.12.0</span>
+   &#160;<span id="projectnumber">version 5.13.0</span>
    </div>
   </td>
  </tr>
@@ -76,12 +76,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a15d9ff61beca923011ba0afc0ca9d58f"><td class="memItemLeft" align="right" valign="top">MB_API <a class="el" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_image.html#a15d9ff61beca923011ba0afc0ca9d58f">recognizerImageCreateFromRawImage</a> (<a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> **image, <a class="el" href="_types_8h.html#af3264aee3eef722a659d905bcf2638a7">MBByte</a> const *input, int width, int height, size_t bytesPerRow, <a class="el" href="_recognizer_image_8h.html#aa0ff796c761521138a3bbe11def09f82">MBRawImageType</a> rawType)</td></tr>
-<tr class="memdesc:a15d9ff61beca923011ba0afc0ca9d58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and creates <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> object from raw image. Example:  <a href="struct_m_b_recognizer_image.html#a15d9ff61beca923011ba0afc0ca9d58f">More...</a><br /></td></tr>
-<tr class="separator:a15d9ff61beca923011ba0afc0ca9d58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d0c297b8c16b98a3bf65dfa9860f05f"><td class="memItemLeft" align="right" valign="top">MB_API <a class="el" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_image.html#a2d0c297b8c16b98a3bf65dfa9860f05f">recognizerImageSetNewRawBuffer</a> (<a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> *image, <a class="el" href="_types_8h.html#af3264aee3eef722a659d905bcf2638a7">MBByte</a> const *input, int width, int height, size_t bytesPerRow, <a class="el" href="_recognizer_image_8h.html#aa0ff796c761521138a3bbe11def09f82">MBRawImageType</a> rawType)</td></tr>
-<tr class="memdesc:a2d0c297b8c16b98a3bf65dfa9860f05f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a new buffer to the given <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a>. NOTE: This function will not make copy of the given buffer, so make sure that buffer stays alive and unchanged while this <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> is in use. Example:  <a href="struct_m_b_recognizer_image.html#a2d0c297b8c16b98a3bf65dfa9860f05f">More...</a><br /></td></tr>
-<tr class="separator:a2d0c297b8c16b98a3bf65dfa9860f05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e0c8e1f006654298bc7e9dcc86e157"><td class="memItemLeft" align="right" valign="top">MB_API <a class="el" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_image.html#aa6e0c8e1f006654298bc7e9dcc86e157">recognizerImageCreateFromRawImage</a> (<a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> **image, <a class="el" href="_types_8h.html#af3264aee3eef722a659d905bcf2638a7">MBByte</a> const *input, uint16_t width, uint16_t height, uint16_t bytesPerRow, <a class="el" href="_recognizer_image_8h.html#aa0ff796c761521138a3bbe11def09f82">MBRawImageType</a> rawType)</td></tr>
+<tr class="memdesc:aa6e0c8e1f006654298bc7e9dcc86e157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and creates <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> object from raw image. NOTE: This function will not make copy of the given buffer, so make sure that buffer stays alive and unchanged while this <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> is in use.  <a href="struct_m_b_recognizer_image.html#aa6e0c8e1f006654298bc7e9dcc86e157">More...</a><br /></td></tr>
+<tr class="separator:aa6e0c8e1f006654298bc7e9dcc86e157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad301891b711bfd06000189b8819021ee"><td class="memItemLeft" align="right" valign="top">MB_API <a class="el" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_image.html#ad301891b711bfd06000189b8819021ee">recognizerImageLoadFromFile</a> (<a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> **image, char const *path)</td></tr>
+<tr class="memdesc:ad301891b711bfd06000189b8819021ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and creates <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> object from given file. NOTE: Only JPG and PNG file types are supported. All other file types will fail to load. If you need to load a different file type, please load it manually and then create <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> using recognizerImageCreateFromRawImage.  <a href="struct_m_b_recognizer_image.html#ad301891b711bfd06000189b8819021ee">More...</a><br /></td></tr>
+<tr class="separator:ad301891b711bfd06000189b8819021ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3032da6bc2c87c19ba767a4f04fc0e"><td class="memItemLeft" align="right" valign="top">MB_API <a class="el" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_image.html#a0f3032da6bc2c87c19ba767a4f04fc0e">recognizerImageSetNewRawBuffer</a> (<a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> *image, <a class="el" href="_types_8h.html#af3264aee3eef722a659d905bcf2638a7">MBByte</a> const *input, uint16_t width, uint16_t height, uint16_t bytesPerRow, <a class="el" href="_recognizer_image_8h.html#aa0ff796c761521138a3bbe11def09f82">MBRawImageType</a> rawType)</td></tr>
+<tr class="memdesc:a0f3032da6bc2c87c19ba767a4f04fc0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a new buffer to the given <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a>. NOTE: This function will not make copy of the given buffer, so make sure that buffer stays alive and unchanged while this <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> is in use.  <a href="struct_m_b_recognizer_image.html#a0f3032da6bc2c87c19ba767a4f04fc0e">More...</a><br /></td></tr>
+<tr class="separator:a0f3032da6bc2c87c19ba767a4f04fc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65012d848002cb4e17b44cb70d20ddd0"><td class="memItemLeft" align="right" valign="top">MB_API <a class="el" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_image.html#a65012d848002cb4e17b44cb70d20ddd0">recognizerImageCreateCopyFromImage</a> (<a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> **image, <a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> const *original)</td></tr>
 <tr class="memdesc:a65012d848002cb4e17b44cb70d20ddd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and creates <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> by copying another <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a>. This method will copy pixel data, so it may be slow.  <a href="struct_m_b_recognizer_image.html#a65012d848002cb4e17b44cb70d20ddd0">More...</a><br /></td></tr>
 <tr class="separator:a65012d848002cb4e17b44cb70d20ddd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,15 +103,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a73c9ae4f72deabd2c99e8a54f1d9eb63"><td class="memItemLeft" align="right" valign="top">MB_API <a class="el" href="_types_8h.html#af3264aee3eef722a659d905bcf2638a7">MBByte</a> *MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_image.html#a73c9ae4f72deabd2c99e8a54f1d9eb63">recognizerImageGetMutableRawBytes</a> (<a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> *image)</td></tr>
 <tr class="memdesc:a73c9ae4f72deabd2c99e8a54f1d9eb63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets modifiable buffer containing raw image bytes.  <a href="struct_m_b_recognizer_image.html#a73c9ae4f72deabd2c99e8a54f1d9eb63">More...</a><br /></td></tr>
 <tr class="separator:a73c9ae4f72deabd2c99e8a54f1d9eb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d3e44c6162f4bffe8682a7688c7943d"><td class="memItemLeft" align="right" valign="top">MB_API int MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_image.html#a2d3e44c6162f4bffe8682a7688c7943d">recognizerImageGetWidth</a> (<a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> const *image)</td></tr>
-<tr class="memdesc:a2d3e44c6162f4bffe8682a7688c7943d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets width of image in number of pixels.  <a href="struct_m_b_recognizer_image.html#a2d3e44c6162f4bffe8682a7688c7943d">More...</a><br /></td></tr>
-<tr class="separator:a2d3e44c6162f4bffe8682a7688c7943d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74737cd367d6cad4952fc9c3a03130ec"><td class="memItemLeft" align="right" valign="top">MB_API int MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_image.html#a74737cd367d6cad4952fc9c3a03130ec">recognizerImageGetHeight</a> (<a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> const *image)</td></tr>
-<tr class="memdesc:a74737cd367d6cad4952fc9c3a03130ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets height of image in number of pixels.  <a href="struct_m_b_recognizer_image.html#a74737cd367d6cad4952fc9c3a03130ec">More...</a><br /></td></tr>
-<tr class="separator:a74737cd367d6cad4952fc9c3a03130ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a963850873be68c9a0f3380332ac5b17f"><td class="memItemLeft" align="right" valign="top">MB_API int MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_image.html#a963850873be68c9a0f3380332ac5b17f">recognizerImageGetBytesPerRow</a> (<a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> const *image)</td></tr>
-<tr class="memdesc:a963850873be68c9a0f3380332ac5b17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets bytes per row for given image.  <a href="struct_m_b_recognizer_image.html#a963850873be68c9a0f3380332ac5b17f">More...</a><br /></td></tr>
-<tr class="separator:a963850873be68c9a0f3380332ac5b17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3181a19a0e448784ed371cf434b45b4"><td class="memItemLeft" align="right" valign="top">MB_API uint16_t MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_image.html#aa3181a19a0e448784ed371cf434b45b4">recognizerImageGetWidth</a> (<a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> const *image)</td></tr>
+<tr class="memdesc:aa3181a19a0e448784ed371cf434b45b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets width of image in number of pixels.  <a href="struct_m_b_recognizer_image.html#aa3181a19a0e448784ed371cf434b45b4">More...</a><br /></td></tr>
+<tr class="separator:aa3181a19a0e448784ed371cf434b45b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8dd83675fa7838fa121e4f92560efb"><td class="memItemLeft" align="right" valign="top">MB_API uint16_t MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_image.html#a2f8dd83675fa7838fa121e4f92560efb">recognizerImageGetHeight</a> (<a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> const *image)</td></tr>
+<tr class="memdesc:a2f8dd83675fa7838fa121e4f92560efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets height of image in number of pixels.  <a href="struct_m_b_recognizer_image.html#a2f8dd83675fa7838fa121e4f92560efb">More...</a><br /></td></tr>
+<tr class="separator:a2f8dd83675fa7838fa121e4f92560efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b702e5b703c8ba75c8cd6dc5da629d8"><td class="memItemLeft" align="right" valign="top">MB_API uint16_t MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_image.html#a7b702e5b703c8ba75c8cd6dc5da629d8">recognizerImageGetBytesPerRow</a> (<a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> const *image)</td></tr>
+<tr class="memdesc:a7b702e5b703c8ba75c8cd6dc5da629d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets bytes per row for given image.  <a href="struct_m_b_recognizer_image.html#a7b702e5b703c8ba75c8cd6dc5da629d8">More...</a><br /></td></tr>
+<tr class="separator:a7b702e5b703c8ba75c8cd6dc5da629d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af03908816b7e3b0fd79bb1cf626197d0"><td class="memItemLeft" align="right" valign="top">MB_API <a class="el" href="_recognizer_image_8h.html#aa0ff796c761521138a3bbe11def09f82">MBRawImageType</a> MB_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_b_recognizer_image.html#af03908816b7e3b0fd79bb1cf626197d0">recognizerImageGetRawImageType</a> (<a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> const *image)</td></tr>
 <tr class="memdesc:af03908816b7e3b0fd79bb1cf626197d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets raw image type for given image.  <a href="struct_m_b_recognizer_image.html#af03908816b7e3b0fd79bb1cf626197d0">More...</a><br /></td></tr>
 <tr class="separator:af03908816b7e3b0fd79bb1cf626197d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,8 +157,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a15d9ff61beca923011ba0afc0ca9d58f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15d9ff61beca923011ba0afc0ca9d58f">&#9670;&nbsp;</a></span>recognizerImageCreateFromRawImage()</h2>
+<a id="aa6e0c8e1f006654298bc7e9dcc86e157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6e0c8e1f006654298bc7e9dcc86e157">&#9670;&nbsp;</a></span>recognizerImageCreateFromRawImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,19 +178,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>bytesPerRow</em>, </td>
         </tr>
         <tr>
@@ -204,14 +207,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Allocates and creates <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> object from raw image. Example: </p>
-<div class="fragment"><div class="line"><span class="keywordtype">int</span> image_width, image_height, image_stride;</div>
+<p>Allocates and creates <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> object from raw image. NOTE: This function will not make copy of the given buffer, so make sure that buffer stays alive and unchanged while this <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> is in use. </p>
+<p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> image_width, image_height, image_stride;</div>
 <div class="line"><span class="keywordtype">void</span>* image_buffer;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// populate above variables (i.e. by loading image file or capturing image with camera)</span></div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> *image;</div>
-<div class="line"><a class="code" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> status = <a class="code" href="struct_m_b_recognizer_image.html#a15d9ff61beca923011ba0afc0ca9d58f">recognizerImageCreateFromRawImage</a>(&amp;img, image_buffer, image_width, image_height, image_stride, <a class="code" href="_recognizer_image_8h.html#aa0ff796c761521138a3bbe11def09f82aef31f2ddb06e6c7e7fee812d108a92b3">MB_RAW_IMAGE_TYPE_BGRA</a>);</div>
+<div class="line"><a class="code" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> status = <a class="code" href="struct_m_b_recognizer_image.html#aa6e0c8e1f006654298bc7e9dcc86e157">recognizerImageCreateFromRawImage</a>(&amp;img, image_buffer, image_width, image_height, image_stride, <a class="code" href="_recognizer_image_8h.html#aa0ff796c761521138a3bbe11def09f82aef31f2ddb06e6c7e7fee812d108a92b3">MB_RAW_IMAGE_TYPE_BGRA</a>);</div>
 <div class="line"><span class="comment">// make sure last parameter correctly describes image format, otherwise a crash will occur later while processing the image. There is no way to</span></div>
 <div class="line"><span class="comment">// detect whether this parameter was given correctly while creating the image, so function may return MB_RECOGNIZER_ERROR_STATUS_SUCCESS even if</span></div>
 <div class="line"><span class="comment">// this parameter is wrong.</span></div>
@@ -225,12 +228,12 @@ Public Member Functions</h2></td></tr>
 <div class="line">    <span class="comment">// use MBRecognizerImage object</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="struct_m_b_recognizer_image.html#aac9f472373a1d67ca23ed4304402a2b8">recognizerImageDelete</a>(image);</div>
+<div class="line"><a class="code" href="struct_m_b_recognizer_image.html#aac9f472373a1d67ca23ed4304402a2b8">recognizerImageDelete</a>(&amp;image);</div>
 </div><!-- fragment --><p>Raw image type is the type without any encoding. List of supported raw image types is given in enum MBRawImageType. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="_recognizer_image_8h.html#a2344ffee84e4edbe8bdd9e7e167e78ce" title="Typedef for MBRawImageType enum.">MBRawImageType</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">image</td><td>Pointer to pointer referencing the created <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> object, set to NULL if error occured. </td></tr>
-    <tr><td class="paramname">input</td><td>Pointer to a buffer with raw image pixels </td></tr>
+    <tr><td class="paramname">input</td><td>Pointer to a buffer with raw image pixels. </td></tr>
     <tr><td class="paramname">width</td><td>Width of the image, in pixels </td></tr>
     <tr><td class="paramname">height</td><td>Height of the image, in pixels </td></tr>
     <tr><td class="paramname">bytesPerRow</td><td>Number of bytes contained in every row of the image </td></tr>
@@ -270,14 +273,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a963850873be68c9a0f3380332ac5b17f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a963850873be68c9a0f3380332ac5b17f">&#9670;&nbsp;</a></span>recognizerImageGetBytesPerRow()</h2>
+<a id="a7b702e5b703c8ba75c8cd6dc5da629d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b702e5b703c8ba75c8cd6dc5da629d8">&#9670;&nbsp;</a></span>recognizerImageGetBytesPerRow()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">MB_API int MB_CALL recognizerImageGetBytesPerRow </td>
+          <td class="memname">MB_API uint16_t MB_CALL recognizerImageGetBytesPerRow </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> const *&#160;</td>
           <td class="paramname"><em>image</em></td><td>)</td>
@@ -297,14 +300,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a74737cd367d6cad4952fc9c3a03130ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74737cd367d6cad4952fc9c3a03130ec">&#9670;&nbsp;</a></span>recognizerImageGetHeight()</h2>
+<a id="a2f8dd83675fa7838fa121e4f92560efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f8dd83675fa7838fa121e4f92560efb">&#9670;&nbsp;</a></span>recognizerImageGetHeight()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">MB_API int MB_CALL recognizerImageGetHeight </td>
+          <td class="memname">MB_API uint16_t MB_CALL recognizerImageGetHeight </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> const *&#160;</td>
           <td class="paramname"><em>image</em></td><td>)</td>
@@ -432,14 +435,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2d3e44c6162f4bffe8682a7688c7943d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d3e44c6162f4bffe8682a7688c7943d">&#9670;&nbsp;</a></span>recognizerImageGetWidth()</h2>
+<a id="aa3181a19a0e448784ed371cf434b45b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3181a19a0e448784ed371cf434b45b4">&#9670;&nbsp;</a></span>recognizerImageGetWidth()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">MB_API int MB_CALL recognizerImageGetWidth </td>
+          <td class="memname">MB_API uint16_t MB_CALL recognizerImageGetWidth </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> const *&#160;</td>
           <td class="paramname"><em>image</em></td><td>)</td>
@@ -456,6 +459,58 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>width of image in pixels </dd></dl>
+
+</div>
+</div>
+<a id="ad301891b711bfd06000189b8819021ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad301891b711bfd06000189b8819021ee">&#9670;&nbsp;</a></span>recognizerImageLoadFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MB_API <a class="el" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> MB_CALL recognizerImageLoadFromFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> **&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocates and creates <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> object from given file. NOTE: Only JPG and PNG file types are supported. All other file types will fail to load. If you need to load a different file type, please load it manually and then create <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> using recognizerImageCreateFromRawImage. </p>
+<p>Example: </p><div class="fragment"><div class="line"><a class="code" href="struct_m_b_recognizer_image.html">MBRecognizerImage</a> *image;</div>
+<div class="line"><a class="code" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> status = <a class="code" href="struct_m_b_recognizer_image.html#ad301891b711bfd06000189b8819021ee">recognizerImageLoadFromFile</a>(&amp;img, <span class="stringliteral">&quot;path/to/image.jpg&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (status != <a class="code" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27aa323ae6a8b923d2a9ce233b288637a2d">MB_RECOGNIZER_ERROR_STATUS_SUCCESS</a>) {</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span>* status_string = <a class="code" href="_recognizer_error_8h.html#a106df83be708288e60902b32a6f271e0">recognizerErrorToString</a>(status);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;LoadFromFile method returned status: %s\n&quot;</span>, status_string);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// handle error</span></div>
+<div class="line">} <span class="keywordflow">else</span> {</div>
+<div class="line">    <span class="comment">// use MBRecognizerImage object</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><a class="code" href="struct_m_b_recognizer_image.html#aac9f472373a1d67ca23ed4304402a2b8">recognizerImageDelete</a>(&amp;image);</div>
+</div><!-- fragment --><p>Image metadata, such as orientation, will not be read from the image. Instead, the loaded image will always have the default orientation <a class="el" href="_recognizer_image_8h.html#af5ef4ed34aa18118ba3c8605f4c4305fa3964e7a35ae349278a781e6a8f66efe8">MB_IMAGE_ORIENTATION_NO_ROTATION</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>Pointer to pointer referencing the created <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> object, set to NULL if error occured. </td></tr>
+    <tr><td class="paramname">path</td><td>Path to file to be loaded. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>errorStatus Status of the operation. </dd></dl>
 
 </div>
 </div>
@@ -497,8 +552,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2d0c297b8c16b98a3bf65dfa9860f05f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d0c297b8c16b98a3bf65dfa9860f05f">&#9670;&nbsp;</a></span>recognizerImageSetNewRawBuffer()</h2>
+<a id="a0f3032da6bc2c87c19ba767a4f04fc0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f3032da6bc2c87c19ba767a4f04fc0e">&#9670;&nbsp;</a></span>recognizerImageSetNewRawBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -518,19 +573,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>bytesPerRow</em>, </td>
         </tr>
         <tr>
@@ -547,8 +602,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets a new buffer to the given <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a>. NOTE: This function will not make copy of the given buffer, so make sure that buffer stays alive and unchanged while this <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> is in use. Example: </p>
-<div class="fragment"><div class="line"><span class="keywordtype">int</span> image_width, image_height, image_stride;</div>
+<p>Sets a new buffer to the given <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a>. NOTE: This function will not make copy of the given buffer, so make sure that buffer stays alive and unchanged while this <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> is in use. </p>
+<p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> image_width, image_height, image_stride;</div>
 <div class="line"><span class="keywordtype">void</span>* image_buffer;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// populate above variables (i.e. by loading image file or capturing image with camera)</span></div>
@@ -558,7 +613,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="comment">// create image with recognizerImageCreateFromRawImage</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// now, update the image with new buffer</span></div>
-<div class="line"><a class="code" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> status = <a class="code" href="struct_m_b_recognizer_image.html#a2d0c297b8c16b98a3bf65dfa9860f05f">recognizerImageSetNewRawBuffer</a>(img, image_buffer, image_width, image_height, image_stride, <a class="code" href="_recognizer_image_8h.html#aa0ff796c761521138a3bbe11def09f82aef31f2ddb06e6c7e7fee812d108a92b3">MB_RAW_IMAGE_TYPE_BGRA</a>);</div>
+<div class="line"><a class="code" href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a> status = <a class="code" href="struct_m_b_recognizer_image.html#a0f3032da6bc2c87c19ba767a4f04fc0e">recognizerImageSetNewRawBuffer</a>(img, image_buffer, image_width, image_height, image_stride, <a class="code" href="_recognizer_image_8h.html#aa0ff796c761521138a3bbe11def09f82aef31f2ddb06e6c7e7fee812d108a92b3">MB_RAW_IMAGE_TYPE_BGRA</a>);</div>
 <div class="line"><span class="comment">// make sure last parameter correctly describes image format, otherwise a crash will occur later while processing the image. There is no way to</span></div>
 <div class="line"><span class="comment">// detect whether this parameter was given correctly while creating the image, so function may return MB_RECOGNIZER_ERROR_STATUS_SUCCESS even if</span></div>
 <div class="line"><span class="comment">// this parameter is wrong.</span></div>
@@ -572,12 +627,12 @@ Public Member Functions</h2></td></tr>
 <div class="line">    <span class="comment">// use MBRecognizerImage object</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="struct_m_b_recognizer_image.html#aac9f472373a1d67ca23ed4304402a2b8">recognizerImageDelete</a>(image);</div>
+<div class="line"><a class="code" href="struct_m_b_recognizer_image.html#aac9f472373a1d67ca23ed4304402a2b8">recognizerImageDelete</a>(&amp;image);</div>
 </div><!-- fragment --><p>Raw image type is the type without any encoding. List of supported raw image types is given in enum MBRawImageType. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="_recognizer_image_8h.html#a2344ffee84e4edbe8bdd9e7e167e78ce" title="Typedef for MBRawImageType enum.">MBRawImageType</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">image</td><td>Pointer referencing the created <a class="el" href="struct_m_b_recognizer_image.html" title="MBRecognizerImage data structure. Holds image on which recognition will bw performed.">MBRecognizerImage</a> object, must be non-NULL. </td></tr>
-    <tr><td class="paramname">input</td><td>Pointer to a buffer with raw image pixels </td></tr>
+    <tr><td class="paramname">input</td><td>Pointer to a buffer with raw image pixels. </td></tr>
     <tr><td class="paramname">width</td><td>Width of the image, in pixels </td></tr>
     <tr><td class="paramname">height</td><td>Height of the image, in pixels </td></tr>
     <tr><td class="paramname">bytesPerRow</td><td>Number of bytes contained in every row of the image </td></tr>
@@ -594,11 +649,12 @@ Public Member Functions</h2></td></tr>
 <li>inc/Recognizer/<a class="el" href="_recognizer_image_8h_source.html">RecognizerImage.h</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="astruct_m_b_recognizer_image_html_a2d0c297b8c16b98a3bf65dfa9860f05f"><div class="ttname"><a href="struct_m_b_recognizer_image.html#a2d0c297b8c16b98a3bf65dfa9860f05f">MBRecognizerImage::recognizerImageSetNewRawBuffer</a></div><div class="ttdeci">MB_API MBRecognizerErrorStatus MB_CALL recognizerImageSetNewRawBuffer(MBRecognizerImage *image, MBByte const *input, int width, int height, size_t bytesPerRow, MBRawImageType rawType)</div><div class="ttdoc">Sets a new buffer to the given MBRecognizerImage. NOTE: This function will not make copy of the given...</div></div>
-<div class="ttc" id="astruct_m_b_recognizer_image_html_a15d9ff61beca923011ba0afc0ca9d58f"><div class="ttname"><a href="struct_m_b_recognizer_image.html#a15d9ff61beca923011ba0afc0ca9d58f">MBRecognizerImage::recognizerImageCreateFromRawImage</a></div><div class="ttdeci">MB_API MBRecognizerErrorStatus MB_CALL recognizerImageCreateFromRawImage(MBRecognizerImage **image, MBByte const *input, int width, int height, size_t bytesPerRow, MBRawImageType rawType)</div><div class="ttdoc">Allocates and creates MBRecognizerImage object from raw image. Example:</div></div>
+<div class="ttc" id="astruct_m_b_recognizer_image_html_ad301891b711bfd06000189b8819021ee"><div class="ttname"><a href="struct_m_b_recognizer_image.html#ad301891b711bfd06000189b8819021ee">MBRecognizerImage::recognizerImageLoadFromFile</a></div><div class="ttdeci">MB_API MBRecognizerErrorStatus MB_CALL recognizerImageLoadFromFile(MBRecognizerImage **image, char const *path)</div><div class="ttdoc">Allocates and creates MBRecognizerImage object from given file. NOTE: Only JPG and PNG file types are...</div></div>
+<div class="ttc" id="astruct_m_b_recognizer_image_html_aa6e0c8e1f006654298bc7e9dcc86e157"><div class="ttname"><a href="struct_m_b_recognizer_image.html#aa6e0c8e1f006654298bc7e9dcc86e157">MBRecognizerImage::recognizerImageCreateFromRawImage</a></div><div class="ttdeci">MB_API MBRecognizerErrorStatus MB_CALL recognizerImageCreateFromRawImage(MBRecognizerImage **image, MBByte const *input, uint16_t width, uint16_t height, uint16_t bytesPerRow, MBRawImageType rawType)</div><div class="ttdoc">Allocates and creates MBRecognizerImage object from raw image. NOTE: This function will not make copy...</div></div>
+<div class="ttc" id="astruct_m_b_recognizer_image_html_a0f3032da6bc2c87c19ba767a4f04fc0e"><div class="ttname"><a href="struct_m_b_recognizer_image.html#a0f3032da6bc2c87c19ba767a4f04fc0e">MBRecognizerImage::recognizerImageSetNewRawBuffer</a></div><div class="ttdeci">MB_API MBRecognizerErrorStatus MB_CALL recognizerImageSetNewRawBuffer(MBRecognizerImage *image, MBByte const *input, uint16_t width, uint16_t height, uint16_t bytesPerRow, MBRawImageType rawType)</div><div class="ttdoc">Sets a new buffer to the given MBRecognizerImage. NOTE: This function will not make copy of the given...</div></div>
 <div class="ttc" id="a_recognizer_error_8h_html_a106df83be708288e60902b32a6f271e0"><div class="ttname"><a href="_recognizer_error_8h.html#a106df83be708288e60902b32a6f271e0">recognizerErrorToString</a></div><div class="ttdeci">MB_API char const  *MB_CALL recognizerErrorToString(MBRecognizerErrorStatus errorStatus)</div></div>
 <div class="ttc" id="astruct_m_b_recognizer_image_html_aac9f472373a1d67ca23ed4304402a2b8"><div class="ttname"><a href="struct_m_b_recognizer_image.html#aac9f472373a1d67ca23ed4304402a2b8">MBRecognizerImage::recognizerImageDelete</a></div><div class="ttdeci">MB_API MBRecognizerErrorStatus MB_CALL recognizerImageDelete(MBRecognizerImage **image)</div><div class="ttdoc">Deletes the image object and sets pointer to NULL.</div></div>
-<div class="ttc" id="a_recognizer_image_8h_html_aa0ff796c761521138a3bbe11def09f82aef31f2ddb06e6c7e7fee812d108a92b3"><div class="ttname"><a href="_recognizer_image_8h.html#aa0ff796c761521138a3bbe11def09f82aef31f2ddb06e6c7e7fee812d108a92b3">MB_RAW_IMAGE_TYPE_BGRA</a></div><div class="ttdeci">@ MB_RAW_IMAGE_TYPE_BGRA</div><div class="ttdef"><b>Definition:</b> RecognizerImage.h:46</div></div>
+<div class="ttc" id="a_recognizer_image_8h_html_aa0ff796c761521138a3bbe11def09f82aef31f2ddb06e6c7e7fee812d108a92b3"><div class="ttname"><a href="_recognizer_image_8h.html#aa0ff796c761521138a3bbe11def09f82aef31f2ddb06e6c7e7fee812d108a92b3">MB_RAW_IMAGE_TYPE_BGRA</a></div><div class="ttdeci">@ MB_RAW_IMAGE_TYPE_BGRA</div><div class="ttdef"><b>Definition:</b> RecognizerImage.h:47</div></div>
 <div class="ttc" id="a_recognizer_error_8h_html_a478101be8b179bf0b97ae64d80574f27"><div class="ttname"><a href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27">MBRecognizerErrorStatus</a></div><div class="ttdeci">MBRecognizerErrorStatus</div><div class="ttdoc">Enumeration of all possible error statuses.</div><div class="ttdef"><b>Definition:</b> RecognizerError.h:28</div></div>
 <div class="ttc" id="a_recognizer_error_8h_html_a478101be8b179bf0b97ae64d80574f27aa323ae6a8b923d2a9ce233b288637a2d"><div class="ttname"><a href="_recognizer_error_8h.html#a478101be8b179bf0b97ae64d80574f27aa323ae6a8b923d2a9ce233b288637a2d">MB_RECOGNIZER_ERROR_STATUS_SUCCESS</a></div><div class="ttdeci">@ MB_RECOGNIZER_ERROR_STATUS_SUCCESS</div><div class="ttdef"><b>Definition:</b> RecognizerError.h:30</div></div>
 <div class="ttc" id="astruct_m_b_recognizer_image_html"><div class="ttname"><a href="struct_m_b_recognizer_image.html">MBRecognizerImage</a></div><div class="ttdoc">MBRecognizerImage data structure. Holds image on which recognition will bw performed.</div></div>

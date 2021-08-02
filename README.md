@@ -275,8 +275,17 @@ We’re only asking you to do this so we can validate your trial license key. Sc
 
     MBRecognizerImage * img;
     MBRecognizerErrorStatus status = recognizerImageCreateFromRawImage( &img, image_buffer, image_width, image_height, image_stride, MB_RAW_IMAGE_TYPE_BGR );
-    if (status != MB_RECOGNIZER_ERROR_STATUS_SUCCESS) {
-        printf("Failed to create image. Reason: %s", recognizerErrorToString(status));
+    if ( status != MB_RECOGNIZER_ERROR_STATUS_SUCCESS ) {
+        printf( "Failed to create image. Reason: %s", recognizerErrorToString( status ) );
+    }
+    ```
+
+    Alternatively, you can load the image from file using the [`recognizerImageLoadFromFile`](https://blinkid.github.io/blinkid-c-sdk/struct_m_b_recognizer_image.html#ad301891b711bfd06000189b8819021ee)
+    ```c
+    MBRecognizerImage* img;
+    MBRecognizerErrorStatus status = recognizerImageLoadFromFile( &img, "path/to/image.jpg" );
+    if ( status != MB_RECOGNIZER_ERROR_STATUS_SUCCESS ) {
+        printf( "Failed to load image from file. Reason: %s", recognizerErrorToString( status ) );
     }
     ```
 
