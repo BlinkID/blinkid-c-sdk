@@ -19,9 +19,9 @@
 		C9837C3A252336A900A7EC56 /* BlinkID_MonochromeClassifier_general_6.0.0.strop in Copy Resources */ = {isa = PBXBuildFile; fileRef = C9837C2E2523369600A7EC56 /* BlinkID_MonochromeClassifier_general_6.0.0.strop */; };
 		C9837C3B252336A900A7EC56 /* BlinkID_Detector_general_6.7.0.strop in Copy Resources */ = {isa = PBXBuildFile; fileRef = C9837C2F2523369600A7EC56 /* BlinkID_Detector_general_6.7.0.strop */; };
 		C9837C3C252336A900A7EC56 /* BlinkID_Ocr_general_6.14.0.strop in Copy Resources */ = {isa = PBXBuildFile; fileRef = C9837C302523369600A7EC56 /* BlinkID_Ocr_general_6.14.0.strop */; };
-		C9837C3D252336A900A7EC56 /* BlinkID_Segmentator_general_6.15.0.strop in Copy Resources */ = {isa = PBXBuildFile; fileRef = C9837C312523369600A7EC56 /* BlinkID_Segmentator_general_6.15.0.strop */; };
+		C9837C3D252336A900A7EC56 /* BlinkID_Segmentator_general_6.16.0.strop in Copy Resources */ = {isa = PBXBuildFile; fileRef = C9837C312523369600A7EC56 /* BlinkID_Segmentator_general_6.16.0.strop */; };
 		C9837C3E252336A900A7EC56 /* BlinkID_Ocr_mrz_6.4.0.strop in Copy Resources */ = {isa = PBXBuildFile; fileRef = C9837C322523369600A7EC56 /* BlinkID_Ocr_mrz_6.4.0.strop */; };
-		C9837C3F252336A900A7EC56 /* BlinkID_Classifier_general_6.15.0.strop  in Copy Resources */ = {isa = PBXBuildFile; fileRef = C9837C332523369600A7EC56 /* BlinkID_Classifier_general_6.15.0.strop  */; };
+		C9837C3F252336A900A7EC56 /* BlinkID_Classifier_general_6.16.0.strop  in Copy Resources */ = {isa = PBXBuildFile; fileRef = C9837C332523369600A7EC56 /* BlinkID_Classifier_general_6.16.0.strop  */; };
 		C9837C40252336A900A7EC56 /* BlinkID_Analyzer_general_6.6.0.strop in Copy Resources */ = {isa = PBXBuildFile; fileRef = C9837C342523369600A7EC56 /* BlinkID_Analyzer_general_6.6.0.strop */; };
 /* End PBXBuildFile section */
 
@@ -51,9 +51,9 @@
 				C9837C3A252336A900A7EC56 /* BlinkID_MonochromeClassifier_general_6.0.0.strop in Copy Resources */,
 				C9837C3B252336A900A7EC56 /* BlinkID_Detector_general_6.7.0.strop in Copy Resources */,
 				C9837C3C252336A900A7EC56 /* BlinkID_Ocr_general_6.14.0.strop in Copy Resources */,
-				C9837C3D252336A900A7EC56 /* BlinkID_Segmentator_general_6.15.0.strop in Copy Resources */,
+				C9837C3D252336A900A7EC56 /* BlinkID_Segmentator_general_6.16.0.strop in Copy Resources */,
 				C9837C3E252336A900A7EC56 /* BlinkID_Ocr_mrz_6.4.0.strop in Copy Resources */,
-				C9837C3F252336A900A7EC56 /* BlinkID_Classifier_general_6.15.0.strop  in Copy Resources */,
+				C9837C3F252336A900A7EC56 /* BlinkID_Classifier_general_6.16.0.strop  in Copy Resources */,
 				C9837C40252336A900A7EC56 /* BlinkID_Analyzer_general_6.6.0.strop in Copy Resources */,
 			);
 			name = "Copy Resources";
@@ -86,9 +86,9 @@
 		C9837C2E2523369600A7EC56 /* BlinkID_MonochromeClassifier_general_6.0.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_MonochromeClassifier_general_6.0.0.strop; sourceTree = "<group>"; };
 		C9837C2F2523369600A7EC56 /* BlinkID_Detector_general_6.7.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Detector_general_6.7.0.strop; sourceTree = "<group>"; };
 		C9837C302523369600A7EC56 /* BlinkID_Ocr_general_6.14.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Ocr_general_6.14.0.strop; sourceTree = "<group>"; };
-		C9837C312523369600A7EC56 /* BlinkID_Segmentator_general_6.15.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Segmentator_general_6.15.0.strop; sourceTree = "<group>"; };
+		C9837C312523369600A7EC56 /* BlinkID_Segmentator_general_6.16.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Segmentator_general_6.16.0.strop; sourceTree = "<group>"; };
 		C9837C322523369600A7EC56 /* BlinkID_Ocr_mrz_6.4.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Ocr_mrz_6.4.0.strop; sourceTree = "<group>"; };
-		C9837C332523369600A7EC56 /* BlinkID_Classifier_general_6.15.0.strop  */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Classifier_general_6.15.0.strop ; sourceTree = "<group>"; };
+		C9837C332523369600A7EC56 /* BlinkID_Classifier_general_6.16.0.strop  */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Classifier_general_6.16.0.strop ; sourceTree = "<group>"; };
 		C9837C342523369600A7EC56 /* BlinkID_Analyzer_general_6.6.0.strop */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlinkID_Analyzer_general_6.6.0.strop; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,9 +168,9 @@
 				C9837C2E2523369600A7EC56 /* BlinkID_MonochromeClassifier_general_6.0.0.strop */,
 				C9837C2F2523369600A7EC56 /* BlinkID_Detector_general_6.7.0.strop */,
 				C9837C302523369600A7EC56 /* BlinkID_Ocr_general_6.14.0.strop */,
-				C9837C312523369600A7EC56 /* BlinkID_Segmentator_general_6.15.0.strop */,
+				C9837C312523369600A7EC56 /* BlinkID_Segmentator_general_6.16.0.strop */,
 				C9837C322523369600A7EC56 /* BlinkID_Ocr_mrz_6.4.0.strop */,
-				C9837C332523369600A7EC56 /* BlinkID_Classifier_general_6.15.0.strop  */,
+				C9837C332523369600A7EC56 /* BlinkID_Classifier_general_6.16.0.strop  */,
 				C9837C342523369600A7EC56 /* BlinkID_Analyzer_general_6.6.0.strop */,
 			);
 			name = "non-android";
@@ -243,7 +243,7 @@
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"LICENSEE=\\\"test\\\"",
-					"LICENSE_KEY=\\\"sRwAAAQEdGVzdMo6VCxh3Y0vyKAlqFBH+c+a4HCWT22YYJ9Gi93+kA5dKZmQT39dpTV86JrC7zwTopkEzQ2ry3fbm5cDEZr+eMMpAkXvRPm1MYJWZft7fX6cJyqmTHCCKqPTM522VkUTGGmE3sWZCb7Dnjl03cgeL0SH4jsxsxAKcuIv69re4t/dE/cIC/Y7I1b5TWzwua4X/9hCdcdjkltgweqEgP8ucXsr1Rwd5qI1gWIvKLOwZe1iUn9EVjSS7B4+6J256Nx5RYFsftM9UDjKdR8H3WYlmn2pJLU3aAWmxwKpYRXs2YNg4n0pqj3xmJEif8HMd5cMjsg/AKWG5wHAde+qCnVQMdsPKg==\\\"",
+					"LICENSE_KEY=\\\"sRwAAAQEdGVzdMo6VCxh3Y0vyKAlqFYf3GyC4/juG8O5Bxde3JfRo78B/Is1jR+WBvMFZ/1IEWQbXmkSKwGp1/bDxuhci34N1lLvqFhxEccv+SJF64GOw1BWBdazFBXQ5SbgzYtrRUVUQqcBtqtXfCEVTbTrjHdko2SP1OHlPtFKkLkdvk+nGZmwAavd2UvSWkOzo8STgYyWTQW/TTkA1lr3TlP4jNDnmVPBB2SEWqWrnxkYiFdnExX098dJgYU31mUI5I9o2GS4XSjOzcqU8NRy02nVESbhjFgA7XcQ4pUbYLV6S0o09k4qGMGDStItQN5+OcRqgeUQ9Rcru2/NYZPHFVf7Mwy3lwZvRg==\\\"",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -256,7 +256,7 @@
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"LICENSEE=\\\"test\\\"",
-					"LICENSE_KEY=\\\"sRwAAAQEdGVzdMo6VCxh3Y0vyKAlqFBH+c+a4HCWT22YYJ9Gi93+kA5dKZmQT39dpTV86JrC7zwTopkEzQ2ry3fbm5cDEZr+eMMpAkXvRPm1MYJWZft7fX6cJyqmTHCCKqPTM522VkUTGGmE3sWZCb7Dnjl03cgeL0SH4jsxsxAKcuIv69re4t/dE/cIC/Y7I1b5TWzwua4X/9hCdcdjkltgweqEgP8ucXsr1Rwd5qI1gWIvKLOwZe1iUn9EVjSS7B4+6J256Nx5RYFsftM9UDjKdR8H3WYlmn2pJLU3aAWmxwKpYRXs2YNg4n0pqj3xmJEif8HMd5cMjsg/AKWG5wHAde+qCnVQMdsPKg==\\\"",
+					"LICENSE_KEY=\\\"sRwAAAQEdGVzdMo6VCxh3Y0vyKAlqFYf3GyC4/juG8O5Bxde3JfRo78B/Is1jR+WBvMFZ/1IEWQbXmkSKwGp1/bDxuhci34N1lLvqFhxEccv+SJF64GOw1BWBdazFBXQ5SbgzYtrRUVUQqcBtqtXfCEVTbTrjHdko2SP1OHlPtFKkLkdvk+nGZmwAavd2UvSWkOzo8STgYyWTQW/TTkA1lr3TlP4jNDnmVPBB2SEWqWrnxkYiFdnExX098dJgYU31mUI5I9o2GS4XSjOzcqU8NRy02nVESbhjFgA7XcQ4pUbYLV6S0o09k4qGMGDStItQN5+OcRqgeUQ9Rcru2/NYZPHFVf7Mwy3lwZvRg==\\\"",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
 				PRODUCT_NAME = "$(TARGET_NAME)";

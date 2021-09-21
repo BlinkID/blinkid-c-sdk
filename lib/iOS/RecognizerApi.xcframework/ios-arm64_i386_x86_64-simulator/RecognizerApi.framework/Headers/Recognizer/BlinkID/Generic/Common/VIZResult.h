@@ -33,6 +33,10 @@ struct MBVIZResult
     char const * additionalNameInformation;
     /** The localized name of the document owner. */
     char const * localizedName;
+    /** The name of the father of the document owner. */
+    char const * fathersName;
+    /** The name of the mother of the document owner. */
+    char const * mothersName;
 
     /** The address of the document owner. */
     char const * address;

@@ -26,7 +26,7 @@ extern "C"
  *
  * A Recognizer is object which orchestrates image recognition. It combines detection of objects (documents, barcodes, etc.) with
  * OCR/barcode decoding and data extraction. Each Recognizer is specific to extracting single type of information from the image.
- * For example, USDL recognizer (@see USDLRecognizer.h) is specialized for searching PDF417 barcodes on US driver's licenses and
+ * For example, Generic ID recognizer (@see IdRecognizer.h) is specialized for searching identity documents in the image and
  * extracting data from them. Please browse the documentation to see all specific available recognizers and how to configure them.
  */
 typedef void * MBRecognizerPtr;

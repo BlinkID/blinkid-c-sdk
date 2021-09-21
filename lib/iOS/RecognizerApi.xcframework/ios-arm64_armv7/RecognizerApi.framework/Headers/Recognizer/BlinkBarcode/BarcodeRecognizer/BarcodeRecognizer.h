@@ -81,11 +81,6 @@ struct MBBarcodeRecognizerSettings
     MBBool readCode39AsExtendedData;
 
     /**
-     * Use this flag to enable reading of Aztec 2D barcodes.
-     */
-    MBBool scanAztec;
-
-    /**
      * Use this flag to enable reading of Code 128 1D barcodes.
      */
     MBBool scanCode128;
@@ -94,11 +89,6 @@ struct MBBarcodeRecognizerSettings
      * Use this flag to enable reading of Code 39 1D barcodes.
      */
     MBBool scanCode39;
-
-    /**
-     * Use this flag to enable reading of DataMatrix 2D barcodes.
-     */
-    MBBool scanDataMatrix;
 
     /**
      * Use this flag to enable reading of EAN 13 1D barcodes.

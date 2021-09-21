@@ -44,6 +44,9 @@ enum MBMRTDDocumentType
     /** Internal travel document */
     MB_MRTD_TYPE_INTERNAL_TRAVEL_DOCUMENT,
 
+    /** Border crossing card */
+    MB_MRTD_TYPE_BORDER_CROSSING_CARD,
+
     /** Number of elements in this enum. */
     MB_MRTD_TYPE_COUNT
 };
