@@ -167,6 +167,12 @@ struct MBBlinkIdRecognizerCommonResult
     /** The full name of the document owner. */
     char const * fullName;
 
+    /** The name of the father of the document owner. */
+    char const * fathersName;
+
+    /** The name of the mother of the document owner. */
+    char const * mothersName;
+
     /** The additional name information of the document owner. */
     char const * additionalNameInformation;
 

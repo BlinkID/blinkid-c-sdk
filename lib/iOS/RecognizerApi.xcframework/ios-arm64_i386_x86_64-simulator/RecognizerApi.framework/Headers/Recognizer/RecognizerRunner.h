@@ -231,10 +231,10 @@ struct MBRecognitionCallback
      *  Note that this method is called only if all recognizers in recognizer chain fail to
      *  detect anything, while onDetectedObject will be called for each recognizer separately.
      *
-     *  For example, if the image contains PDF417 code and both barcode recognizer (configured for QR code scanning only) and USDL
+     *  For example, if the image contains PDF417 code and both barcode recognizer (configured for QR code scanning only) and ID Barcode
      *  recognizer are in chain, then the barcode recognizer will call onDetectedObject with detection status DETECTION_STATUS_FAIL,
-     *  while USDL recognizer will call onDetectedObject with DETECTION_STATUS_SUCCESS and this method will not be called.
-     *  On the other hand, if image doesn't contain anything, both barcode recognizer and USDL recognizer will call onDetectedObject
+     *  while ID Barcode recognizer will call onDetectedObject with DETECTION_STATUS_SUCCESS and this method will not be called.
+     *  On the other hand, if image doesn't contain anything, both barcode recognizer and ID Barcode recognizer will call onDetectedObject
      *  with DETECTION_STATUS_FAIL and then this method will be called.
      */
     void (*onDetectionFailed)();
