@@ -1,5 +1,62 @@
 # Release notes
 
+## 5.15.0
+
+### We support the latest versions of these documents:
+
+#### Europe
+
+* Belgium - Driving License (front only)
+* Croatia - ID Card
+* France - ID Card
+* France - Residence Permit (beta)
+* Spain - ID Card
+* Switzerland - Residence Permit
+* UK - Residence Permit
+
+#### Oceania
+
+* Australia - Northern Territory - Driving License (front only, beta)
+
+#### Middle East and Africa
+
+* UAE - ID Card
+* UAE - Resident ID
+
+#### Northern America
+
+* Honduras - ID Card (beta)
+* USA - Colorado - ID Card
+* USA - Minnesota - Driving License
+* USA - Nevada - Driving License
+* USA - Oklahoma - Driving License
+* USA - Wyoming - Driving License
+
+### Changes to BlinkID(Combined) Recognizer
+
+* No API changes
+
+#### Improvements
+
+* We now support `DataMatch` functionality on single side documents (Passports)
+    * We added a special case to support `DataMatch` for UAE ID Card and Resident ID Card documents for the field `personal_id_number`
+* We can now extract `additional_personal_id_number` on Ecuador ID Card
+* We’ve made improvements for reading NRIC number on Malaysian documents that have an asterisk (\*) character present
+* We’ve improved document detection and cropping of the document image
+
+### Changes to IdBarcodeRecognizer
+
+- we've added document type `MB_BARCODE_DOCUMENT_TYPE_ARGENTINA_ALIEN_ID` and added support for parsing Argentina Alien IDs
+
+### Other changes
+
+- We are now requiring NEON+VFPv4 support for `armeabi-v7a` Android devices
+    - almost every 32-bit Android device we know of supports that
+- We've raised the minimum required version of iOS to 11.0
+- We've raised the minimum required version of MacOS to 10.15 (Catalina)
+- We've raised the minimum required version of GLIBC on Linux to 2.26
+    - we now build the SDK on Amazon Linux 2, instead of CentOS 7. Amazon Linux 2 uses GLIBC 2.26 so the SDK will work on any Linux distribution that uses same or newer version of GLIBC.
+
 ## 5.14.0
 
 ### Back side support added:
