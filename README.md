@@ -74,23 +74,23 @@ You should use _BlinkID C SDK_ if you are developing:
     - `armeabi-v7a`, `arm64-v8a`, `x86` and `x86_64`
 - **Not supported ABIs**: `armeabi`, `mips` and `mips64`
 - **Note about `armeabi-v7a`**:
-    - only devices that have processor with support for [Advanced SIMD (NEON)](https://en.wikipedia.org/wiki/ARM_architecture#Advanced_SIMD_(NEON)) are supported
+    - only devices that have processor with support for [Advanced SIMD (NEON)](https://en.wikipedia.org/wiki/ARM_architecture#Advanced_SIMD_(NEON)) and [VFPv4](https://en.wikipedia.org/wiki/ARM_architecture#Floating-point_(VFP)) are supported
     - this means that certain `armeabi-v7a` CPUs, such as [NVIDIA Tegra 2](https://en.wikipedia.org/wiki/Tegra#Tegra_2) **are not supported**
 
 #### iOS
 
-- all iOS devices that have iOS 9.0 or newer are supported. Note that recognition performance can be low on older single-core iOS devices, such as iPhone 4.
+- all iOS devices that have iOS 11.0 or newer are supported.
 
 ## <a name="sw-requirements"></a> Minimum software requirements
 
 ### MacOS
 
-- _BlinkID C SDK_ supports 64-bit Intel-based and Apple Silicon-based Macs with **Mac OS X 10.14 (Mojave)** or newer
+- _BlinkID C SDK_ supports 64-bit Intel-based and Apple Silicon-based Macs with **Mac OS X 10.15 (Catalina)** or newer
 - Note that SDK may work on earlier versions of MacOS, but we do not give any support nor guarantees for that.
 
 ### Linux
 
-- _BlinkID C SDK_ supports Linux distributions that have **GLIBC 2.17** or newer
+- _BlinkID C SDK_ supports Linux distributions that have **GLIBC 2.26** or newer
 - **OpenSSL v1.1.1** is required to be installed on the system, as well as CA certificates
     - both `libssl.so.1.1` and `libcrypto.so.1.1` must be available
     - for axample, on CentOS 7, you can install OpenSSL v1.1.1 by [enabling EPEL repo](https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/) and installing the package `openssl11` with command `sudo yum install openssl11`
@@ -110,7 +110,7 @@ You should use _BlinkID C SDK_ if you are developing:
 
 ### iOS
 
-- _BlinkID C SDK_ supports iOS 9.0 or newer. The binary has been built using the latest Xcode version available at the time of the release.
+- _BlinkID C SDK_ supports iOS 11.0 or newer. The binary has been built using the latest Xcode version available at the time of the release.
 
 # <a name="integration"></a> Integration instructions
 
