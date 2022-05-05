@@ -4,7 +4,7 @@ API_RES_PATH := ../../../../resources/non-android
 API_INC_PATH := ../../../../include
 API_LIB_PATH := ../../../../lib/linux/x64
 
-FLAGS := -g -ansi -m64 -DLICENSEE=\"test\" -DLICENSE_KEY=\"sRwAAAUEdGVzdGZnyBMppn/pdSTAoOIRkk8M6dK7xsYpQT9SwIbn2dlJvS12BIb5objtpsHlIb2pk7HyV3GLMWxC+nwwah/ZpDTrimUU4HKwdwvh4afJ0CDWRQ4nX2G3vo30Onno7KPADAN2phwl5kn9J+NXdEW6JjuALPRUwosTcoG+tjJ2U4onnI1qIojpsPUuMfhuD2QcM4HxKmLGEcq/mWcaTc2rjgy+v0hxsHe9x/O7mJkUfWqm8MuIid2M6XxP/1K4MqZ+S2c5JArFA+7zj9pfV4ucWJZzNKWKJmUolfPiTEBiM1W4/fKAm2oy9WxYigubR/lOWg9ONG5qbI6JyfG5ydVk6d/8iQ==\"
+FLAGS := -g -ansi -m64 -DLICENSEE=\"test\" -DLICENSE_KEY=\"sRwAAAUEdGVzdGZnyBMppn/pdSTAUOUhsOQ31AyaftyEgdHqi5DOoOHFvN7zRNoS71a3k7PeYqG+Lib8I/NsxnpcBjxUr7x1JM109kv33Ak/QynPGcV2shwIPTCu3eng+OyHJU57mcXFvz9QuJR43wEfbOecghAlrwpieROU98A9i3hPMSRRiSrkRxe93zlseAL9IgTXYH3mjuLtKD7wyBCnhamcuLUGU+D79eU9Q1PfvjDLmkadO+w4e50YUrRpryvNiSe9esS6yPkpqKs5ua8gh3OEeCLd1fAHHJZPjF6WkQgf0P1JXLJoge/ZQgjp9iloksLAAFGXQu7z0amRFkvYWsnKEEr9XkCc\"
 CC    := gcc
 
 all: run

@@ -399,7 +399,10 @@ enum MBRegion
     MB_REGION_CAMPECHE                     = 111,
     MB_REGION_COLIMA                       = 112,
     MB_REGION_QUINTANA_ROO_BENITO_JUAREZ   = 113,
-    MB_REGION_COUNT                        = 114,
+    MB_REGION_QUINTANA_ROO                 = 114,
+    MB_REGION_QUINTANA_ROO_SOLIDARIDAD     = 115,
+    MB_REGION_TLAXCALA                     = 116,
+    MB_REGION_COUNT                        = 117,
 };
 
 /**
@@ -458,7 +461,8 @@ enum MBDocumentType
     MB_DOCUMENT_TYPE_TRIBAL_ID                  = 45,
     MB_DOCUMENT_TYPE_VETERAN_ID                 = 46,
     MB_DOCUMENT_TYPE_CITIZENSHIP_CERTIFICATE    = 47,
-    MB_DOCUMENT_TYPE_COUNT                      = 48,
+    MB_DOCUMENT_TYPE_MY_NUMBER_CARD             = 48,
+    MB_DOCUMENT_TYPE_COUNT                      = 49,
 };
 
 /**

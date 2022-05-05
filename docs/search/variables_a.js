@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['lastname_723',['lastName',['../struct_m_b_id_barcode_recognizer_result.html#a1162aeb7faef4ce0ae23d71444111c68',1,'MBIdBarcodeRecognizerResult::lastName()'],['../struct_m_b_barcode_result.html#ac99211ead182a78bdc843c088e943cb9',1,'MBBarcodeResult::lastName()'],['../struct_m_b_v_i_z_result.html#a524f5883a9be8cb99cac95005341ce82',1,'MBVIZResult::lastName()'],['../struct_m_b_blink_id_recognizer_common_result.html#a04d39f80168d4ca37d08870b2f08cd7d',1,'MBBlinkIdRecognizerCommonResult::lastName()']]],
-  ['leftfactor_724',['leftFactor',['../struct_m_b_extension_factors.html#a44632150f491ee497dacd4d736e84534',1,'MBExtensionFactors']]],
-  ['localizedname_725',['localizedName',['../struct_m_b_v_i_z_result.html#aa091e948a72c4938e342483970d4c474',1,'MBVIZResult::localizedName()'],['../struct_m_b_blink_id_recognizer_common_result.html#a946fe5f40a35e2a8ccbcd933d3d19377',1,'MBBlinkIdRecognizerCommonResult::localizedName()']]]
+  ['lastname_0',['lastName',['../struct_m_b_id_barcode_recognizer_result.html#a1162aeb7faef4ce0ae23d71444111c68',1,'MBIdBarcodeRecognizerResult::lastName()'],['../struct_m_b_barcode_result.html#ac99211ead182a78bdc843c088e943cb9',1,'MBBarcodeResult::lastName()'],['../struct_m_b_v_i_z_result.html#a524f5883a9be8cb99cac95005341ce82',1,'MBVIZResult::lastName()'],['../struct_m_b_blink_id_recognizer_common_result.html#a04d39f80168d4ca37d08870b2f08cd7d',1,'MBBlinkIdRecognizerCommonResult::lastName()']]],
+  ['leftfactor_1',['leftFactor',['../struct_m_b_extension_factors.html#a44632150f491ee497dacd4d736e84534',1,'MBExtensionFactors']]],
+  ['licencetype_2',['licenceType',['../struct_m_b_vehicle_class_info.html#a660e725837489f87ab4ea377e114393e',1,'MBVehicleClassInfo']]],
+  ['localizedname_3',['localizedName',['../struct_m_b_v_i_z_result.html#aa091e948a72c4938e342483970d4c474',1,'MBVIZResult::localizedName()'],['../struct_m_b_blink_id_recognizer_common_result.html#a946fe5f40a35e2a8ccbcd933d3d19377',1,'MBBlinkIdRecognizerCommonResult::localizedName()']]]
 ];

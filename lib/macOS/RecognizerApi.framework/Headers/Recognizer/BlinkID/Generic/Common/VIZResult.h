@@ -42,6 +42,8 @@ struct MBVIZResult
     char const * address;
     /** THe additional address information of the document owner. */
     char const * additionalAddressInformation;
+    /** The one more additional address information of the document owner. */
+    char const * additionalOptionalAddressInformation;
     /** The place of birth of the document owner. */
     char const * placeOfBirth;
     /** The nationality of the document owner. */
