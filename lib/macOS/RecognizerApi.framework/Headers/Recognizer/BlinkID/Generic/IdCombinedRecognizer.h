@@ -119,6 +119,15 @@ struct MBBlinkIdCombinedRecognizerResult
 
     /** Status of the last back side recognition process.  */
     MBProcessingStatus backProcessingStatus;
+
+    /** The front raw camera frame */
+    MBRawImage frontCameraFrame;
+
+    /** The back raw camera frame */
+    MBRawImage backCameraFrame;
+
+    /** The barcode raw camera frame */
+    MBRawImage barcodeCameraFrame;
 };
 
 /**

@@ -1,4 +1,23 @@
 var searchData=
 [
-  ['jurisdiction_142',['jurisdiction',['../struct_m_b_id_barcode_recognizer_result.html#ab91fc0769b89a9e55a57384fd0f2dfc6',1,'MBIdBarcodeRecognizerResult::jurisdiction()'],['../struct_m_b_address_detailed_info.html#a1e0b26069f48f1c5aeb0baaaf91c4459',1,'MBAddressDetailedInfo::jurisdiction()']]]
+  ['idbarcoderecognizer_2eh_0',['IdBarcodeRecognizer.h',['../_id_barcode_recognizer_8h.html',1,'']]],
+  ['idcombinedrecognizer_2eh_1',['IdCombinedRecognizer.h',['../_id_combined_recognizer_8h.html',1,'']]],
+  ['idrecognizer_2eh_2',['IdRecognizer.h',['../_id_recognizer_8h.html',1,'']]],
+  ['imageanalysisdetectionstatus_2eh_3',['ImageAnalysisDetectionStatus.h',['../_image_analysis_detection_status_8h.html',1,'']]],
+  ['imageanalysisresult_4',['imageAnalysisResult',['../struct_m_b_blink_id_recognizer_result.html#aa2e2acafc9387ed5b52e9c96ff53157b',1,'MBBlinkIdRecognizerResult']]],
+  ['imageanalysisresult_2eh_5',['ImageAnalysisResult.h',['../_image_analysis_result_8h.html',1,'']]],
+  ['imagedpi_6',['imageDpi',['../struct_m_b_image_options.html#ad18e3e1d0ce01579e780e0454a2a4a98',1,'MBImageOptions']]],
+  ['imageoptions_7',['imageOptions',['../struct_m_b_full_document_image_options.html#afa00ebc32d895cdcd7e9b4b19ce6ca4b',1,'MBFullDocumentImageOptions']]],
+  ['imageoptions_2eh_8',['ImageOptions.h',['../_image_options_8h.html',1,'']]],
+  ['imageoptionsdefaultinit_9',['imageOptionsDefaultInit',['../struct_m_b_image_options.html#a3b58216b6a7e1387949ac40e728897e5',1,'MBImageOptions']]],
+  ['imageresult_2eh_10',['ImageResult.h',['../_image_result_8h.html',1,'']]],
+  ['imagetype_11',['imageType',['../struct_m_b_raw_image.html#aabb980dcf5cdbf786548cf68ee9579e5',1,'MBRawImage']]],
+  ['immigrantcasenumber_12',['immigrantCaseNumber',['../struct_m_b_m_r_z_result.html#a609338c69eeb5caff8d2ceb3a1cc47d2',1,'MBMRZResult']]],
+  ['infos_13',['infos',['../struct_m_b_vehicle_class_infos.html#af849677de39f084e0be34104220698a4',1,'MBVehicleClassInfos']]],
+  ['isoalpha2countrycode_14',['isoAlpha2CountryCode',['../struct_m_b_class_info.html#a53c8feb2200d6c422246c9f5ab4da44a',1,'MBClassInfo']]],
+  ['isoalpha3countrycode_15',['isoAlpha3CountryCode',['../struct_m_b_class_info.html#a413c971ba515d290b61928a3971f0b31',1,'MBClassInfo']]],
+  ['isonumericcountrycode_16',['isoNumericCountryCode',['../struct_m_b_class_info.html#a2cabc8b15d76322eb888c72b51bdc20b',1,'MBClassInfo']]],
+  ['issuer_17',['issuer',['../struct_m_b_m_r_z_result.html#a8630c44ece9cf5930db062a9ea9bdf21',1,'MBMRZResult']]],
+  ['issuername_18',['issuerName',['../struct_m_b_m_r_z_result.html#a4247438c2099ad8ca141a4e2c4d87bd3',1,'MBMRZResult']]],
+  ['issuingauthority_19',['issuingAuthority',['../struct_m_b_id_barcode_recognizer_result.html#a68334127ed5e6bf1925eba66961f06c1',1,'MBIdBarcodeRecognizerResult::issuingAuthority()'],['../struct_m_b_barcode_result.html#aed9a84926b66cabbcee2301b3e8bc6cf',1,'MBBarcodeResult::issuingAuthority()'],['../struct_m_b_v_i_z_result.html#a28ae0618ecadeb144a1533cf07a8b2ea',1,'MBVIZResult::issuingAuthority()'],['../struct_m_b_blink_id_recognizer_common_result.html#a01bf0e6d44f4b41f74e5066dd1f0cfa8',1,'MBBlinkIdRecognizerCommonResult::issuingAuthority()']]]
 ];

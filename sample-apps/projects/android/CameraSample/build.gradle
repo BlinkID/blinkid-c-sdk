@@ -4,7 +4,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.2'
+        classpath 'com.android.tools.build:gradle:7.1.2'
     }
 }
 
@@ -54,7 +54,7 @@ android {
             assets.srcDirs = ['../../../src/demo']
         }
     }
-    ndkVersion '21.3.6528147'
+    ndkVersion '23.1.7779620'
 }
 
 dependencies {

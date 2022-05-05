@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_501',['x',['../struct_m_b_point.html#a589bd95f63874df7715ceea631bdd0ae',1,'MBPoint::x()'],['../struct_m_b_rectangle.html#a6bf3a052dd233483b07bb209612f7121',1,'MBRectangle::x()']]]
+  ['width_0',['width',['../struct_m_b_size.html#a92da63a3be8666a2a53480265448d83f',1,'MBSize::width()'],['../struct_m_b_rectangle.html#a33f0ff68812ed6296667f8023bdb633b',1,'MBRectangle::width()']]]
 ];

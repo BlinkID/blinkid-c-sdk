@@ -35,7 +35,7 @@
 #   define MB_CALL
 #endif
 
-#ifdef WIN32
+#if defined( WIN32 ) && !defined( __clang__ )
 #   define MB_EXPORTED_TYPE MB_API
 #else
 #   define MB_EXPORTED_TYPE

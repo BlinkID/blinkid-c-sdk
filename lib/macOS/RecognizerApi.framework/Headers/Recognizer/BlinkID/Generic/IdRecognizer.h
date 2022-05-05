@@ -117,6 +117,12 @@ struct MBBlinkIdRecognizerSettings
     MBBool scanCroppedDocumentImage;
 
     /**
+     *  Configure the recognizer to save the raw camera frames.
+     *  This significantly increases memory consumption.
+     */
+    MBBool saveCameraFrames;
+
+    /**
      * Called when dewarped full document image is available.
      */
     void (*dewarpedImageCallback)( MBRawImage image );
@@ -184,6 +190,9 @@ struct MBBlinkIdRecognizerCommonResult
 
     /** The additional address information of the document owner. */
     char const * additionalAddressInformation;
+
+    /** The one more additional address information of the document owner. */
+    char const * additionalOptionalAddressInformation;
 
     /** The place of birth of the document owner. */
     char const * placeOfBirth;
@@ -286,6 +295,12 @@ struct MBBlinkIdRecognizerResult
 
     /** The data extracted from the visual inspection zone. */
     MBVIZResult viz;
+
+    /** The raw camera frame. */
+    MBRawImage cameraFrame;
+
+    /** The barcode raw camera frame. */
+    MBRawImage barcodeCameraFrame;
 };
 
 /**

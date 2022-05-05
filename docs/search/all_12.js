@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['uncertain_491',['uncertain',['../struct_m_b_barcode_data.html#a48ced2a9be87e1aa8679ac193285c3d4',1,'MBBarcodeData']]],
-  ['upfactor_492',['upFactor',['../struct_m_b_extension_factors.html#a28889bb78c409b177628ed7fdc946321',1,'MBExtensionFactors']]],
-  ['useautoscale_493',['useAutoScale',['../struct_m_b_barcode_recognizer_settings.html#a18cfdac059c10eba21af32691dcd9cd7',1,'MBBarcodeRecognizerSettings']]]
+  ['type_0',['type',['../struct_m_b_class_info.html#a41d7564b9bb6b3dd3481a8726b6e850d',1,'MBClassInfo']]],
+  ['types_2eh_1',['Types.h',['../_types_8h.html',1,'']]]
 ];
