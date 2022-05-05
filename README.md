@@ -102,7 +102,7 @@ You should use _BlinkID C SDK_ if you are developing:
 
 - _BlinkID C SDK_ supports only 64-bit Windows 10
     - 32-bit version of Windows 10, as well as Windows 8.1 and earlier versions are **not supported**
-- [Visual C++ 2019 redistributable package](https://aka.ms/vs/16/release/VC_redist.x64.exe) is required for _BlinkID C SDK_ to work on Windows
+- [Visual C++ 2022 redistributable package](https://aka.ms/vs/17/release/VC_redist.x64.exe) is required for _BlinkID C SDK_ to work on Windows
 
 ### Android
 
@@ -140,7 +140,7 @@ In order to be able to use _BlinkID_ in your application, you first need to conf
 
 ### <a name="configure-linux"></a> Linux
 
-On Linux, please make sure that you instruct your compiler to search for headers in [include](include) directory and to link with `libRecognizerApi.so`, which is located in [Linux lib folder](lib/linux/x64). Also, make sure that your Linux distribution has `OpenSSL` installed (`libssl.so.10` and `libcrypto.so.10` need to be available). When running your app, make sure that `libRecognizerApi.so` is available in library search path by installing it to the default library directory (usually `/usr/lib`) or by setting `LD_LIBRARY_PATH` environment variable to folder containing the `libRecognizerApi.so`. While deploying your application, make sure that you also include the [resources](resources/non-android) that are needed at runtime. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan).
+On Linux, please make sure that you instruct your compiler to search for headers in [include](include) directory and to link with `libRecognizerApi.so`, which is located in [Linux lib folder](lib/linux/x64). Also, make sure that your Linux distribution has `OpenSSL` installed (`libssl.so.1.1` and `libcrypto.so.1.1` need to be available). When running your app, make sure that `libRecognizerApi.so` is available in library search path by installing it to the default library directory (usually `/usr/lib`) or by setting `LD_LIBRARY_PATH` environment variable to folder containing the `libRecognizerApi.so`. While deploying your application, make sure that you also include the [resources](resources/non-android) that are needed at runtime. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan).
 
 Please check [the Linux sample-app](sample-apps/projects/linux/x64) for an example of integration of _BlinkID C SDK_ on Linux.
 
@@ -152,7 +152,7 @@ Please check [the MacOS sample-app](sample-apps/projects/macOS) for an example o
 
 ### <a name="configure-windows"></a> Windows
 
-On Windows, _BlinkID C SDK_ is available as [dynamic library](lib/windows). You need to instruct your compiler to search for headers in [include](include) directory and link with `RecognizerApi.lib`, which is located in [Windows lib folder](lib/windows/x64). When running your app, make sure that `RecognizerApi.dll` is available in the same directory as your application's executable file. While deploying your application, make sure that you also include the [resources](resources/non-android) that are needed at runtime. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan). In order for _BlinkID C SDK_ to work, a  [Visual C++ 2019 redistributable package](https://aka.ms/vs/16/release/VC_redist.x64.exe) needs to be installed on the system.
+On Windows, _BlinkID C SDK_ is available as [dynamic library](lib/windows). You need to instruct your compiler to search for headers in [include](include) directory and link with `RecognizerApi.lib`, which is located in [Windows lib folder](lib/windows/x64). When running your app, make sure that `RecognizerApi.dll` is available in the same directory as your application's executable file. While deploying your application, make sure that you also include the [resources](resources/non-android) that are needed at runtime. You will need to provide path to folder containing those resources during [the initialization of the SDK](#first-scan). In order for _BlinkID C SDK_ to work, a  [Visual C++ 2022 redistributable package](https://aka.ms/vs/17/release/VC_redist.x64.exe) needs to be installed on the system.
 
 Please check [the Windows sample-app](sample-apps/projects/windows/x64) for an example of integration of _BlinkID C SDK_ on Windows.
 

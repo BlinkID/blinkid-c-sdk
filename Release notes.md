@@ -80,6 +80,12 @@
 - We've added support for Brazil ID Card when the cardholder's face image is rotated for 90 degrees on the document.
 	- We will return face image and document image + data from VIZ part present on the back side.
 
+### Changes to the C SDK minimum system requirements
+
+- minimum supported iOS is now 11.0
+- minimum supported macOS is now 10.15
+- minimum supported GLIBC on linux is now 2.26
+
 ## 5.15.0
 
 ### We support the latest versions of these documents:
